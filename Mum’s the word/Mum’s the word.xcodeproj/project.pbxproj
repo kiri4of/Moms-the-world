@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C30816729F5C33400C73271 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C30816629F5C33400C73271 /* AppDelegate.swift */; };
+		0C30816929F5C33400C73271 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C30816829F5C33400C73271 /* SceneDelegate.swift */; };
+		0C30816B29F5C33400C73271 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C30816A29F5C33400C73271 /* ViewController.swift */; };
+		0C30816E29F5C33400C73271 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C30816C29F5C33400C73271 /* Main.storyboard */; };
+		0C30817029F5C33700C73271 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C30816F29F5C33700C73271 /* Assets.xcassets */; };
+		0C30817329F5C33700C73271 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C30817129F5C33700C73271 /* LaunchScreen.storyboard */; };
+		0C30817E29F5C33700C73271 /* Mum_s_the_wordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C30817D29F5C33700C73271 /* Mum_s_the_wordTests.swift */; };
+		0C30818829F5C33700C73271 /* Mum_s_the_wordUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C30818729F5C33700C73271 /* Mum_s_the_wordUITests.swift */; };
+		0C30818A29F5C33700C73271 /* Mum_s_the_wordUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C30818929F5C33700C73271 /* Mum_s_the_wordUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C30817A29F5C33700C73271 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C30815B29F5C33400C73271 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C30816229F5C33400C73271;
+			remoteInfo = "Mum’s the word";
+		};
+		0C30818429F5C33700C73271 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C30815B29F5C33400C73271 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C30816229F5C33400C73271;
+			remoteInfo = "Mum’s the word";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C30816329F5C33400C73271 /* Mum’s the word.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mum’s the word.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C30816629F5C33400C73271 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0C30816829F5C33400C73271 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0C30816A29F5C33400C73271 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0C30816D29F5C33400C73271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0C30816F29F5C33700C73271 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C30817229F5C33700C73271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0C30817429F5C33700C73271 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C30817929F5C33700C73271 /* Mum’s the wordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mum’s the wordTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C30817D29F5C33700C73271 /* Mum_s_the_wordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mum_s_the_wordTests.swift; sourceTree = "<group>"; };
+		0C30818329F5C33700C73271 /* Mum’s the wordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mum’s the wordUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C30818729F5C33700C73271 /* Mum_s_the_wordUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mum_s_the_wordUITests.swift; sourceTree = "<group>"; };
+		0C30818929F5C33700C73271 /* Mum_s_the_wordUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mum_s_the_wordUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C30816029F5C33400C73271 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C30817629F5C33700C73271 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C30818029F5C33700C73271 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C30815A29F5C33400C73271 = {
+			isa = PBXGroup;
+			children = (
+				0C30816529F5C33400C73271 /* Mum’s the word */,
+				0C30817C29F5C33700C73271 /* Mum’s the wordTests */,
+				0C30818629F5C33700C73271 /* Mum’s the wordUITests */,
+				0C30816429F5C33400C73271 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0C30816429F5C33400C73271 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C30816329F5C33400C73271 /* Mum’s the word.app */,
+				0C30817929F5C33700C73271 /* Mum’s the wordTests.xctest */,
+				0C30818329F5C33700C73271 /* Mum’s the wordUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C30816529F5C33400C73271 /* Mum’s the word */ = {
+			isa = PBXGroup;
+			children = (
+				0C30816629F5C33400C73271 /* AppDelegate.swift */,
+				0C30816829F5C33400C73271 /* SceneDelegate.swift */,
+				0C30816A29F5C33400C73271 /* ViewController.swift */,
+				0C30816C29F5C33400C73271 /* Main.storyboard */,
+				0C30816F29F5C33700C73271 /* Assets.xcassets */,
+				0C30817129F5C33700C73271 /* LaunchScreen.storyboard */,
+				0C30817429F5C33700C73271 /* Info.plist */,
+			);
+			path = "Mum’s the word";
+			sourceTree = "<group>";
+		};
+		0C30817C29F5C33700C73271 /* Mum’s the wordTests */ = {
+			isa = PBXGroup;
+			children = (
+				0C30817D29F5C33700C73271 /* Mum_s_the_wordTests.swift */,
+			);
+			path = "Mum’s the wordTests";
+			sourceTree = "<group>";
+		};
+		0C30818629F5C33700C73271 /* Mum’s the wordUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0C30818729F5C33700C73271 /* Mum_s_the_wordUITests.swift */,
+				0C30818929F5C33700C73271 /* Mum_s_the_wordUITestsLaunchTests.swift */,
+			);
+			path = "Mum’s the wordUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C30816229F5C33400C73271 /* Mum’s the word */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C30818D29F5C33700C73271 /* Build configuration list for PBXNativeTarget "Mum’s the word" */;
+			buildPhases = (
+				0C30815F29F5C33400C73271 /* Sources */,
+				0C30816029F5C33400C73271 /* Frameworks */,
+				0C30816129F5C33400C73271 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mum’s the word";
+			productName = "Mum’s the word";
+			productReference = 0C30816329F5C33400C73271 /* Mum’s the word.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0C30817829F5C33700C73271 /* Mum’s the wordTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C30819029F5C33700C73271 /* Build configuration list for PBXNativeTarget "Mum’s the wordTests" */;
+			buildPhases = (
+				0C30817529F5C33700C73271 /* Sources */,
+				0C30817629F5C33700C73271 /* Frameworks */,
+				0C30817729F5C33700C73271 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C30817B29F5C33700C73271 /* PBXTargetDependency */,
+			);
+			name = "Mum’s the wordTests";
+			productName = "Mum’s the wordTests";
+			productReference = 0C30817929F5C33700C73271 /* Mum’s the wordTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0C30818229F5C33700C73271 /* Mum’s the wordUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C30819329F5C33700C73271 /* Build configuration list for PBXNativeTarget "Mum’s the wordUITests" */;
+			buildPhases = (
+				0C30817F29F5C33700C73271 /* Sources */,
+				0C30818029F5C33700C73271 /* Frameworks */,
+				0C30818129F5C33700C73271 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C30818529F5C33700C73271 /* PBXTargetDependency */,
+			);
+			name = "Mum’s the wordUITests";
+			productName = "Mum’s the wordUITests";
+			productReference = 0C30818329F5C33700C73271 /* Mum’s the wordUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C30815B29F5C33400C73271 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					0C30816229F5C33400C73271 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					0C30817829F5C33700C73271 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 0C30816229F5C33400C73271;
+					};
+					0C30818229F5C33700C73271 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 0C30816229F5C33400C73271;
+					};
+				};
+			};
+			buildConfigurationList = 0C30815E29F5C33400C73271 /* Build configuration list for PBXProject "Mum’s the word" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0C30815A29F5C33400C73271;
+			productRefGroup = 0C30816429F5C33400C73271 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C30816229F5C33400C73271 /* Mum’s the word */,
+				0C30817829F5C33700C73271 /* Mum’s the wordTests */,
+				0C30818229F5C33700C73271 /* Mum’s the wordUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C30816129F5C33400C73271 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C30817329F5C33700C73271 /* LaunchScreen.storyboard in Resources */,
+				0C30817029F5C33700C73271 /* Assets.xcassets in Resources */,
+				0C30816E29F5C33400C73271 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C30817729F5C33700C73271 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C30818129F5C33700C73271 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C30815F29F5C33400C73271 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C30816B29F5C33400C73271 /* ViewController.swift in Sources */,
+				0C30816729F5C33400C73271 /* AppDelegate.swift in Sources */,
+				0C30816929F5C33400C73271 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C30817529F5C33700C73271 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C30817E29F5C33700C73271 /* Mum_s_the_wordTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C30817F29F5C33700C73271 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C30818A29F5C33700C73271 /* Mum_s_the_wordUITestsLaunchTests.swift in Sources */,
+				0C30818829F5C33700C73271 /* Mum_s_the_wordUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C30817B29F5C33700C73271 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C30816229F5C33400C73271 /* Mum’s the word */;
+			targetProxy = 0C30817A29F5C33700C73271 /* PBXContainerItemProxy */;
+		};
+		0C30818529F5C33700C73271 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C30816229F5C33400C73271 /* Mum’s the word */;
+			targetProxy = 0C30818429F5C33700C73271 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0C30816C29F5C33400C73271 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C30816D29F5C33400C73271 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0C30817129F5C33700C73271 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C30817229F5C33700C73271 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0C30818B29F5C33700C73271 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0C30818C29F5C33700C73271 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0C30818E29F5C33700C73271 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Mum’s the word/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kkk.Mum-s-the-word";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0C30818F29F5C33700C73271 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Mum’s the word/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kkk.Mum-s-the-word";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0C30819129F5C33700C73271 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kkk.Mum-s-the-wordTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mum’s the word.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mum’s the word";
+			};
+			name = Debug;
+		};
+		0C30819229F5C33700C73271 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kkk.Mum-s-the-wordTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mum’s the word.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mum’s the word";
+			};
+			name = Release;
+		};
+		0C30819429F5C33700C73271 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kkk.Mum-s-the-wordUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mum’s the word";
+			};
+			name = Debug;
+		};
+		0C30819529F5C33700C73271 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kkk.Mum-s-the-wordUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mum’s the word";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C30815E29F5C33400C73271 /* Build configuration list for PBXProject "Mum’s the word" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C30818B29F5C33700C73271 /* Debug */,
+				0C30818C29F5C33700C73271 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C30818D29F5C33700C73271 /* Build configuration list for PBXNativeTarget "Mum’s the word" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C30818E29F5C33700C73271 /* Debug */,
+				0C30818F29F5C33700C73271 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C30819029F5C33700C73271 /* Build configuration list for PBXNativeTarget "Mum’s the wordTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C30819129F5C33700C73271 /* Debug */,
+				0C30819229F5C33700C73271 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C30819329F5C33700C73271 /* Build configuration list for PBXNativeTarget "Mum’s the wordUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C30819429F5C33700C73271 /* Debug */,
+				0C30819529F5C33700C73271 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C30815B29F5C33400C73271 /* Project object */;
+}
