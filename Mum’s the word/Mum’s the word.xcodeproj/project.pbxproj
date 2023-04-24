@@ -16,6 +16,7 @@
 		CA4DD9DB29F66F6200E19431 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4DD9D829F66F6200E19431 /* AppRouter.swift */; };
 		CA4DD9DC29F66F6200E19431 /* NavigationRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4DD9D929F66F6200E19431 /* NavigationRouterProtocol.swift */; };
 		CA4DD9E029F66FC000E19431 /* OnboardingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4DD9DF29F66FC000E19431 /* OnboardingRouter.swift */; };
+		CA4DD9E329F6728200E19431 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4DD9E229F6728200E19431 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		CA4DD9D829F66F6200E19431 /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		CA4DD9D929F66F6200E19431 /* NavigationRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationRouterProtocol.swift; sourceTree = "<group>"; };
 		CA4DD9DF29F66FC000E19431 /* OnboardingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRouter.swift; sourceTree = "<group>"; };
+		CA4DD9E229F6728200E19431 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 		CA4DD9D529F66F3100E19431 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				CA4DD9E129F6727100E19431 /* ViewController */,
 				CA4DD9D629F66F4500E19431 /* Navigation */,
 			);
 			path = Common;
@@ -157,6 +160,14 @@
 				CA4DD9DF29F66FC000E19431 /* OnboardingRouter.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		CA4DD9E129F6727100E19431 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CA4DD9E229F6728200E19431 /* BaseViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +305,7 @@
 				CA4DD9DA29F66F6200E19431 /* NavigationRouter.swift in Sources */,
 				CA4DD9E029F66FC000E19431 /* OnboardingRouter.swift in Sources */,
 				CA4DD9DB29F66F6200E19431 /* AppRouter.swift in Sources */,
+				CA4DD9E329F6728200E19431 /* BaseViewController.swift in Sources */,
 				CA4DD9DC29F66F6200E19431 /* NavigationRouterProtocol.swift in Sources */,
 				0C30816929F5C33400C73271 /* SceneDelegate.swift in Sources */,
 			);
