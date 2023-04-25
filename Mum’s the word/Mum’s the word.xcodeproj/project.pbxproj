@@ -11,18 +11,26 @@
 		0C30816929F5C33400C73271 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C30816829F5C33400C73271 /* SceneDelegate.swift */; };
 		0C30816B29F5C33400C73271 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C30816A29F5C33400C73271 /* ViewController.swift */; };
 		0C30817029F5C33700C73271 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C30816F29F5C33700C73271 /* Assets.xcassets */; };
-		0C30817329F5C33700C73271 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C30817129F5C33700C73271 /* LaunchScreen.storyboard */; };
 		CA4DD9DA29F66F6200E19431 /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4DD9D729F66F6200E19431 /* NavigationRouter.swift */; };
 		CA4DD9DB29F66F6200E19431 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4DD9D829F66F6200E19431 /* AppRouter.swift */; };
 		CA4DD9DC29F66F6200E19431 /* NavigationRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4DD9D929F66F6200E19431 /* NavigationRouterProtocol.swift */; };
 		CA4DD9E029F66FC000E19431 /* OnboardingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4DD9DF29F66FC000E19431 /* OnboardingRouter.swift */; };
 		CA4DD9E329F6728200E19431 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4DD9E229F6728200E19431 /* BaseViewController.swift */; };
+		CA50192129F79312006039C4 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA50191B29F79312006039C4 /* SplashPresenter.swift */; };
+		CA50192229F79312006039C4 /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA50191C29F79312006039C4 /* SplashRouter.swift */; };
+		CA50192329F79312006039C4 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA50191D29F79312006039C4 /* SplashViewController.swift */; };
+		CA50192429F79312006039C4 /* SplashBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA50191E29F79312006039C4 /* SplashBuilder.swift */; };
+		CA50192529F79312006039C4 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA50191F29F79312006039C4 /* SplashView.swift */; };
+		CA50192B29F7935B006039C4 /* AppImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA50192A29F7935B006039C4 /* AppImages.swift */; };
+		CA50192E29F79E22006039C4 /* BubleLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA50192D29F79E22006039C4 /* BubleLoader.swift */; };
+		CA5E391E29F78E5A0014BD4D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA5E391D29F78E5A0014BD4D /* Launch Screen.storyboard */; };
 		CAE6055729F6C9B000FE65E6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CAE6055629F6C9B000FE65E6 /* SnapKit */; };
 		CAE6055D29F6CA4700FE65E6 /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE6055829F6CA4700FE65E6 /* OnboardingPresenter.swift */; };
 		CAE6055E29F6CA4700FE65E6 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE6055929F6CA4700FE65E6 /* OnboardingViewController.swift */; };
 		CAE6055F29F6CA4700FE65E6 /* OnboardingBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE6055A29F6CA4700FE65E6 /* OnboardingBuilder.swift */; };
 		CAE6056029F6CA4700FE65E6 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE6055B29F6CA4700FE65E6 /* OnboardingView.swift */; };
 		CAE6056129F6CA4700FE65E6 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE6055C29F6CA4700FE65E6 /* OnboardingModel.swift */; };
+		CAE6056429F6F42E00FE65E6 /* Hero in Frameworks */ = {isa = PBXBuildFile; productRef = CAE6056329F6F42E00FE65E6 /* Hero */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +56,6 @@
 		0C30816829F5C33400C73271 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0C30816A29F5C33400C73271 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0C30816F29F5C33700C73271 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0C30817229F5C33700C73271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C30817429F5C33700C73271 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C30817929F5C33700C73271 /* Mum’s the wordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mum’s the wordTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C30818329F5C33700C73271 /* Mum’s the wordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mum’s the wordUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +64,14 @@
 		CA4DD9D929F66F6200E19431 /* NavigationRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationRouterProtocol.swift; sourceTree = "<group>"; };
 		CA4DD9DF29F66FC000E19431 /* OnboardingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRouter.swift; sourceTree = "<group>"; };
 		CA4DD9E229F6728200E19431 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CA50191B29F79312006039C4 /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
+		CA50191C29F79312006039C4 /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
+		CA50191D29F79312006039C4 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		CA50191E29F79312006039C4 /* SplashBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashBuilder.swift; sourceTree = "<group>"; };
+		CA50191F29F79312006039C4 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		CA50192A29F7935B006039C4 /* AppImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImages.swift; sourceTree = "<group>"; };
+		CA50192D29F79E22006039C4 /* BubleLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubleLoader.swift; sourceTree = "<group>"; };
+		CA5E391D29F78E5A0014BD4D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		CAE6055829F6CA4700FE65E6 /* OnboardingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
 		CAE6055929F6CA4700FE65E6 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		CAE6055A29F6CA4700FE65E6 /* OnboardingBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingBuilder.swift; sourceTree = "<group>"; };
@@ -69,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAE6056429F6F42E00FE65E6 /* Hero in Frameworks */,
 				CAE6055729F6C9B000FE65E6 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,8 +134,8 @@
 				0C30816829F5C33400C73271 /* SceneDelegate.swift */,
 				0C30816A29F5C33400C73271 /* ViewController.swift */,
 				0C30816F29F5C33700C73271 /* Assets.xcassets */,
-				0C30817129F5C33700C73271 /* LaunchScreen.storyboard */,
 				0C30817429F5C33700C73271 /* Info.plist */,
+				CA5E391D29F78E5A0014BD4D /* Launch Screen.storyboard */,
 			);
 			path = "Mum’s the word";
 			sourceTree = "<group>";
@@ -135,6 +151,7 @@
 		CA4DD9D429F66F2D00E19431 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				CA50192929F7934B006039C4 /* Constants */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -161,6 +178,7 @@
 		CA4DD9DD29F66FAA00E19431 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				CA50191A29F792C5006039C4 /* Splash */,
 				CA4DD9DE29F66FB200E19431 /* Onboarding */,
 			);
 			path = Screens;
@@ -187,6 +205,35 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		CA50191A29F792C5006039C4 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				CA50192C29F79E07006039C4 /* Components */,
+				CA50191B29F79312006039C4 /* SplashPresenter.swift */,
+				CA50191C29F79312006039C4 /* SplashRouter.swift */,
+				CA50191D29F79312006039C4 /* SplashViewController.swift */,
+				CA50191E29F79312006039C4 /* SplashBuilder.swift */,
+				CA50191F29F79312006039C4 /* SplashView.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		CA50192929F7934B006039C4 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				CA50192A29F7935B006039C4 /* AppImages.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		CA50192C29F79E07006039C4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CA50192D29F79E22006039C4 /* BubleLoader.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -205,6 +252,7 @@
 			name = "Mum’s the word";
 			packageProductDependencies = (
 				CAE6055629F6C9B000FE65E6 /* SnapKit */,
+				CAE6056329F6F42E00FE65E6 /* Hero */,
 			);
 			productName = "Mum’s the word";
 			productReference = 0C30816329F5C33400C73271 /* Mum’s the word.app */;
@@ -280,6 +328,7 @@
 			mainGroup = 0C30815A29F5C33400C73271;
 			packageReferences = (
 				CAE6055529F6C9B000FE65E6 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				CAE6056229F6F42E00FE65E6 /* XCRemoteSwiftPackageReference "Hero" */,
 			);
 			productRefGroup = 0C30816429F5C33400C73271 /* Products */;
 			projectDirPath = "";
@@ -297,7 +346,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C30817329F5C33700C73271 /* LaunchScreen.storyboard in Resources */,
+				CA5E391E29F78E5A0014BD4D /* Launch Screen.storyboard in Resources */,
 				0C30817029F5C33700C73271 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,18 +373,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C30816B29F5C33400C73271 /* ViewController.swift in Sources */,
+				CA50192129F79312006039C4 /* SplashPresenter.swift in Sources */,
 				0C30816729F5C33400C73271 /* AppDelegate.swift in Sources */,
 				CA4DD9DA29F66F6200E19431 /* NavigationRouter.swift in Sources */,
 				CAE6055F29F6CA4700FE65E6 /* OnboardingBuilder.swift in Sources */,
 				CAE6055D29F6CA4700FE65E6 /* OnboardingPresenter.swift in Sources */,
+				CA50192429F79312006039C4 /* SplashBuilder.swift in Sources */,
 				CA4DD9E029F66FC000E19431 /* OnboardingRouter.swift in Sources */,
 				CA4DD9DB29F66F6200E19431 /* AppRouter.swift in Sources */,
 				CA4DD9E329F6728200E19431 /* BaseViewController.swift in Sources */,
 				CAE6055E29F6CA4700FE65E6 /* OnboardingViewController.swift in Sources */,
+				CA50192229F79312006039C4 /* SplashRouter.swift in Sources */,
 				CAE6056029F6CA4700FE65E6 /* OnboardingView.swift in Sources */,
+				CA50192E29F79E22006039C4 /* BubleLoader.swift in Sources */,
 				CA4DD9DC29F66F6200E19431 /* NavigationRouterProtocol.swift in Sources */,
 				CAE6056129F6CA4700FE65E6 /* OnboardingModel.swift in Sources */,
 				0C30816929F5C33400C73271 /* SceneDelegate.swift in Sources */,
+				CA50192B29F7935B006039C4 /* AppImages.swift in Sources */,
+				CA50192329F79312006039C4 /* SplashViewController.swift in Sources */,
+				CA50192529F79312006039C4 /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,17 +423,6 @@
 			targetProxy = 0C30818429F5C33700C73271 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		0C30817129F5C33700C73271 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0C30817229F5C33700C73271 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0C30818B29F5C33700C73271 /* Debug */ = {
@@ -499,14 +544,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8ZH35KKWH9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Mum’s the word/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -514,9 +562,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "kkk.Mum-s-the-word";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -525,14 +576,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8ZH35KKWH9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Mum’s the word/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -540,9 +594,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "kkk.Mum-s-the-word";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -668,6 +725,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		CAE6056229F6F42E00FE65E6 /* XCRemoteSwiftPackageReference "Hero" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/HeroTransitions/Hero.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -675,6 +740,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CAE6055529F6C9B000FE65E6 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		CAE6056329F6F42E00FE65E6 /* Hero */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CAE6056229F6F42E00FE65E6 /* XCRemoteSwiftPackageReference "Hero" */;
+			productName = Hero;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
