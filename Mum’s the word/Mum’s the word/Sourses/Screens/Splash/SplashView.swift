@@ -41,15 +41,12 @@ extension SplashView {
         bgImage.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
-        
         addSubview(bubleLoader)
-        
         bubleLoader.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.bottom.equalToSuperview().inset(86)
+            make.bottom.lessThanOrEqualToSuperview().inset(86)
             make.size.equalTo(CGSize(width: 58, height: 60))
         }
-        
         bubleLoader.startAnimating()
     }
 }

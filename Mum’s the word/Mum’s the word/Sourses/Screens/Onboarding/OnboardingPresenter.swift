@@ -8,7 +8,7 @@
 import Foundation
 
 protocol OnboardingPresenterProtocol: AnyObject {
-    
+    func routeToStart()
 }
 
 final class OnboardingPresenter: OnboardingPresenterProtocol {
@@ -19,5 +19,9 @@ final class OnboardingPresenter: OnboardingPresenterProtocol {
     init(view: OnboardingViewControllerProtocol, router: OnboardingRouter) {
         self.view = view
         self.router = router
+    }
+    
+    func routeToStart() {
+        router?.showStart()
     }
 }

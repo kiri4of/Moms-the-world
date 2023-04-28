@@ -10,14 +10,12 @@ import UIKit
 final class OnboardingBuilder {
     
     public static func build(
-        coordinator: OnboardingRouter
+        router: OnboardingRouter
     ) -> OnboardingViewController {
         let view = OnboardingView()
         let vc = OnboardingViewController(mainView: view)
-        let presenter = OnboardingPresenter(view: vc, router: coordinator)
-        
+        let presenter = OnboardingPresenter(view: vc, router: router)
         vc.presenter = presenter
-        
         return vc
     }
     

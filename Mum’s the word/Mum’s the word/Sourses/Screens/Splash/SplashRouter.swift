@@ -24,7 +24,7 @@ final class SplashRouter {
         splashWindow?.windowLevel = .normal + 1
         let vc = SplashBuilder.build(router: self)
         splashWindow?.rootViewController = vc
-        
+        splashWindow?.overrideUserInterfaceStyle = .light
         splashWindow?.isHidden = false
         splashWindow?.makeKeyAndVisible()
     }

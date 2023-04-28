@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Hero
 
 class NavigationRouter: NavigationRouterProtocol {
     
@@ -16,6 +17,8 @@ class NavigationRouter: NavigationRouterProtocol {
     }
     
     func showScreen(_ viewController: UIViewController) {
+        viewController.isHeroEnabled = true
+        navigationController?.isHeroEnabled = true
         navigationController!.pushViewController(viewController, animated: true)
     }
     
@@ -29,5 +32,16 @@ class NavigationRouter: NavigationRouterProtocol {
     
     func dismissModalScreen() {
         navigationController?.dismiss(animated: true, completion: nil)
+    }
+    
+    func chooseAnimationTransition(type: HeroDefaultAnimationType) {
+        navigationController?.heroNavigationAnimationType = type
+    }
+    
+    func changeStack(_ viewController: UIViewController) {
+        if let navigationController = self.navigationController {
+            chooseAnimationTransition(type: .fade)
+            navigationController.pushViewController(viewController, animated: true)
+        }
     }
 }

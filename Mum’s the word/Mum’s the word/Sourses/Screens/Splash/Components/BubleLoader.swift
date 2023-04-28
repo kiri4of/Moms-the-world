@@ -30,7 +30,7 @@ extension BubleLoader {
     private func configureAnimation() {
         rotationAnimation = CABasicAnimation(keyPath: "transform.rotation.z")
         rotationAnimation.toValue = NSNumber(value: Double.pi * 2.0)
-        rotationAnimation.duration = 1
+        rotationAnimation.duration = 0.6
         rotationAnimation.repeatCount = .greatestFiniteMagnitude
     }
 }

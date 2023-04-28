@@ -18,17 +18,19 @@ final class AppRouter {
 
 extension AppRouter {
     func showOnboarding() {
-        let router = OnboardingRouter(navigationRouter: navigationRouter)
+        let router = WelcomeRouter(navigationRouter: navigationRouter)
         router.showOnboarding()
     }
     
-    func showSplash(scene: UIWindowScene) {
+    func showSplash(scene: UIWindowScene, completion: @escaping () -> ()) {
         splashRouter?.scene = scene
         splashRouter?.present()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+            completion()
             self.splashRouter?.dismiss(completion: { [weak self] in
                 self?.splashRouter = nil
+                
             })
         }
     }
