@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Hero
 
 protocol OnboardingViewControllerProtocol: AnyObject {
     
@@ -14,12 +15,35 @@ protocol OnboardingViewControllerProtocol: AnyObject {
 final class OnboardingViewController: BaseViewController<OnboardingView> {
     
     public var presenter: OnboardingPresenterProtocol!
+    private var isNotEnd = true
     
     override public func viewDidLoad() -> () {
         super.viewDidLoad()
+        configureUI()
+        targets()
+    }
+    
+    private func configureUI() {
+        navigationController?.navigationBar.isHidden = true
+        navigationController?.navigationBar.isUserInteractionEnabled = false
+        navigationController?.navigationBar.backgroundColor = .red
+        self.hero.isEnabled = true
+    }
+    
+    private func targets() {
+        mainView.delegate = self
     }
 }
 
+extension OnboardingViewController: OnboardingViewProtocol {
+    func lastPage() {
+        if isNotEnd {
+            presenter.routeToStart()
+            isNotEnd = false
+        }
+    }
+}
+ 
 extension OnboardingViewController: OnboardingViewControllerProtocol {
     
 }

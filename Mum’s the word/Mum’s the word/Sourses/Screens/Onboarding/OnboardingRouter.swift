@@ -15,7 +15,12 @@ final class OnboardingRouter {
     }
     
     func showOnboarding() {
-        let vc = ViewController()
+        let vc = OnboardingBuilder.build(router: self)
         navigationRouter.showScreen(vc)
+    }
+    
+    func showStart() {
+        let startRouter = StartScreenRouter(navigationRouter: navigationRouter)
+        startRouter.show()
     }
 }
