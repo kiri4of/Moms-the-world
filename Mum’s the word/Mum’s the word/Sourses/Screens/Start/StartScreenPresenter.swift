@@ -8,7 +8,8 @@
 import Foundation
 
 protocol StartScreenPresenterProtocol: AnyObject {
-    
+    func routeToLogin()
+    func routeToNextStep() 
 }
 
 final class StartScreenPresenter: StartScreenPresenterProtocol {
@@ -19,5 +20,13 @@ final class StartScreenPresenter: StartScreenPresenterProtocol {
     init(view: StartScreenViewControllerProtocol, router: StartScreenRouter) {
         self.view = view
         self.router = router
+    }
+    
+    func routeToLogin() {
+        router?.routeLogin()
+    }
+    
+    func routeToNextStep() {
+        router?.routeNextStep()
     }
 }

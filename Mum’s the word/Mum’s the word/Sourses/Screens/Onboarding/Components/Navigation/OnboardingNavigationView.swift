@@ -34,7 +34,7 @@ final class NavigationOnboadingView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setUI()
+        setupViews()
     }
     
     required init(coder: NSCoder) {
@@ -47,20 +47,24 @@ final class NavigationOnboadingView: UIView {
 }
 
 extension NavigationOnboadingView {
-    private func setUI() {
+    private func setupViews() {
         addSubview(logoImg)
         addSubview(skipButton)
+        setupConstraints()
+    }
+    
+    private func setupConstraints() {
         
         logoImg.snp.makeConstraints { make in
             make.top.left.equalToSuperview()
-            make.size.equalTo(CGSize(width: 91, height: 44))
+            make.size.equalTo(CGSize(width: 91.Hadapted, height: 44.Vadapted))
         }
                 
         skipButton.snp.makeConstraints { make in
             make.centerY.equalTo(logoImg.snp.centerY)
             make.right.equalToSuperview()
-            make.width.equalTo(skipButton.intrinsicContentSize.width + 60)
-            make.height.equalTo(skipButton.intrinsicContentSize.height + 16)
+            make.width.equalTo(skipButton.intrinsicContentSize.width + 60.Hadapted)
+            make.height.equalTo(skipButton.intrinsicContentSize.height + 16.Vadapted)
         }
         
         skipButton.layer.cornerRadius = skipButton.bounds.height / 1.5

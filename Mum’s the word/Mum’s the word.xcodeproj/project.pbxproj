@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0C30816729F5C33400C73271 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C30816629F5C33400C73271 /* AppDelegate.swift */; };
 		0C30816929F5C33400C73271 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C30816829F5C33400C73271 /* SceneDelegate.swift */; };
-		0C30816B29F5C33400C73271 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C30816A29F5C33400C73271 /* ViewController.swift */; };
 		0C30817029F5C33700C73271 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C30816F29F5C33700C73271 /* Assets.xcassets */; };
 		CA13C32D29FAE8FD00EA85D8 /* StartScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA13C32729FAE8FD00EA85D8 /* StartScreenPresenter.swift */; };
 		CA13C32E29FAE8FD00EA85D8 /* StartScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA13C32829FAE8FD00EA85D8 /* StartScreenRouter.swift */; };
@@ -17,6 +16,15 @@
 		CA13C33029FAE8FD00EA85D8 /* StartScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA13C32A29FAE8FD00EA85D8 /* StartScreenBuilder.swift */; };
 		CA13C33129FAE8FD00EA85D8 /* StartScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA13C32B29FAE8FD00EA85D8 /* StartScreenView.swift */; };
 		CA13C33229FAE8FD00EA85D8 /* StartScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA13C32C29FAE8FD00EA85D8 /* StartScreenModel.swift */; };
+		CA13C33A29FC734D00EA85D8 /* RolePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA13C33429FC734D00EA85D8 /* RolePresenter.swift */; };
+		CA13C33B29FC734D00EA85D8 /* RoleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA13C33529FC734D00EA85D8 /* RoleRouter.swift */; };
+		CA13C33C29FC734D00EA85D8 /* RoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA13C33629FC734D00EA85D8 /* RoleViewController.swift */; };
+		CA13C33D29FC734D00EA85D8 /* RoleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA13C33729FC734D00EA85D8 /* RoleBuilder.swift */; };
+		CA13C33E29FC734D00EA85D8 /* RoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA13C33829FC734D00EA85D8 /* RoleView.swift */; };
+		CA13C33F29FC734D00EA85D8 /* RoleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA13C33929FC734D00EA85D8 /* RoleModel.swift */; };
+		CA13C34129FC74B000EA85D8 /* RoleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA13C34029FC74B000EA85D8 /* RoleButton.swift */; };
+		CA13C34429FE97E200EA85D8 /* RoleButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA13C34329FE97E200EA85D8 /* RoleButtonModel.swift */; };
+		CA13C34629FE98C200EA85D8 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA13C34529FE98C200EA85D8 /* TextField.swift */; };
 		CA4DD9DA29F66F6200E19431 /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4DD9D729F66F6200E19431 /* NavigationRouter.swift */; };
 		CA4DD9DB29F66F6200E19431 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4DD9D829F66F6200E19431 /* AppRouter.swift */; };
 		CA4DD9DC29F66F6200E19431 /* NavigationRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4DD9D929F66F6200E19431 /* NavigationRouterProtocol.swift */; };
@@ -53,6 +61,24 @@
 		CA550E0A29F985CD00780317 /* Int + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA550E0929F985CD00780317 /* Int + Extension.swift */; };
 		CA550E0C29F98A5500780317 /* OnboadringPageControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA550E0B29F98A5500780317 /* OnboadringPageControll.swift */; };
 		CA5E391E29F78E5A0014BD4D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA5E391D29F78E5A0014BD4D /* Launch Screen.storyboard */; };
+		CAC4BF2A2A005F5C00331B80 /* TapableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4BF292A005F5C00331B80 /* TapableLabel.swift */; };
+		CAC4BF2C2A026F3D00331B80 /* UILabel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4BF2B2A026F3D00331B80 /* UILabel + Extension.swift */; };
+		CAC4BF302A02712500331B80 /* TwoLabelStackVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4BF2F2A02712500331B80 /* TwoLabelStackVIew.swift */; };
+		CAC4BF382A02B22D00331B80 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4BF322A02B22D00331B80 /* SignUpPresenter.swift */; };
+		CAC4BF392A02B22D00331B80 /* SignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4BF332A02B22D00331B80 /* SignUpRouter.swift */; };
+		CAC4BF3A2A02B22D00331B80 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4BF342A02B22D00331B80 /* SignUpViewController.swift */; };
+		CAC4BF3B2A02B22D00331B80 /* SignUpBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4BF352A02B22D00331B80 /* SignUpBuilder.swift */; };
+		CAC4BF3C2A02B22D00331B80 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4BF362A02B22D00331B80 /* SignUpView.swift */; };
+		CAC4BF3D2A02B22D00331B80 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4BF372A02B22D00331B80 /* SignUpModel.swift */; };
+		CAC4BF402A02C10600331B80 /* PrivacyStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4BF3F2A02C10600331B80 /* PrivacyStackView.swift */; };
+		CAC4BF4C2A0556BA00331B80 /* SelectLocationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4BF462A0556BA00331B80 /* SelectLocationPresenter.swift */; };
+		CAC4BF4D2A0556BA00331B80 /* SelectLocationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4BF472A0556BA00331B80 /* SelectLocationRouter.swift */; };
+		CAC4BF4E2A0556BA00331B80 /* SelectLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4BF482A0556BA00331B80 /* SelectLocationViewController.swift */; };
+		CAC4BF4F2A0556BA00331B80 /* SelectLocationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4BF492A0556BA00331B80 /* SelectLocationBuilder.swift */; };
+		CAC4BF502A0556BA00331B80 /* SelectLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4BF4A2A0556BA00331B80 /* SelectLocationView.swift */; };
+		CAC4BF512A0556BA00331B80 /* SelectLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4BF4B2A0556BA00331B80 /* SelectLocationModel.swift */; };
+		CAC4BF532A0563F900331B80 /* UITextFiled + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4BF522A0563F900331B80 /* UITextFiled + Extension.swift */; };
+		CAC4BF552A0567E900331B80 /* Stepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4BF542A0567E900331B80 /* Stepper.swift */; };
 		CAE6055729F6C9B000FE65E6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CAE6055629F6C9B000FE65E6 /* SnapKit */; };
 		CAE6055D29F6CA4700FE65E6 /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE6055829F6CA4700FE65E6 /* OnboardingPresenter.swift */; };
 		CAE6055E29F6CA4700FE65E6 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE6055929F6CA4700FE65E6 /* OnboardingViewController.swift */; };
@@ -83,7 +109,6 @@
 		0C30816329F5C33400C73271 /* Mum’s the word.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mum’s the word.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C30816629F5C33400C73271 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C30816829F5C33400C73271 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0C30816A29F5C33400C73271 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0C30816F29F5C33700C73271 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C30817429F5C33700C73271 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C30817929F5C33700C73271 /* Mum’s the wordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mum’s the wordTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +119,15 @@
 		CA13C32A29FAE8FD00EA85D8 /* StartScreenBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenBuilder.swift; sourceTree = "<group>"; };
 		CA13C32B29FAE8FD00EA85D8 /* StartScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenView.swift; sourceTree = "<group>"; };
 		CA13C32C29FAE8FD00EA85D8 /* StartScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenModel.swift; sourceTree = "<group>"; };
+		CA13C33429FC734D00EA85D8 /* RolePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolePresenter.swift; sourceTree = "<group>"; };
+		CA13C33529FC734D00EA85D8 /* RoleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleRouter.swift; sourceTree = "<group>"; };
+		CA13C33629FC734D00EA85D8 /* RoleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleViewController.swift; sourceTree = "<group>"; };
+		CA13C33729FC734D00EA85D8 /* RoleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleBuilder.swift; sourceTree = "<group>"; };
+		CA13C33829FC734D00EA85D8 /* RoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleView.swift; sourceTree = "<group>"; };
+		CA13C33929FC734D00EA85D8 /* RoleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleModel.swift; sourceTree = "<group>"; };
+		CA13C34029FC74B000EA85D8 /* RoleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleButton.swift; sourceTree = "<group>"; };
+		CA13C34329FE97E200EA85D8 /* RoleButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleButtonModel.swift; sourceTree = "<group>"; };
+		CA13C34529FE98C200EA85D8 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		CA4DD9D729F66F6200E19431 /* NavigationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
 		CA4DD9D829F66F6200E19431 /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		CA4DD9D929F66F6200E19431 /* NavigationRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationRouterProtocol.swift; sourceTree = "<group>"; };
@@ -130,6 +164,24 @@
 		CA550E0929F985CD00780317 /* Int + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int + Extension.swift"; sourceTree = "<group>"; };
 		CA550E0B29F98A5500780317 /* OnboadringPageControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboadringPageControll.swift; sourceTree = "<group>"; };
 		CA5E391D29F78E5A0014BD4D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		CAC4BF292A005F5C00331B80 /* TapableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapableLabel.swift; sourceTree = "<group>"; };
+		CAC4BF2B2A026F3D00331B80 /* UILabel + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
+		CAC4BF2F2A02712500331B80 /* TwoLabelStackVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoLabelStackVIew.swift; sourceTree = "<group>"; };
+		CAC4BF322A02B22D00331B80 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		CAC4BF332A02B22D00331B80 /* SignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRouter.swift; sourceTree = "<group>"; };
+		CAC4BF342A02B22D00331B80 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		CAC4BF352A02B22D00331B80 /* SignUpBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpBuilder.swift; sourceTree = "<group>"; };
+		CAC4BF362A02B22D00331B80 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		CAC4BF372A02B22D00331B80 /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
+		CAC4BF3F2A02C10600331B80 /* PrivacyStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyStackView.swift; sourceTree = "<group>"; };
+		CAC4BF462A0556BA00331B80 /* SelectLocationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLocationPresenter.swift; sourceTree = "<group>"; };
+		CAC4BF472A0556BA00331B80 /* SelectLocationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLocationRouter.swift; sourceTree = "<group>"; };
+		CAC4BF482A0556BA00331B80 /* SelectLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLocationViewController.swift; sourceTree = "<group>"; };
+		CAC4BF492A0556BA00331B80 /* SelectLocationBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLocationBuilder.swift; sourceTree = "<group>"; };
+		CAC4BF4A2A0556BA00331B80 /* SelectLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLocationView.swift; sourceTree = "<group>"; };
+		CAC4BF4B2A0556BA00331B80 /* SelectLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLocationModel.swift; sourceTree = "<group>"; };
+		CAC4BF522A0563F900331B80 /* UITextFiled + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextFiled + Extension.swift"; sourceTree = "<group>"; };
+		CAC4BF542A0567E900331B80 /* Stepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stepper.swift; sourceTree = "<group>"; };
 		CAE6055829F6CA4700FE65E6 /* OnboardingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
 		CAE6055929F6CA4700FE65E6 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		CAE6055A29F6CA4700FE65E6 /* OnboardingBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingBuilder.swift; sourceTree = "<group>"; };
@@ -190,7 +242,6 @@
 				CA4DD9D329F66F2300E19431 /* Sourses */,
 				0C30816629F5C33400C73271 /* AppDelegate.swift */,
 				0C30816829F5C33400C73271 /* SceneDelegate.swift */,
-				0C30816A29F5C33400C73271 /* ViewController.swift */,
 				0C30816F29F5C33700C73271 /* Assets.xcassets */,
 				0C30817429F5C33700C73271 /* Info.plist */,
 				CA5E391D29F78E5A0014BD4D /* Launch Screen.storyboard */,
@@ -198,7 +249,7 @@
 			path = "Mum’s the word";
 			sourceTree = "<group>";
 		};
-		CA13C32629FAE8CA00EA85D8 /* StartScreen */ = {
+		CA13C32629FAE8CA00EA85D8 /* Start */ = {
 			isa = PBXGroup;
 			children = (
 				CA13C32729FAE8FD00EA85D8 /* StartScreenPresenter.swift */,
@@ -208,7 +259,30 @@
 				CA13C32B29FAE8FD00EA85D8 /* StartScreenView.swift */,
 				CA13C32C29FAE8FD00EA85D8 /* StartScreenModel.swift */,
 			);
-			path = StartScreen;
+			path = Start;
+			sourceTree = "<group>";
+		};
+		CA13C33329FC729600EA85D8 /* Role */ = {
+			isa = PBXGroup;
+			children = (
+				CAC4BF2D2A02710D00331B80 /* Components */,
+				CA13C33429FC734D00EA85D8 /* RolePresenter.swift */,
+				CA13C33529FC734D00EA85D8 /* RoleRouter.swift */,
+				CA13C33629FC734D00EA85D8 /* RoleViewController.swift */,
+				CA13C33729FC734D00EA85D8 /* RoleBuilder.swift */,
+				CA13C33829FC734D00EA85D8 /* RoleView.swift */,
+				CA13C33929FC734D00EA85D8 /* RoleModel.swift */,
+			);
+			path = Role;
+			sourceTree = "<group>";
+		};
+		CA13C34229FE97D100EA85D8 /* RoleButton */ = {
+			isa = PBXGroup;
+			children = (
+				CA13C34029FC74B000EA85D8 /* RoleButton.swift */,
+				CA13C34329FE97E200EA85D8 /* RoleButtonModel.swift */,
+			);
+			path = RoleButton;
 			sourceTree = "<group>";
 		};
 		CA4DD9D329F66F2300E19431 /* Sourses */ = {
@@ -252,7 +326,10 @@
 		CA4DD9DD29F66FAA00E19431 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				CA13C32629FAE8CA00EA85D8 /* StartScreen */,
+				CAC4BF452A05569C00331B80 /* SelectLocation */,
+				CAC4BF312A02B1F700331B80 /* SignUp */,
+				CA13C33329FC729600EA85D8 /* Role */,
+				CA13C32629FAE8CA00EA85D8 /* Start */,
 				CA50193129F7A231006039C4 /* Welcome */,
 				CA50191A29F792C5006039C4 /* Splash */,
 				CA4DD9DE29F66FB200E19431 /* Onboarding */,
@@ -351,6 +428,8 @@
 				CA50194B29F84499006039C4 /* UILabel + Extensions.swift */,
 				CA50194D29F85896006039C4 /* UICollectionVIew + Extension.swift */,
 				CA550DF729F980B200780317 /* UIView + Extension.swift */,
+				CAC4BF2B2A026F3D00331B80 /* UILabel + Extension.swift */,
+				CAC4BF522A0563F900331B80 /* UITextFiled + Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -393,8 +472,13 @@
 		CA550DF129F9787500780317 /* UIElements */ = {
 			isa = PBXGroup;
 			children = (
+				CAC4BF2E2A02711A00331B80 /* TwoLabelStackVIew */,
+				CAC4BF282A005F5100331B80 /* TapableLabel */,
+				CA13C34229FE97D100EA85D8 /* RoleButton */,
 				CA550DF229F9788200780317 /* PurpleButton.swift */,
 				CA550E0B29F98A5500780317 /* OnboadringPageControll.swift */,
+				CA13C34529FE98C200EA85D8 /* TextField.swift */,
+				CAC4BF542A0567E900331B80 /* Stepper.swift */,
 			);
 			path = UIElements;
 			sourceTree = "<group>";
@@ -407,6 +491,64 @@
 				CA550DF929F980D100780317 /* Helper.swift */,
 			);
 			path = Adaptive;
+			sourceTree = "<group>";
+		};
+		CAC4BF282A005F5100331B80 /* TapableLabel */ = {
+			isa = PBXGroup;
+			children = (
+				CAC4BF292A005F5C00331B80 /* TapableLabel.swift */,
+			);
+			path = TapableLabel;
+			sourceTree = "<group>";
+		};
+		CAC4BF2D2A02710D00331B80 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CAC4BF2E2A02711A00331B80 /* TwoLabelStackVIew */ = {
+			isa = PBXGroup;
+			children = (
+				CAC4BF2F2A02712500331B80 /* TwoLabelStackVIew.swift */,
+			);
+			path = TwoLabelStackVIew;
+			sourceTree = "<group>";
+		};
+		CAC4BF312A02B1F700331B80 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				CAC4BF3E2A02C0E200331B80 /* Components */,
+				CAC4BF322A02B22D00331B80 /* SignUpPresenter.swift */,
+				CAC4BF332A02B22D00331B80 /* SignUpRouter.swift */,
+				CAC4BF342A02B22D00331B80 /* SignUpViewController.swift */,
+				CAC4BF352A02B22D00331B80 /* SignUpBuilder.swift */,
+				CAC4BF362A02B22D00331B80 /* SignUpView.swift */,
+				CAC4BF372A02B22D00331B80 /* SignUpModel.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		CAC4BF3E2A02C0E200331B80 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CAC4BF3F2A02C10600331B80 /* PrivacyStackView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CAC4BF452A05569C00331B80 /* SelectLocation */ = {
+			isa = PBXGroup;
+			children = (
+				CAC4BF462A0556BA00331B80 /* SelectLocationPresenter.swift */,
+				CAC4BF472A0556BA00331B80 /* SelectLocationRouter.swift */,
+				CAC4BF482A0556BA00331B80 /* SelectLocationViewController.swift */,
+				CAC4BF492A0556BA00331B80 /* SelectLocationBuilder.swift */,
+				CAC4BF4A2A0556BA00331B80 /* SelectLocationView.swift */,
+				CAC4BF4B2A0556BA00331B80 /* SelectLocationModel.swift */,
+			);
+			path = SelectLocation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -554,30 +696,48 @@
 			files = (
 				CA13C33229FAE8FD00EA85D8 /* StartScreenModel.swift in Sources */,
 				CA13C32D29FAE8FD00EA85D8 /* StartScreenPresenter.swift in Sources */,
-				0C30816B29F5C33400C73271 /* ViewController.swift in Sources */,
 				CA50194C29F84499006039C4 /* UILabel + Extensions.swift in Sources */,
+				CA13C34129FC74B000EA85D8 /* RoleButton.swift in Sources */,
 				CA50192129F79312006039C4 /* SplashPresenter.swift in Sources */,
+				CAC4BF3D2A02B22D00331B80 /* SignUpModel.swift in Sources */,
+				CA13C33C29FC734D00EA85D8 /* RoleViewController.swift in Sources */,
 				CA50193A29F82FA2006039C4 /* AppFonts.swift in Sources */,
 				0C30816729F5C33400C73271 /* AppDelegate.swift in Sources */,
 				CA4DD9DA29F66F6200E19431 /* NavigationRouter.swift in Sources */,
 				CAE6055F29F6CA4700FE65E6 /* OnboardingBuilder.swift in Sources */,
 				CA50194729F83788006039C4 /* AppStrings.swift in Sources */,
 				CA550DF829F980B200780317 /* UIView + Extension.swift in Sources */,
+				CA13C34429FE97E200EA85D8 /* RoleButtonModel.swift in Sources */,
+				CAC4BF532A0563F900331B80 /* UITextFiled + Extension.swift in Sources */,
 				CA50195F29F91C09006039C4 /* WelcomeRouter.swift in Sources */,
+				CAC4BF4D2A0556BA00331B80 /* SelectLocationRouter.swift in Sources */,
+				CAC4BF502A0556BA00331B80 /* SelectLocationView.swift in Sources */,
 				CA550E0A29F985CD00780317 /* Int + Extension.swift in Sources */,
 				CA550DF329F9788200780317 /* PurpleButton.swift in Sources */,
+				CAC4BF3C2A02B22D00331B80 /* SignUpView.swift in Sources */,
+				CAC4BF3A2A02B22D00331B80 /* SignUpViewController.swift in Sources */,
+				CAC4BF302A02712500331B80 /* TwoLabelStackVIew.swift in Sources */,
 				CA50194E29F85896006039C4 /* UICollectionVIew + Extension.swift in Sources */,
+				CAC4BF392A02B22D00331B80 /* SignUpRouter.swift in Sources */,
 				CA550E0C29F98A5500780317 /* OnboadringPageControll.swift in Sources */,
 				CAE6055D29F6CA4700FE65E6 /* OnboardingPresenter.swift in Sources */,
+				CA13C33D29FC734D00EA85D8 /* RoleBuilder.swift in Sources */,
 				CA50192429F79312006039C4 /* SplashBuilder.swift in Sources */,
 				CA4DD9E029F66FC000E19431 /* OnboardingRouter.swift in Sources */,
+				CAC4BF4F2A0556BA00331B80 /* SelectLocationBuilder.swift in Sources */,
+				CAC4BF4E2A0556BA00331B80 /* SelectLocationViewController.swift in Sources */,
+				CAC4BF3B2A02B22D00331B80 /* SignUpBuilder.swift in Sources */,
 				CA4DD9DB29F66F6200E19431 /* AppRouter.swift in Sources */,
 				CA4DD9E329F6728200E19431 /* BaseViewController.swift in Sources */,
+				CA13C33F29FC734D00EA85D8 /* RoleModel.swift in Sources */,
 				CAE6055E29F6CA4700FE65E6 /* OnboardingViewController.swift in Sources */,
 				CA50196229F970C3006039C4 /* OnboardingCell.swift in Sources */,
 				CA50192229F79312006039C4 /* SplashRouter.swift in Sources */,
 				CA50196529F970E2006039C4 /* OnboardingNavigationView.swift in Sources */,
+				CA13C33A29FC734D00EA85D8 /* RolePresenter.swift in Sources */,
+				CAC4BF402A02C10600331B80 /* PrivacyStackView.swift in Sources */,
 				CAE6056029F6CA4700FE65E6 /* OnboardingView.swift in Sources */,
+				CA13C34629FE98C200EA85D8 /* TextField.swift in Sources */,
 				CA550DFA29F980D100780317 /* Helper.swift in Sources */,
 				CA550E0829F985AD00780317 /* Array + Extension.swift in Sources */,
 				CA13C32E29FAE8FD00EA85D8 /* StartScreenRouter.swift in Sources */,
@@ -586,13 +746,21 @@
 				CA50192E29F79E22006039C4 /* BubleLoader.swift in Sources */,
 				CA4DD9DC29F66F6200E19431 /* NavigationRouterProtocol.swift in Sources */,
 				CAE6056129F6CA4700FE65E6 /* OnboardingModel.swift in Sources */,
+				CA13C33B29FC734D00EA85D8 /* RoleRouter.swift in Sources */,
 				0C30816929F5C33400C73271 /* SceneDelegate.swift in Sources */,
+				CAC4BF2C2A026F3D00331B80 /* UILabel + Extension.swift in Sources */,
+				CAC4BF2A2A005F5C00331B80 /* TapableLabel.swift in Sources */,
+				CA13C33E29FC734D00EA85D8 /* RoleView.swift in Sources */,
+				CAC4BF552A0567E900331B80 /* Stepper.swift in Sources */,
+				CAC4BF382A02B22D00331B80 /* SignUpPresenter.swift in Sources */,
 				CA50193029F7A128006039C4 /* AppColor.swift in Sources */,
 				CA550DF629F9809100780317 /* CGFloat.swift in Sources */,
 				CA50192B29F7935B006039C4 /* AppImages.swift in Sources */,
 				CA13C32F29FAE8FD00EA85D8 /* StartScreenViewController.swift in Sources */,
 				CA50192329F79312006039C4 /* SplashViewController.swift in Sources */,
+				CAC4BF512A0556BA00331B80 /* SelectLocationModel.swift in Sources */,
 				CA550E0629F9856400780317 /* Dimension.swift in Sources */,
+				CAC4BF4C2A0556BA00331B80 /* SelectLocationPresenter.swift in Sources */,
 				CA13C33129FAE8FD00EA85D8 /* StartScreenView.swift in Sources */,
 				CA50192529F79312006039C4 /* SplashView.swift in Sources */,
 				CA550E0229F984E200780317 /* Device.swift in Sources */,

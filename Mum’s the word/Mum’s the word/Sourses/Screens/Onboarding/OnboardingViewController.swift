@@ -24,9 +24,7 @@ final class OnboardingViewController: BaseViewController<OnboardingView> {
     }
     
     private func configureUI() {
-        navigationController?.navigationBar.isHidden = true
-        navigationController?.navigationBar.isUserInteractionEnabled = false
-        navigationController?.navigationBar.backgroundColor = .red
+        hideNavigationContoroller()
         self.hero.isEnabled = true
     }
     
@@ -46,4 +44,12 @@ extension OnboardingViewController: OnboardingViewProtocol {
  
 extension OnboardingViewController: OnboardingViewControllerProtocol {
     
+}
+
+extension UIViewController {
+    func hideNavigationContoroller() {
+        navigationController?.navigationBar.isHidden = true
+        navigationController?.navigationBar.isUserInteractionEnabled = false
+        navigationController?.navigationBar.backgroundColor = .red
+    }
 }

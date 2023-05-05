@@ -16,6 +16,8 @@ final class WelcomeViewController: UIViewController {
         return imageView
     }()
     
+    private var stackView: UIStackView = UIStackView()
+    
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.textColor = AppColor.purplePrimary
@@ -40,37 +42,34 @@ final class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.hero.isEnabled = true
-        setUI()
+        setupViews()
     }
 }
 
 extension WelcomeViewController {
-    private func setUI() {
+    
+    private func setupViews() {
+        self.hero.isEnabled = true
         view.addSubview(bgImage)
-        
-        bgImage.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
-        }
-        
-        let stackView = UIStackView()
-        
         stackView.addArrangedSubview(titleLabel)
         stackView.addArrangedSubview(descLabel)
         
         stackView.axis = .vertical
         stackView.alignment = .center
         stackView.distribution = .fill
-        stackView.spacing = 26
-        
+        stackView.spacing = 26.Vadapted
         view.addSubview(stackView)
+        setConstraints()
+    }
+    
+    private func setConstraints() {
+        bgImage.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
         
         stackView.snp.makeConstraints { make in
             make.bottom.lessThanOrEqualTo(view.safeAreaLayoutGuide.snp.bottom).inset(16)
-            make.leading.lessThanOrEqualTo(view.layoutMargins)
-            make.leading.greaterThanOrEqualTo(view.layoutMargins)
             make.centerX.equalToSuperview()
         }
-        
     }
 }

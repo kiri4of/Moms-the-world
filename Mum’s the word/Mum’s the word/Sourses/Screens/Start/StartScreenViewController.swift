@@ -18,7 +18,21 @@ final class StartScreenViewController: BaseViewController<StartScreenView> {
     
     override public func viewDidLoad() -> () {
         super.viewDidLoad()
-        self.hero.isEnabled = true
+        configureUI()
+    }
+    
+    private func configureUI() {
+        mainView.delegate = self
+    }
+}
+
+extension StartScreenViewController: StartScreenViewProtocol {
+    func routeLogin() {
+        presenter.routeToLogin()
+    }
+    
+    func routeNextStep() {
+        presenter.routeToNextStep()
     }
 }
 

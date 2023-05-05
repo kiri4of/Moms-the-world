@@ -45,7 +45,7 @@ final class OnboardingPageControl: UIControl {
     
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: progressViews)
-        stackView.spacing = 8
+        stackView.spacing = 5
         return stackView
     }()
     
@@ -124,7 +124,7 @@ extension OnboardingPageControl {
         
         for (index,progressView) in progressViews.enumerated() where index == currentPage {
             UIView.animate(withDuration: widthAnimationDuration, delay: 0, animations: {
-                progressView.constraints.first { $0.firstAttribute == .width }?.constant = 10 * self.indicatorWidth
+                progressView.constraints.first { $0.firstAttribute == .width }?.constant = 8 * self.indicatorWidth
                 progressView.progress = 0
                 
                 progressView.layoutIfNeeded()

@@ -19,4 +19,13 @@ final class StartScreenRouter {
         let vc = StartScreenBuilder.build(router: self)
         navigationRouter.changeStack(vc)
     }
+    
+    func routeLogin() {
+        
+    }
+    
+    func routeNextStep() {
+        let router = RoleRouter(navigationRouter: navigationRouter)
+        router.show()
+    }
 }
