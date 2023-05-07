@@ -27,7 +27,7 @@ final class SplashView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setUI()
+        setupViews()
     }
     
     required init?(coder: NSCoder) {
@@ -36,12 +36,17 @@ final class SplashView: UIView {
 }
 
 extension SplashView {
-    private func setUI() {
+    private func setupViews() {
         addSubview(bgImage)
+        addSubview(bubleLoader)
+        setupConstraints()
+    }
+    
+    private func setupConstraints() {
         bgImage.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
-        addSubview(bubleLoader)
+       
         bubleLoader.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.bottom.lessThanOrEqualToSuperview().inset(86)

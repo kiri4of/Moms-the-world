@@ -29,7 +29,37 @@ enum AppStrings {
     static let swipeToLearnMore = "Swipe to learn more"
     
     static let nextButton = "Next"
+    static let loginButton = "Login"
     
     static let startScreen = "Let’s start with \nMum’s the word"
+    static let startGradientWord = "Mum’s the word"
+    
+    static let parenRole = "I’m a Parent"
+    static let businessRole = "Business"
+    static let mockRoleDesc = "Role’s description"
+    
+    static let choose = "Choose Your role"
+    static let chooseDesc = "quis nostrud exercitation ullamco laboris nisi ut"
+    
+    static let letsStart = "Let’s Start"
+    
+    static let underLineLogin = "I’m already have an account. Log in"
+    static let chWordLogin = "Log in"
+    
+    static let descStart = "Hey, sign up to get things started!"
+    static let userAgreement = "I accept the terms of the User Agreement"
+    static let chWordUserAgreement = "User Agreement"
+    
+    static let stepperTitle = "Children’s"
+    
+    static func addName(_ name: String) -> NSMutableAttributedString {
+        let string = "Welcome, "
+        let mutableString = NSMutableAttributedString(string: string)
+        let range = (string as NSString).range(of: string)
+        mutableString.addAttributes([.font: AppFonts.sans24Regular], range: range)
+        let name = NSAttributedString(string: name)
+        mutableString.append(name)
+        return mutableString
+    }
 }
 

@@ -23,13 +23,9 @@ struct OnboardingModel {
     mutating func getColots() {
         switch self.type {
         case .dark:
-            let firstColor = #colorLiteral(red: 0.2345032394, green: 0.3246327043, blue: 0.9795067906, alpha: 1)
-            let secondColor = #colorLiteral(red: 1, green: 0.3620835543, blue: 0.7334597707, alpha: 1)
-            gradientColors = [firstColor,secondColor]
+            gradientColors = AppColor.Gradient.pinkBlue
         case .light:
-            let firstColor = #colorLiteral(red: 1, green: 0.5098039216, blue: 0.9333333333, alpha: 1)
-            let secondColor = #colorLiteral(red: 1, green: 0.7647058824, blue: 0.1607843137, alpha: 1)
-            gradientColors = [secondColor,firstColor]
+            gradientColors = AppColor.Gradient.yellowRed
         }
     }
 }

@@ -24,7 +24,7 @@ final class WelcomeRouter {
     func dismiss() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 4) { [self] in
             let router = OnboardingRouter(navigationRouter: navigationRouter)
-            navigationRouter.chooseAnimationTransition(type: .uncover(direction: .down))
+            navigationRouter.chooseAnimationTransition(type: .push(direction: .left))
             router.showOnboarding()
         }
     }

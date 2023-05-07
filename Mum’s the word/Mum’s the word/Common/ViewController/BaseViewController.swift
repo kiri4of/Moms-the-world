@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Hero
 
 class BaseViewController<View: UIView>: UIViewController {
     let mainView: View!
@@ -13,6 +14,11 @@ class BaseViewController<View: UIView>: UIViewController {
     init(mainView: View) {
         self.mainView = mainView
         super.init(nibName: nil, bundle: nil)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.hero.isEnabled = true
     }
     
     required init?(coder: NSCoder) {

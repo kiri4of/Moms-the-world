@@ -16,5 +16,22 @@ enum AppImages {
     static let onboardingSecondScreen = UIImage(named: "secondScreenImg")
     static let onboardingThirdScreen = UIImage(named: "thirdScreenImg")
     static let logo = UIImage(named: "logo")
+    static let logoYellow = UIImage(named: "logoYellow")
+    
     static let start = UIImage(named: "startScreen")
+    static let role = UIImage(named: "roleScreen")
+    
+    static let parenRole = UIImage(named: "parent")
+    static let businessRole = UIImage(named: "business")
+    
+    static let ex = UIImage(named: "ex")
+    
+    static let checkboxEmpty = UIImage(named: "Checkbox_empty")
+    
+    static let checkboxFill = UIImage(named: "Checkbox_fill")
+    
+    static let picker = UIImage(named: "picker")
+    
+    static let add = UIImage(named: "Add")
+    static let minus = UIImage(named: "Minus")
 }

@@ -9,7 +9,7 @@ import UIKit
 
 final class OnboardingCell: UICollectionViewCell {
     
-    lazy var titleLabel: UILabel = {
+    private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.textColor = AppColor.primaryBlack
         label.text = "Welcome to Mum’s the word"
@@ -22,7 +22,7 @@ final class OnboardingCell: UICollectionViewCell {
     
     var stackView: UIStackView!
     
-    lazy var descLabel: UILabel = {
+    private lazy var descLabel: UILabel = {
         let label = UILabel()
         label.textColor = AppColor.descriptionGray
         label.text = "The best helper for parents and business"
@@ -44,7 +44,7 @@ final class OnboardingCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setUI()
+        setupUI()
     }
     
     required init?(coder: NSCoder) {
@@ -54,19 +54,25 @@ final class OnboardingCell: UICollectionViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         bgImage.layer.cornerRadius = 40.0
-        bgImage.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        bgImage.layer.maskedCorners =
+        [
+            .layerMinXMinYCorner, .layerMaxXMinYCorner
+        ]
     }
     
     func update(_ model: OnboardingModel) {
         self.titleLabel.text = model.title
         self.descLabel.text = model.desc
         self.bgImage.image = model.image
-        titleLabel.setGradientText(model.wordGradient, gradientColors: model.gradientColors)
+        titleLabel.setGradientText(
+            model.wordGradient,
+            gradientColors: model.gradientColors
+        )
     }
 }
 
 extension OnboardingCell {
-    private func setUI() {
+    private func setupUI() {
         contentView.addSubview(bgImage)
         
         bgImage.snp.makeConstraints { make in

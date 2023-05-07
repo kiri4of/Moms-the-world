@@ -34,6 +34,8 @@ enum Inter {
 enum AppFonts {
     static let sans30Bold = WorkSans.bold(size: 28)
     static let sans24Bold = WorkSans.bold(size: 24)
+    static let sans24Regular = WorkSans.regular(size: 24)
+    
     static let sans13Regular = WorkSans.regular(size: 13)
     
     static let inter24Bold = Inter.bold(size: 24)

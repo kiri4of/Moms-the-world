@@ -17,7 +17,6 @@ extension UILabel {
             gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
             gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.0)
             gradientLayer.frame = self.bounds
-            print(gradientLayer.bounds.size)
             let renderer = UIGraphicsImageRenderer(size: gradientLayer.bounds.size)
             let gradientImage = renderer.image { context in
                 gradientLayer.render(in: context.cgContext)

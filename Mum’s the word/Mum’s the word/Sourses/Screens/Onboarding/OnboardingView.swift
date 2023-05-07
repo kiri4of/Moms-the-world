@@ -13,6 +13,7 @@ enum Spacing {
     static let height = 43.Vadapted
     static let buttonWidth = 280.Hadapted
     static let buttonHeight = 51.Vadapted
+    static let textFieldheight = 48.Vadapted
 }
 
 protocol OnboardingViewProtocol: AnyObject {
@@ -103,12 +104,11 @@ extension OnboardingView {
         addSubview(swipeLabel)
         addSubview(pageControl)
         pageControl.delegate = self
-        setUI()
+        setupUI()
         configureUI()
     }
     
-    
-    private func setUI() {
+    private func setupUI() {
         navigationView.snp.makeConstraints { make in
             make.leading.trailing.equalTo(layoutMargins).inset(Spacing.defaultSpacing)
             make.height.greaterThanOrEqualTo(Spacing.height)

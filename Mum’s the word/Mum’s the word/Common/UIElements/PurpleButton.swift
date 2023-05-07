@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class PurpleButton: UIButton {
+final class PurpleButton: BaseButton {
     
     private var title: String
     private var bgColor: UIColor
