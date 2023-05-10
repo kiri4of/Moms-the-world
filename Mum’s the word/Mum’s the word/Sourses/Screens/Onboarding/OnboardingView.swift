@@ -27,7 +27,7 @@ final class OnboardingView: UIView, OnboardingPageControlDelegate {
     
     private lazy var pageControl = OnboardingPageControl(
         numberOfPages: defaultOnboardingModel.count,
-        pageShowTime: 3
+        pageShowTime: 15
     )
     
     private let purpleButton = PurpleButton()
