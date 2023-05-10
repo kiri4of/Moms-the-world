@@ -25,6 +25,7 @@
 		CA13C34129FC74B000EA85D8 /* RoleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA13C34029FC74B000EA85D8 /* RoleButton.swift */; };
 		CA13C34429FE97E200EA85D8 /* RoleButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA13C34329FE97E200EA85D8 /* RoleButtonModel.swift */; };
 		CA13C34629FE98C200EA85D8 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA13C34529FE98C200EA85D8 /* TextField.swift */; };
+		CA2C5DE02A0BF5D80037D60E /* SignIn in Resources */ = {isa = PBXBuildFile; fileRef = CA2C5DDF2A0BF5D80037D60E /* SignIn */; };
 		CA4DD9DA29F66F6200E19431 /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4DD9D729F66F6200E19431 /* NavigationRouter.swift */; };
 		CA4DD9DB29F66F6200E19431 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4DD9D829F66F6200E19431 /* AppRouter.swift */; };
 		CA4DD9DC29F66F6200E19431 /* NavigationRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4DD9D929F66F6200E19431 /* NavigationRouterProtocol.swift */; };
@@ -128,6 +129,7 @@
 		CA13C34029FC74B000EA85D8 /* RoleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleButton.swift; sourceTree = "<group>"; };
 		CA13C34329FE97E200EA85D8 /* RoleButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleButtonModel.swift; sourceTree = "<group>"; };
 		CA13C34529FE98C200EA85D8 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		CA2C5DDF2A0BF5D80037D60E /* SignIn */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SignIn; sourceTree = "<group>"; };
 		CA4DD9D729F66F6200E19431 /* NavigationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
 		CA4DD9D829F66F6200E19431 /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		CA4DD9D929F66F6200E19431 /* NavigationRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationRouterProtocol.swift; sourceTree = "<group>"; };
@@ -326,6 +328,7 @@
 		CA4DD9DD29F66FAA00E19431 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				CA2C5DDF2A0BF5D80037D60E /* SignIn */,
 				CAC4BF452A05569C00331B80 /* SelectLocation */,
 				CAC4BF312A02B1F700331B80 /* SignUp */,
 				CA13C33329FC729600EA85D8 /* Role */,
@@ -669,6 +672,7 @@
 				CA50194529F83529006039C4 /* WorkSans-Bold.ttf in Resources */,
 				CA50193F29F831B6006039C4 /* Inter-Regular.ttf in Resources */,
 				CA50194029F831B8006039C4 /* Inter-SemiBold.ttf in Resources */,
+				CA2C5DE02A0BF5D80037D60E /* SignIn in Resources */,
 				CA50194429F83527006039C4 /* WorkSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
