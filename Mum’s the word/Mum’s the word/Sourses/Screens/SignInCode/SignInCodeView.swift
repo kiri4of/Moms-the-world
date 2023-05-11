@@ -1,18 +1,17 @@
 // 
-//  SignInView.swift
+//  SignInCodeView.swift
 //  Mum’s the word
 //
-//  Created by Александр Александрович on 08.05.2023.
+//  Created by Александр Александрович on 11.05.2023.
 //
 
 import UIKit
 import Hero
 
-protocol SignInViewProtocol: AnyObject {
-    func nextTap()
+protocol SignInCodeViewProtocol: AnyObject {
 }
 
-final class SignInView: UIView {
+final class SignInCodeView: UIView {
     
     private var logoImage: UIImageView = {
         let imageView = UIImageView()
@@ -21,14 +20,21 @@ final class SignInView: UIView {
         return imageView
     }()
     
+    private lazy var resendButton: BaseButton = {
+        let button = BaseButton()
+        button.setTitle(AppStrings.resend, for: .normal)
+        button.titleLabel?.font = AppFonts.inter16Bold
+        button.backgroundColor = .clear
+        return button
+    }()
+    
     private lazy var purpleButton = PurpleButton(bg: AppColor.purplePrimary)
-    private lazy var privacyStackView = PrivacyStackView()
-    private(set) lazy var loginTextField = DefaultTextField(
-        placeHolder: "Email or phone", type: .textField)
+    private(set) lazy var otpTextField = OTPStackView(
+        frame: bounds)
         
     private lazy var header = TwoLabelStackVIew(
-        title: AppStrings.signInHeader,
-        desc: AppStrings.descSignIn
+        title: AppStrings.confirmationCode,
+        desc: AppStrings.chooseDesc
     )
     
     private var bgImage: UIImageView = {
@@ -40,7 +46,7 @@ final class SignInView: UIView {
     
     private lazy var stackView = UIStackView()
     
-    weak var delegate: SignInViewProtocol?
+    weak var delegate: SelectLocationViewProtocol?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -51,16 +57,18 @@ final class SignInView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func update(name: String) {
-        header.titleLabel.attributedText = AppStrings.addName(name)
+    func update(text: String) {
+        header.descLabel.text = AppStrings.addEmailOrPhone(text)
     }
 }
 
-extension SignInView {
+extension SignInCodeView {
     private func setupViews() {
         addSubview(bgImage)
         addSubview(logoImage)
-        addSubview(stackView)
+        addSubview(header)
+        addSubview(otpTextField)
+        addSubview(resendButton)
         addSubview(purpleButton)
         setupConstraints()
         configureUI()
@@ -71,7 +79,6 @@ extension SignInView {
         purpleButton.heroModifiers = [.translate(y: -100),.duration(0.5)]
         purpleButton.setTitle(AppStrings.nextButton, for: .normal)
         purpleButton.addTarget(self, action: #selector(nextTap), for: .touchUpInside)
-        privacyStackView.updateText(text: AppStrings.remember)
     }
     
     private func setupConstraints() {
@@ -85,39 +92,36 @@ extension SignInView {
             make.size.equalTo(CGSize(width: 110.Hadapted, height: 52.Vadapted))
         }
         
-        stackView.axis = .vertical
-        stackView.distribution = .fill
-        stackView.alignment = .leading
-        stackView.spacing = 16
-                
-        stackView.addArrangedSubviews(
-            header,loginTextField,privacyStackView
-        )
-        stackView.setCustomSpacing(30, after: header)
-        
-        stackView.snp.makeConstraints { make in
+        header.snp.makeConstraints { make in
             make.top.equalTo(logoImage.snp.bottom).offset(36)
             make.leading.equalToSuperview().inset(16)
             make.trailing.equalToSuperview().inset(16)
         }
         
-        loginTextField.snp.makeConstraints { make in
-            make.width.equalTo(stackView)
+        otpTextField.snp.makeConstraints { make in
+            make.top.equalTo(header.snp.bottom).offset(30)
+            make.centerX.equalToSuperview()
             make.height.equalTo(Spacing.textFieldheight)
+        }
+        
+        resendButton.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.top.equalTo(otpTextField.snp.bottom).offset(40)
+            make.width.greaterThanOrEqualTo(Spacing.buttonWidth)
+            make.height.greaterThanOrEqualTo(Spacing.buttonHeight)
         }
         
         purpleButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.top.equalTo(stackView.snp.bottom).offset(40)
+            make.top.equalTo(resendButton.snp.bottom).offset(19)
             make.width.greaterThanOrEqualTo(Spacing.buttonWidth)
             make.height.greaterThanOrEqualTo(Spacing.buttonHeight)
         }
-       
     }
     
     @objc
     private func nextTap() {
-        delegate?.nextTap()
+        print("sasja")
     }
 }
 

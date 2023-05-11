@@ -52,14 +52,29 @@ enum AppStrings {
     
     static let stepperTitle = "Children’s"
     
+    static let confirmationCode = "Enter confirmation code"
+    
+    static let descSignIn = "Hey, sign in to get things started!"
+    
+    static let signInHeader = "Sign in"
+    
+    static let remember = "Remember me"
+    
+    static let resend = "Resend code"
+    
     static func addName(_ name: String) -> NSMutableAttributedString {
         let string = "Welcome, "
         let mutableString = NSMutableAttributedString(string: string)
         let range = (string as NSString).range(of: string)
         mutableString.addAttributes([.font: AppFonts.sans24Regular], range: range)
-        let name = NSAttributedString(string: name)
+        let name = NSAttributedString(string: name.isEmpty ? "Unknown" : name)
         mutableString.append(name)
         return mutableString
+    }
+    
+    static func addEmailOrPhone(_ text: String) -> String {
+        let str = "A 6-digit code was sent to \(text)"
+        return str
     }
 }
 

@@ -19,4 +19,10 @@ final class SignInRouter {
         let vc = SignInBuilder.build(coordinator: self)
         navigationRouter.showScreen(vc)
     }
+    
+    func routeToCode(text: SignInCodeModel) {
+        let router = SignInCodeRouter(navigationRouter: navigationRouter)
+        navigationRouter.chooseAnimationTransition(type: .fade)
+        router.show(text)
+    }
 }
