@@ -18,9 +18,8 @@ final class AppRouter {
 
 extension AppRouter {
     func showOnboarding() {
-        let router = SignInRouter(navigationRouter: navigationRouter)
-        //router.showOnboarding()
-        router.show()
+        let router = WelcomeRouter(navigationRouter: navigationRouter)
+        router.showOnboarding()
     }
     
     func showSplash(scene: UIWindowScene, completion: @escaping () -> ()) {
