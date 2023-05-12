@@ -142,6 +142,9 @@ extension StartScreenView {
         navigationView.skipButton.isHidden = true
         purpleButton.addTarget(
             self, action: #selector(nextTap), for: .touchUpInside)
+        
+        loginButton.addTarget(
+            self, action: #selector(loginTap), for: .touchUpInside)
     }
     
     private func updateUI() {

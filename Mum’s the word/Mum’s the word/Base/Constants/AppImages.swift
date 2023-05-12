@@ -34,4 +34,5 @@ enum AppImages {
     
     static let add = UIImage(named: "Add")
     static let minus = UIImage(named: "Minus")
+    static let lightBg = UIImage(named: "lightBg")
 }

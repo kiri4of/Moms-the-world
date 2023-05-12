@@ -30,7 +30,7 @@ final class TwoLabelStackVIew: UIStackView {
         return label
     }()
     
-    private lazy var descLabel: UILabel = {
+    private(set) lazy var descLabel: UILabel = {
         let label = UILabel()
         label.textColor = .white
         label.textAlignment = .left

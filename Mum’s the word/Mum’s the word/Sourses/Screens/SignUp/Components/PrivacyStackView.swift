@@ -11,7 +11,7 @@ final class PrivacyStackView: UIStackView {
     
     var isAccepted: Bool = false
     
-    private lazy var tapAbleLabel: TapableLabel = {
+    private(set) lazy var tapAbleLabel: TapableLabel = {
         let label = TapableLabel(
             text: AppStrings.userAgreement,
             tapWord: AppStrings.chWordUserAgreement ,
@@ -38,6 +38,10 @@ final class PrivacyStackView: UIStackView {
     
     required init(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func updateText(text: String) {
+        self.tapAbleLabel.text = text
     }
     
     private func setupUI() {

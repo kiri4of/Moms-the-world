@@ -21,7 +21,8 @@ final class StartScreenRouter {
     }
     
     func routeLogin() {
-        
+        let router = SignInRouter(navigationRouter: navigationRouter)
+        router.show()
     }
     
     func routeNextStep() {
