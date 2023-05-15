@@ -20,8 +20,13 @@ final class RoleRouter {
         navigationRouter.showScreen(vc)
     }
     
-    func routeToSignUP() {
+    func routeToSignUP(_ role: Roles) {
         let router = SignUpRouter(navigationRouter: navigationRouter)
+        router.show(role)
+    }
+    
+    func routeToSignIn() {
+        let router = SignInRouter(navigationRouter: navigationRouter)
         router.show()
     }
 }

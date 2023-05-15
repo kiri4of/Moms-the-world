@@ -13,6 +13,8 @@ protocol SelectLocationViewProtocol: AnyObject {
 
 final class SelectLocationView: UIView {
     
+    private var type: Roles?
+    
     private var logoImage: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
@@ -42,8 +44,9 @@ final class SelectLocationView: UIView {
     
     weak var delegate: SelectLocationViewProtocol?
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    init(type: Roles) {
+        super.init(frame: .zero)
+        self.type = type
         setupViews()
     }
     
@@ -52,7 +55,13 @@ final class SelectLocationView: UIView {
     }
     
     func update(name: String) {
-        header.titleLabel.attributedText = AppStrings.addName(name)
+        if type == .parent {
+            let string = AppStrings.addName(name)
+            header.titleLabel.attributedText = string
+        } else {
+            let company = AppStrings.companyLocation
+            header.titleLabel.text = company
+        }
     }
 }
 
@@ -94,8 +103,13 @@ extension SelectLocationView {
         stackView.spacing = 16
                 
         stackView.addArrangedSubviews(
-            header,locationPicker,stepper
+            header,locationPicker
         )
+        
+        if type == .parent {
+            stackView.addArrangedSubview(stepper)
+        }
+        
         stackView.setCustomSpacing(30, after: header)
         
         stackView.snp.makeConstraints { make in
@@ -109,8 +123,10 @@ extension SelectLocationView {
             make.height.equalTo(Spacing.textFieldheight)
         }
         
-        stepper.snp.makeConstraints { make in
-            make.width.equalTo(stackView)
+        if type == .parent {
+            stepper.snp.makeConstraints { make in
+                make.width.equalTo(stackView)
+            }
         }
         
         purpleButton.snp.makeConstraints { make in

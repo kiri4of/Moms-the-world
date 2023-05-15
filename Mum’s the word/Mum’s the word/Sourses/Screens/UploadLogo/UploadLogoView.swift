@@ -1,21 +1,19 @@
 // 
-//  SignUpView.swift
+//  UploadLogoView.swift
 //  Mum’s the word
 //
-//  Created by Александр Александрович on 03.05.2023.
+//  Created by Александр Александрович on 13.05.2023.
 //
 
 import UIKit
 import Hero
 
-protocol SignUpViewProtocol: AnyObject {
+protocol UploadLogoViewProtocol: AnyObject {
     func openChooseLoacation(_ model: SignUpModel)
 }
 
-final class SignUpView: UIView {
-    
-    private var type: Roles?
-        
+final class UploadLogoView: UIView {
+            
     private var logoImage: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
@@ -23,12 +21,10 @@ final class SignUpView: UIView {
         return imageView
     }()
     
-    private lazy var purpleButton = PurpleButton(bg: AppColor.Gradient.yellow)
-    private lazy var nameTextField = DefaultTextField(
-        placeHolder: type == .parent ? "Name" : AppStrings.companySignUp )
-    private lazy var emailTextField = DefaultTextField(placeHolder: "Email")
+    private(set) lazy var purpleButton = PurpleButton(bg: AppColor.Gradient.yellow)
+    private(set) lazy var chooseLogoView = ChooseLogoView(frame: .zero)
     
-    private lazy var privacyStackView = PrivacyStackView()
+    private(set) lazy var card = CompanyCardView()
     
     private lazy var header = TwoLabelStackVIew(
         title: AppStrings.choose,
@@ -44,11 +40,10 @@ final class SignUpView: UIView {
     
     private lazy var stackView = UIStackView()
     
-    weak var delegate: SignUpViewProtocol?
+    weak var delegate: UploadLogoViewProtocol?
     
-    init(type: Roles) {
+    init() {
         super.init(frame: .zero)
-        self.type = type
         setupUI()
     }
     
@@ -57,7 +52,7 @@ final class SignUpView: UIView {
     }
 }
 
-extension SignUpView {
+extension UploadLogoView {
     private func setupUI() {
         addSubview(bgImage)
         addSubview(logoImage)
@@ -78,11 +73,21 @@ extension SignUpView {
         stackView.distribution = .fill
         stackView.alignment = .leading
         stackView.spacing = 16
+        let width = 200.Hadapted
+        
+        let containterView = ContainterView(view: chooseLogoView) { view in
+            view.snp.makeConstraints { make in
+                make.centerX.centerY.equalToSuperview()
+                make.size.equalTo(CGSize(width: width, height: width))
+            }
+        }
                 
         stackView.addArrangedSubviews(
-            header,nameTextField,emailTextField,privacyStackView
+            header,containterView,card
         )
+        
         stackView.setCustomSpacing(30, after: header)
+        stackView.setCustomSpacing(40, after: containterView)
         
         stackView.snp.makeConstraints { make in
             make.top.equalTo(logoImage.snp.bottom).offset(36)
@@ -90,11 +95,13 @@ extension SignUpView {
             make.trailing.equalToSuperview().inset(16)
         }
         
-        [nameTextField,emailTextField].forEach { textF in
-            textF.snp.makeConstraints { make in
-                make.width.equalTo(stackView)
-                make.height.equalTo(Spacing.textFieldheight)
-            }
+        containterView.snp.makeConstraints { make in
+            make.width.equalTo(stackView)
+            make.height.equalTo(width)
+        }
+        
+        card.snp.makeConstraints { make in
+            make.width.equalTo(stackView)
         }
         
         purpleButton.snp.makeConstraints { make in
@@ -111,13 +118,8 @@ extension SignUpView {
     
     @objc
     private func nextTap() {
-        if
-            let name = nameTextField.text,
-            let email = emailTextField.text {
-            let privacy = privacyStackView.isAccepted
-            let model = SignUpModel(name: name, email: email, privacy: privacy)
-            delegate?.openChooseLoacation(model)
-        }
+       print("Sasha")
     }
 }
+
 

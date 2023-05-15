@@ -11,6 +11,7 @@ struct RoleButtonModel {
     let title: String
     let desc: String
     let image: UIImage?
+    let type: Roles
 }
 
 enum Roles {
@@ -23,12 +24,12 @@ enum Roles {
             return RoleButtonModel(
                 title: AppStrings.parenRole,
                 desc: AppStrings.mockRoleDesc,
-                image: AppImages.parenRole)
+                image: AppImages.parenRole, type: self)
         case .business:
             return RoleButtonModel(
                 title: AppStrings.businessRole,
                 desc: AppStrings.mockRoleDesc,
-                image: AppImages.businessRole)
+                image: AppImages.businessRole, type: self)
         }
     }
 }

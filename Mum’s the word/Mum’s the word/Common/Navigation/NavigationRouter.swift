@@ -9,7 +9,7 @@ import UIKit
 import Hero
 
 class NavigationRouter: NavigationRouterProtocol {
-    
+   
     private weak var navigationController: UINavigationController?
     
     init(navigationController: UINavigationController?) {
@@ -44,4 +44,9 @@ class NavigationRouter: NavigationRouterProtocol {
             navigationController.pushViewController(viewController, animated: true)
         }
     }
+    
+    func present(_ viewController: UIViewController) {
+        navigationController?.present(viewController, animated: true)
+    }
+    
 }

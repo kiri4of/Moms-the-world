@@ -10,9 +10,9 @@ import UIKit
 final class SelectLocationBuilder {
     
     public static func build(
-        router: SelectLocationRouter
+        router: SelectLocationRouter, _ role: Roles
     ) -> SelectLocationViewController {
-        let view = SelectLocationView()
+        let view = SelectLocationView(type: role)
         let vc = SelectLocationViewController(mainView: view)
         let presenter = SelectLocationPresenter(view: vc, router: router)
         

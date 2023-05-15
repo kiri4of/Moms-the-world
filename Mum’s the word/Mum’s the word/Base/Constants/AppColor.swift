@@ -13,7 +13,9 @@ enum AppColor {
     static let lightGrayPrimary: UIColor = #colorLiteral(red: 0.9431939721, green: 0.9631138444, blue: 0.9907973409, alpha: 1)
     static let descriptionGray: UIColor = #colorLiteral(red: 0.2128768861, green: 0.2128768861, blue: 0.2128768861, alpha: 1)
     static let primaryBlack: UIColor = .black
+    static let fieldColor = #colorLiteral(red: 0.510383904, green: 0.5105038285, blue: 0.5142068863, alpha: 1)
     static let primaryGrayTextFiled = #colorLiteral(red: 0.8980392157, green: 0.8980392157, blue: 0.8980392157, alpha: 1)
+    static let descGray = #colorLiteral(red: 0.787740171, green: 0.787740171, blue: 0.787740171, alpha: 1)
     static let primaryOrange = #colorLiteral(red: 1, green: 0.8, blue: 0.2039215686, alpha: 1)
     
     enum Gradient {

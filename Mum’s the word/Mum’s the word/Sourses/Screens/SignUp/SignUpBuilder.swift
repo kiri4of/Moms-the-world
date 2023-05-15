@@ -10,9 +10,9 @@ import UIKit
 final class SignUpBuilder {
     
     public static func build(
-        router: SignUpRouter
+        router: SignUpRouter, _ role: Roles
     ) -> SignUpViewController {
-        let view = SignUpView()
+        let view = SignUpView(type: role)
         let vc = SignUpViewController(mainView: view)
         let presenter = SignUpPresenter(view: vc, router: router)
         

@@ -27,6 +27,14 @@ final class RoleViewController: BaseViewController<RoleView> {
 }
 
 extension RoleViewController: RoleViewProtocol {
+    func getRole(_ role: Roles) {
+        presenter.setRole(role)
+    }
+    
+    func routeToLogin() {
+        presenter.routeToSignIn()
+    }
+    
     func routeToSignUP() {
         presenter.routeToSignUP()
     }    

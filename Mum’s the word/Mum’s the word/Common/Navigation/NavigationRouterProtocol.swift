@@ -15,5 +15,6 @@ protocol NavigationRouterProtocol: AnyObject {
     func dismissModalScreen()
     func chooseAnimationTransition(type: HeroDefaultAnimationType)
     func changeStack(_ viewController: UIViewController)
+    func present(_ viewController: UIViewController)
 }
 

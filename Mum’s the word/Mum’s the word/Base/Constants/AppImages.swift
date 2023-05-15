@@ -35,4 +35,10 @@ enum AppImages {
     static let add = UIImage(named: "Add")
     static let minus = UIImage(named: "Minus")
     static let lightBg = UIImage(named: "lightBg")
+    
+    static let locationMark = UIImage(named: "location_mark")
+    
+    static let companyCardLogo = UIImage(named: "company_card_logo")
+    
+    static let logoPlaceholder = UIImage(named: "logo_placeholder")
 }

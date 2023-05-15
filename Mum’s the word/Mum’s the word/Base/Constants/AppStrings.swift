@@ -62,6 +62,11 @@ enum AppStrings {
     
     static let resend = "Resend code"
     
+    static let companySignUp = "Company or service name"
+    
+    static let companyLocation = "Choose location"
+    
+    
     static func addName(_ name: String) -> NSMutableAttributedString {
         let string = "Welcome, "
         let mutableString = NSMutableAttributedString(string: string)

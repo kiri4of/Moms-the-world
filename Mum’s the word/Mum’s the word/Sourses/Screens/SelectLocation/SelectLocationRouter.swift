@@ -15,9 +15,10 @@ final class SelectLocationRouter {
         self.navigationRouter = navigationRouter
     }
     
-    func show(_ model: SignUpModel) {
-        let vc = SelectLocationBuilder.build(router: self)
+    func show(_ model: SignUpModel,_ role: Roles) {
+        let vc = SelectLocationBuilder.build(router: self, role)
         vc.presenter.setSignUpModel(model: model)
+        vc.presenter.setRole(role)
         navigationRouter.showScreen(vc)
     }
 }

@@ -10,6 +10,8 @@ import Hero
 
 protocol RoleViewProtocol: AnyObject {
     func routeToSignUP()
+    func routeToLogin()
+    func getRole(_ role: Roles)
 }
 
 final class RoleView: UIView {
@@ -29,14 +31,14 @@ final class RoleView: UIView {
         let label = TapableLabel(
             text: AppStrings.underLineLogin,
             tapWord: AppStrings.chWordLogin ,
-            attr: .white) {
-                print("Sasha")
+            attr: .white) { [weak self] in
+                self?.delegate?.routeToLogin()
             }
         label.textColor = .white
         label.font = AppFonts.inter14Bold
         return label
     }()
-    
+        
     private lazy var header = TwoLabelStackVIew(
         title: AppStrings.choose,
         desc: AppStrings.chooseDesc
@@ -116,9 +118,11 @@ extension RoleView {
     private func configureUI() {
         let buttons: [RoleButton] = [parentRoleButton, businessRoleButton]
         buttons.forEach { v in
-            v.handler = { model in
+            v.handler = { [weak self] model in
+                guard let self = self else { return }
                 buttons.forEach { $0.changeUI(isClear: true) }
                 v.changeUI(isClear: false)
+                self.delegate?.getRole(model)
             }
         }
     }

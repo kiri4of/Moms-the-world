@@ -29,7 +29,7 @@ class BaseButton: UIButton {
 
 final class RoleButton: BaseButton {
     
-    var handler: ((_ model: RoleButtonModel?) -> ())?
+    var handler: ((_ model: Roles) -> ())?
     private var model: RoleButtonModel?
     
     private var bgImage: UIImageView = {
@@ -78,7 +78,7 @@ final class RoleButton: BaseButton {
         _ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
             if let model = model {
-                handler?(model)
+                handler?(model.type)
             }
     }
     
