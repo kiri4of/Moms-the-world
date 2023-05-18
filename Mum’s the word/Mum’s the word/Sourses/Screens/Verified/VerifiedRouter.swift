@@ -14,4 +14,9 @@ final class VerifiedRouter {
     init(navigationRouter: NavigationRouterProtocol) {
         self.navigationRouter = navigationRouter
     }
+    
+    func show() {
+        let vc = VerifiedBuilder.build(router: self)
+        navigationRouter.showScreen(vc)
+    }
 }

@@ -14,4 +14,14 @@ final class BusinessHoursRouter {
     init(navigationRouter: NavigationRouterProtocol) {
         self.navigationRouter = navigationRouter
     }
+    
+    func show() {
+        let vc = BusinessHoursBuilder.build(router: self)
+        navigationRouter.showScreen(vc)
+    }
+    
+    func routeToChooseLogo() {
+        let router = UploadLogoRouter(navigationRouter: navigationRouter)
+        router.show()
+    }
 }

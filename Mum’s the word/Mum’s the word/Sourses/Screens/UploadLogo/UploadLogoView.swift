@@ -27,8 +27,8 @@ final class UploadLogoView: UIView {
     private(set) lazy var card = CompanyCardView()
     
     private lazy var header = TwoLabelStackVIew(
-        title: AppStrings.choose,
-        desc: AppStrings.chooseDesc
+        title: AppStrings.uploadLogo,
+        desc: AppStrings.descUploadLogo
     )
     
     private var bgImage: UIImageView = {
@@ -106,12 +106,10 @@ extension UploadLogoView {
         
         purpleButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.top.equalTo(stackView.snp.bottom).offset(40)
+            make.bottom.equalTo(safeAreaLayoutGuide)
             make.width.greaterThanOrEqualTo(Spacing.buttonWidth)
             make.height.greaterThanOrEqualTo(Spacing.buttonHeight)
         }
-        purpleButton.hero.id = "purpleButton"
-        purpleButton.heroModifiers = [.translate(y: -100),.duration(0.5)]
         purpleButton.setTitle(AppStrings.nextButton, for: .normal)
         purpleButton.addTarget(self, action: #selector(nextTap), for: .touchUpInside)
     }

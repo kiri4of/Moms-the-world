@@ -29,8 +29,8 @@ final class SelectLocationView: UIView {
     private lazy var stepper = Stepper()
     
     private lazy var header = TwoLabelStackVIew(
-        title: AppStrings.choose,
-        desc: AppStrings.chooseDesc
+        title: AppStrings.companyLocation,
+        desc: AppStrings.gradinetFirst
     )
     
     private var bgImage: UIImageView = {

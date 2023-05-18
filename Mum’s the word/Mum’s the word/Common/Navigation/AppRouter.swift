@@ -18,7 +18,7 @@ final class AppRouter {
 
 extension AppRouter {
     func showOnboarding() {
-        let router = UploadLogoRouter(navigationRouter: navigationRouter)
+        let router = BusinessHoursRouter(navigationRouter: navigationRouter)
         router.show()
         //router.showOnboarding()
     }

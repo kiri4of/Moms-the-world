@@ -10,6 +10,16 @@
 		0C30816729F5C33400C73271 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C30816629F5C33400C73271 /* AppDelegate.swift */; };
 		0C30816929F5C33400C73271 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C30816829F5C33400C73271 /* SceneDelegate.swift */; };
 		0C30817029F5C33700C73271 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C30816F29F5C33700C73271 /* Assets.xcassets */; };
+		CA0EFAF42A15730F003FF26A /* TimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EFAF32A15730F003FF26A /* TimePicker.swift */; };
+		CA0EFAF72A157350003FF26A /* CustomTimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EFAF62A157350003FF26A /* CustomTimePicker.swift */; };
+		CA0EFAFA2A157CF8003FF26A /* RoundedShadowedSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EFAF92A157CF8003FF26A /* RoundedShadowedSegmentedControl.swift */; };
+		CA0EFAFD2A157D32003FF26A /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EFAFC2A157D32003FF26A /* WeekView.swift */; };
+		CA0EFB052A15928E003FF26A /* VerifiedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EFAFF2A15928E003FF26A /* VerifiedPresenter.swift */; };
+		CA0EFB062A15928E003FF26A /* VerifiedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EFB002A15928E003FF26A /* VerifiedRouter.swift */; };
+		CA0EFB072A15928E003FF26A /* VerifiedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EFB012A15928E003FF26A /* VerifiedViewController.swift */; };
+		CA0EFB082A15928E003FF26A /* VerifiedBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EFB022A15928E003FF26A /* VerifiedBuilder.swift */; };
+		CA0EFB092A15928E003FF26A /* VerifiedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EFB032A15928E003FF26A /* VerifiedView.swift */; };
+		CA0EFB0A2A15928E003FF26A /* VerifiedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EFB042A15928E003FF26A /* VerifiedModel.swift */; };
 		CA13C32D29FAE8FD00EA85D8 /* StartScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA13C32729FAE8FD00EA85D8 /* StartScreenPresenter.swift */; };
 		CA13C32E29FAE8FD00EA85D8 /* StartScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA13C32829FAE8FD00EA85D8 /* StartScreenRouter.swift */; };
 		CA13C32F29FAE8FD00EA85D8 /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA13C32929FAE8FD00EA85D8 /* StartScreenViewController.swift */; };
@@ -83,6 +93,13 @@
 		CA779F102A101F96001C4569 /* UploadLogoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA779F0A2A101F96001C4569 /* UploadLogoModel.swift */; };
 		CA779F132A1022CA001C4569 /* CompanyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA779F122A1022CA001C4569 /* CompanyCardView.swift */; };
 		CA779F152A102F00001C4569 /* ChooseLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA779F142A102F00001C4569 /* ChooseLogoView.swift */; };
+		CA779F9D2A12D802001C4569 /* BusinessHoursPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA779F972A12D802001C4569 /* BusinessHoursPresenter.swift */; };
+		CA779F9E2A12D802001C4569 /* BusinessHoursRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA779F982A12D802001C4569 /* BusinessHoursRouter.swift */; };
+		CA779F9F2A12D802001C4569 /* BusinessHoursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA779F992A12D802001C4569 /* BusinessHoursViewController.swift */; };
+		CA779FA02A12D802001C4569 /* BusinessHoursBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA779F9A2A12D802001C4569 /* BusinessHoursBuilder.swift */; };
+		CA779FA12A12D802001C4569 /* BusinessHoursView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA779F9B2A12D802001C4569 /* BusinessHoursView.swift */; };
+		CA779FA22A12D802001C4569 /* BusinessHoursModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA779F9C2A12D802001C4569 /* BusinessHoursModel.swift */; };
+		CA779FA52A12D88E001C4569 /* HoursView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA779FA42A12D88E001C4569 /* HoursView.swift */; };
 		CAC4BF2A2A005F5C00331B80 /* TapableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4BF292A005F5C00331B80 /* TapableLabel.swift */; };
 		CAC4BF2C2A026F3D00331B80 /* UILabel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4BF2B2A026F3D00331B80 /* UILabel + Extension.swift */; };
 		CAC4BF302A02712500331B80 /* TwoLabelStackVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4BF2F2A02712500331B80 /* TwoLabelStackVIew.swift */; };
@@ -135,6 +152,16 @@
 		0C30817429F5C33700C73271 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C30817929F5C33700C73271 /* Mum’s the wordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mum’s the wordTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C30818329F5C33700C73271 /* Mum’s the wordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mum’s the wordUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA0EFAF32A15730F003FF26A /* TimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePicker.swift; sourceTree = "<group>"; };
+		CA0EFAF62A157350003FF26A /* CustomTimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTimePicker.swift; sourceTree = "<group>"; };
+		CA0EFAF92A157CF8003FF26A /* RoundedShadowedSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowedSegmentedControl.swift; sourceTree = "<group>"; };
+		CA0EFAFC2A157D32003FF26A /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
+		CA0EFAFF2A15928E003FF26A /* VerifiedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifiedPresenter.swift; sourceTree = "<group>"; };
+		CA0EFB002A15928E003FF26A /* VerifiedRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifiedRouter.swift; sourceTree = "<group>"; };
+		CA0EFB012A15928E003FF26A /* VerifiedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifiedViewController.swift; sourceTree = "<group>"; };
+		CA0EFB022A15928E003FF26A /* VerifiedBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifiedBuilder.swift; sourceTree = "<group>"; };
+		CA0EFB032A15928E003FF26A /* VerifiedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifiedView.swift; sourceTree = "<group>"; };
+		CA0EFB042A15928E003FF26A /* VerifiedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifiedModel.swift; sourceTree = "<group>"; };
 		CA13C32729FAE8FD00EA85D8 /* StartScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenPresenter.swift; sourceTree = "<group>"; };
 		CA13C32829FAE8FD00EA85D8 /* StartScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenRouter.swift; sourceTree = "<group>"; };
 		CA13C32929FAE8FD00EA85D8 /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
@@ -208,6 +235,13 @@
 		CA779F0A2A101F96001C4569 /* UploadLogoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadLogoModel.swift; sourceTree = "<group>"; };
 		CA779F122A1022CA001C4569 /* CompanyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyCardView.swift; sourceTree = "<group>"; };
 		CA779F142A102F00001C4569 /* ChooseLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseLogoView.swift; sourceTree = "<group>"; };
+		CA779F972A12D802001C4569 /* BusinessHoursPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessHoursPresenter.swift; sourceTree = "<group>"; };
+		CA779F982A12D802001C4569 /* BusinessHoursRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessHoursRouter.swift; sourceTree = "<group>"; };
+		CA779F992A12D802001C4569 /* BusinessHoursViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessHoursViewController.swift; sourceTree = "<group>"; };
+		CA779F9A2A12D802001C4569 /* BusinessHoursBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessHoursBuilder.swift; sourceTree = "<group>"; };
+		CA779F9B2A12D802001C4569 /* BusinessHoursView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessHoursView.swift; sourceTree = "<group>"; };
+		CA779F9C2A12D802001C4569 /* BusinessHoursModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessHoursModel.swift; sourceTree = "<group>"; };
+		CA779FA42A12D88E001C4569 /* HoursView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoursView.swift; sourceTree = "<group>"; };
 		CAC4BF292A005F5C00331B80 /* TapableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapableLabel.swift; sourceTree = "<group>"; };
 		CAC4BF2B2A026F3D00331B80 /* UILabel + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
 		CAC4BF2F2A02712500331B80 /* TwoLabelStackVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoLabelStackVIew.swift; sourceTree = "<group>"; };
@@ -291,6 +325,51 @@
 				CA5E391D29F78E5A0014BD4D /* Launch Screen.storyboard */,
 			);
 			path = "Mum’s the word";
+			sourceTree = "<group>";
+		};
+		CA0EFAF22A157309003FF26A /* TimePicker */ = {
+			isa = PBXGroup;
+			children = (
+				CA0EFAF32A15730F003FF26A /* TimePicker.swift */,
+			);
+			path = TimePicker;
+			sourceTree = "<group>";
+		};
+		CA0EFAF52A157349003FF26A /* CustomTimePicker */ = {
+			isa = PBXGroup;
+			children = (
+				CA0EFAF62A157350003FF26A /* CustomTimePicker.swift */,
+			);
+			path = CustomTimePicker;
+			sourceTree = "<group>";
+		};
+		CA0EFAF82A157CDB003FF26A /* RoundedShadowedSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				CA0EFAF92A157CF8003FF26A /* RoundedShadowedSegmentedControl.swift */,
+			);
+			path = RoundedShadowedSegmentedControl;
+			sourceTree = "<group>";
+		};
+		CA0EFAFB2A157D28003FF26A /* WeekView */ = {
+			isa = PBXGroup;
+			children = (
+				CA0EFAFC2A157D32003FF26A /* WeekView.swift */,
+			);
+			path = WeekView;
+			sourceTree = "<group>";
+		};
+		CA0EFAFE2A159278003FF26A /* Verified */ = {
+			isa = PBXGroup;
+			children = (
+				CA0EFAFF2A15928E003FF26A /* VerifiedPresenter.swift */,
+				CA0EFB002A15928E003FF26A /* VerifiedRouter.swift */,
+				CA0EFB012A15928E003FF26A /* VerifiedViewController.swift */,
+				CA0EFB022A15928E003FF26A /* VerifiedBuilder.swift */,
+				CA0EFB032A15928E003FF26A /* VerifiedView.swift */,
+				CA0EFB042A15928E003FF26A /* VerifiedModel.swift */,
+			);
+			path = Verified;
 			sourceTree = "<group>";
 		};
 		CA13C32629FAE8CA00EA85D8 /* Start */ = {
@@ -403,6 +482,8 @@
 		CA4DD9DD29F66FAA00E19431 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				CA0EFAFE2A159278003FF26A /* Verified */,
+				CA779F962A12D7B5001C4569 /* BusinessHours */,
 				CA779F042A101F79001C4569 /* UploadLogo */,
 				CA2C5DFA2A0D6EE20037D60E /* SignInCode */,
 				CA2C5DE12A0BF6360037D60E /* SignIn */,
@@ -553,6 +634,11 @@
 		CA550DF129F9787500780317 /* UIElements */ = {
 			isa = PBXGroup;
 			children = (
+				CA0EFAFB2A157D28003FF26A /* WeekView */,
+				CA0EFAF82A157CDB003FF26A /* RoundedShadowedSegmentedControl */,
+				CA0EFAF52A157349003FF26A /* CustomTimePicker */,
+				CA0EFAF22A157309003FF26A /* TimePicker */,
+				CA779FA32A12D87A001C4569 /* HoursView */,
 				CA2C5DFB2A0D78B70037D60E /* OTPTextField */,
 				CAC4BF2E2A02711A00331B80 /* TwoLabelStackVIew */,
 				CAC4BF282A005F5100331B80 /* TapableLabel */,
@@ -596,6 +682,27 @@
 				CA779F142A102F00001C4569 /* ChooseLogoView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		CA779F962A12D7B5001C4569 /* BusinessHours */ = {
+			isa = PBXGroup;
+			children = (
+				CA779F972A12D802001C4569 /* BusinessHoursPresenter.swift */,
+				CA779F982A12D802001C4569 /* BusinessHoursRouter.swift */,
+				CA779F992A12D802001C4569 /* BusinessHoursViewController.swift */,
+				CA779F9A2A12D802001C4569 /* BusinessHoursBuilder.swift */,
+				CA779F9B2A12D802001C4569 /* BusinessHoursView.swift */,
+				CA779F9C2A12D802001C4569 /* BusinessHoursModel.swift */,
+			);
+			path = BusinessHours;
+			sourceTree = "<group>";
+		};
+		CA779FA32A12D87A001C4569 /* HoursView */ = {
+			isa = PBXGroup;
+			children = (
+				CA779FA42A12D88E001C4569 /* HoursView.swift */,
+			);
+			path = HoursView;
 			sourceTree = "<group>";
 		};
 		CAC4BF282A005F5100331B80 /* TapableLabel */ = {
@@ -796,6 +903,8 @@
 				CA13C32D29FAE8FD00EA85D8 /* StartScreenPresenter.swift in Sources */,
 				CA50194C29F84499006039C4 /* UILabel + Extensions.swift in Sources */,
 				CA13C34129FC74B000EA85D8 /* RoleButton.swift in Sources */,
+				CA0EFB0A2A15928E003FF26A /* VerifiedModel.swift in Sources */,
+				CA0EFAF42A15730F003FF26A /* TimePicker.swift in Sources */,
 				CA50192129F79312006039C4 /* SplashPresenter.swift in Sources */,
 				CAC4BF3D2A02B22D00331B80 /* SignUpModel.swift in Sources */,
 				CA13C33C29FC734D00EA85D8 /* RoleViewController.swift in Sources */,
@@ -805,23 +914,28 @@
 				CA4DD9DA29F66F6200E19431 /* NavigationRouter.swift in Sources */,
 				CAE6055F29F6CA4700FE65E6 /* OnboardingBuilder.swift in Sources */,
 				CA2C5DF92A0D6EDB0037D60E /* SignInCodeModel.swift in Sources */,
+				CA0EFB072A15928E003FF26A /* VerifiedViewController.swift in Sources */,
 				CA2C5DF72A0D6EDB0037D60E /* SignInCodeBuilder.swift in Sources */,
 				CA779F0B2A101F96001C4569 /* UploadLogoPresenter.swift in Sources */,
 				CA779F0E2A101F96001C4569 /* UploadLogoBuilder.swift in Sources */,
 				CA779F152A102F00001C4569 /* ChooseLogoView.swift in Sources */,
 				CA50194729F83788006039C4 /* AppStrings.swift in Sources */,
+				CA779F9D2A12D802001C4569 /* BusinessHoursPresenter.swift in Sources */,
 				CA550DF829F980B200780317 /* UIView + Extension.swift in Sources */,
 				CA13C34429FE97E200EA85D8 /* RoleButtonModel.swift in Sources */,
 				CAC4BF532A0563F900331B80 /* UITextFiled + Extension.swift in Sources */,
 				CA50195F29F91C09006039C4 /* WelcomeRouter.swift in Sources */,
+				CA0EFB052A15928E003FF26A /* VerifiedPresenter.swift in Sources */,
 				CA2C5DF52A0D6EDB0037D60E /* SignInCodeRouter.swift in Sources */,
 				CAC4BF4D2A0556BA00331B80 /* SelectLocationRouter.swift in Sources */,
+				CA0EFAF72A157350003FF26A /* CustomTimePicker.swift in Sources */,
 				CAC4BF502A0556BA00331B80 /* SelectLocationView.swift in Sources */,
 				CA779F132A1022CA001C4569 /* CompanyCardView.swift in Sources */,
 				CA550E0A29F985CD00780317 /* Int + Extension.swift in Sources */,
 				CA550DF329F9788200780317 /* PurpleButton.swift in Sources */,
 				CAC4BF3C2A02B22D00331B80 /* SignUpView.swift in Sources */,
 				CAC4BF3A2A02B22D00331B80 /* SignUpViewController.swift in Sources */,
+				CA0EFAFA2A157CF8003FF26A /* RoundedShadowedSegmentedControl.swift in Sources */,
 				CA2C5DFD2A0D78DD0037D60E /* OPTTexrStackView.swift in Sources */,
 				CAC4BF302A02712500331B80 /* TwoLabelStackVIew.swift in Sources */,
 				CA50194E29F85896006039C4 /* UICollectionVIew + Extension.swift in Sources */,
@@ -840,14 +954,17 @@
 				CA4DD9E329F6728200E19431 /* BaseViewController.swift in Sources */,
 				CA13C33F29FC734D00EA85D8 /* RoleModel.swift in Sources */,
 				CA2C5DE72A0BF64B0037D60E /* SignInRouter.swift in Sources */,
+				CA779FA22A12D802001C4569 /* BusinessHoursModel.swift in Sources */,
 				CA2C5DED2A0BF81E0037D60E /* Constants.swift in Sources */,
 				CA2C5DF42A0D6EDB0037D60E /* SignInCodePresenter.swift in Sources */,
 				CAE6055E29F6CA4700FE65E6 /* OnboardingViewController.swift in Sources */,
 				CA50196229F970C3006039C4 /* OnboardingCell.swift in Sources */,
 				CA50192229F79312006039C4 /* SplashRouter.swift in Sources */,
+				CA779FA52A12D88E001C4569 /* HoursView.swift in Sources */,
 				CA50196529F970E2006039C4 /* OnboardingNavigationView.swift in Sources */,
 				CA13C33A29FC734D00EA85D8 /* RolePresenter.swift in Sources */,
 				CAC4BF402A02C10600331B80 /* PrivacyStackView.swift in Sources */,
+				CA779FA02A12D802001C4569 /* BusinessHoursBuilder.swift in Sources */,
 				CAE6056029F6CA4700FE65E6 /* OnboardingView.swift in Sources */,
 				CA2C5DEA2A0BF64B0037D60E /* SignInBuilder.swift in Sources */,
 				CA13C34629FE98C200EA85D8 /* TextField.swift in Sources */,
@@ -856,20 +973,27 @@
 				CA2C5DFF2A0D78E80037D60E /* OPTTextField.swift in Sources */,
 				CA13C32E29FAE8FD00EA85D8 /* StartScreenRouter.swift in Sources */,
 				CA13C33029FAE8FD00EA85D8 /* StartScreenBuilder.swift in Sources */,
+				CA0EFB082A15928E003FF26A /* VerifiedBuilder.swift in Sources */,
+				CA779F9F2A12D802001C4569 /* BusinessHoursViewController.swift in Sources */,
 				CA50193329F7A246006039C4 /* WelcomeViewController.swift in Sources */,
 				CA779F0D2A101F96001C4569 /* UploadLogoViewController.swift in Sources */,
 				CA50192E29F79E22006039C4 /* BubleLoader.swift in Sources */,
 				CA779F0F2A101F96001C4569 /* UploadLogoView.swift in Sources */,
 				CA4DD9DC29F66F6200E19431 /* NavigationRouterProtocol.swift in Sources */,
+				CA779F9E2A12D802001C4569 /* BusinessHoursRouter.swift in Sources */,
 				CAE6056129F6CA4700FE65E6 /* OnboardingModel.swift in Sources */,
+				CA0EFB062A15928E003FF26A /* VerifiedRouter.swift in Sources */,
 				CA13C33B29FC734D00EA85D8 /* RoleRouter.swift in Sources */,
 				CA2C5DE82A0BF64B0037D60E /* SignInView.swift in Sources */,
 				0C30816929F5C33400C73271 /* SceneDelegate.swift in Sources */,
 				CA779F0C2A101F96001C4569 /* UploadLogoRouter.swift in Sources */,
 				CAC4BF2C2A026F3D00331B80 /* UILabel + Extension.swift in Sources */,
+				CA779FA12A12D802001C4569 /* BusinessHoursView.swift in Sources */,
 				CA2C5DF82A0D6EDB0037D60E /* SignInCodeView.swift in Sources */,
+				CA0EFB092A15928E003FF26A /* VerifiedView.swift in Sources */,
 				CAC4BF2A2A005F5C00331B80 /* TapableLabel.swift in Sources */,
 				CA13C33E29FC734D00EA85D8 /* RoleView.swift in Sources */,
+				CA0EFAFD2A157D32003FF26A /* WeekView.swift in Sources */,
 				CAC4BF552A0567E900331B80 /* Stepper.swift in Sources */,
 				CAC4BF382A02B22D00331B80 /* SignUpPresenter.swift in Sources */,
 				CA50193029F7A128006039C4 /* AppColor.swift in Sources */,

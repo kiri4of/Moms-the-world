@@ -32,8 +32,8 @@ final class ChooseLogoView: UIImageView {
         label.textColor = .white
         label.textAlignment = .center
         label.numberOfLines = 0
-        label.text = AppStrings.choose
-        label.font = AppFonts.inter18Bold
+        label.text = AppStrings.upload
+        label.font = AppFonts.inter14Bold
         label.backgroundColor = AppColor.fieldColor
         return label
     }()
@@ -58,6 +58,7 @@ final class ChooseLogoView: UIImageView {
     }
     
     func updateView(uiimage: UIImage) {
+        self.titleLabel.text = AppStrings.edit
         self.image = uiimage
     }
     

@@ -62,9 +62,27 @@ enum AppStrings {
     
     static let resend = "Resend code"
     
+    static let startTime = "Start of day:"
+    
+    static let endTime = "End of day:"
+    
     static let companySignUp = "Company or service name"
     
     static let companyLocation = "Choose location"
+    
+    static let workHours = "Enter Work hours"
+    static let descWorkHours = "Tell us about your working hours"
+    
+    static let uploadLogo = "Upload company logo"
+    static let descUploadLogo = "The company logo is necessary for better recognition of your institution"
+    
+    static let verified = "You’re Verified"
+    static let descVerified = "Your account is verified, let’s start with Mum’s the world!"
+    
+    static let getStarted = "Get started"
+    
+    static let upload = "Upload"
+    static let edit = "Edit"
     
     
     static func addName(_ name: String) -> NSMutableAttributedString {

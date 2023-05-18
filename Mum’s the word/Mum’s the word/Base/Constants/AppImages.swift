@@ -41,4 +41,6 @@ enum AppImages {
     static let companyCardLogo = UIImage(named: "company_card_logo")
     
     static let logoPlaceholder = UIImage(named: "logo_placeholder")
+    
+    static let verified = UIImage(named: "verified")
 }

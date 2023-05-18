@@ -8,7 +8,7 @@
 import Foundation
 
 protocol BusinessHoursPresenterProtocol: AnyObject {
-    
+    func routeToLogo()
 }
 
 final class BusinessHoursPresenter: BusinessHoursPresenterProtocol {
@@ -19,5 +19,9 @@ final class BusinessHoursPresenter: BusinessHoursPresenterProtocol {
     init(view: BusinessHoursViewControllerProtocol, router: BusinessHoursRouter) {
         self.view = view
         self.router = router
+    }
+    
+    func routeToLogo() {
+        router?.routeToChooseLogo()
     }
 }

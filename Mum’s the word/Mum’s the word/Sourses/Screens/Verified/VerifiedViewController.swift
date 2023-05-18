@@ -17,6 +17,13 @@ final class VerifiedViewController: BaseViewController<VerifiedView> {
     
     override public func viewDidLoad() -> () {
         super.viewDidLoad()
+        configureUI()
+    }
+}
+
+extension VerifiedViewController {
+    private func configureUI() {
+        navigationController?.navigationBar.isHidden = true
     }
 }
 
