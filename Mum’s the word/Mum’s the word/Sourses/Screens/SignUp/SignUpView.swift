@@ -12,20 +12,13 @@ protocol SignUpViewProtocol: AnyObject {
     func openChooseLoacation(_ model: SignUpModel)
 }
 
-final class SignUpView: UIView {
+final class SignUpView: LoginView {
     
-    private var type: Roles?
+    private var role: Roles?
         
-    private var logoImage: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFill
-        imageView.image = AppImages.logoYellow
-        return imageView
-    }()
-    
     private lazy var purpleButton = PurpleButton(bg: AppColor.Gradient.yellow)
     private lazy var nameTextField = DefaultTextField(
-        placeHolder: type == .parent ? "Name" : AppStrings.companySignUp )
+        placeHolder: role == .parent ? "Name" : AppStrings.companySignUp )
     private lazy var emailTextField = DefaultTextField(placeHolder: "Email")
     
     private lazy var privacyStackView = PrivacyStackView()
@@ -35,44 +28,21 @@ final class SignUpView: UIView {
         desc: AppStrings.chooseDesc
     )
     
-    private var bgImage: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFill
-        imageView.image = AppImages.role
-        return imageView
-    }()
-    
     private lazy var stackView = UIStackView()
     
     weak var delegate: SignUpViewProtocol?
     
-    init(type: Roles) {
-        super.init(frame: .zero)
-        self.type = type
+    init(role: Roles, _ type: LoginView.ViewType) {
+        super.init(type)
+        self.role = role
         setupUI()
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
 }
 
 extension SignUpView {
     private func setupUI() {
-        addSubview(bgImage)
-        addSubview(logoImage)
         addSubview(stackView)
         addSubview(purpleButton)
-        
-        bgImage.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
-        }
-                
-        logoImage.snp.makeConstraints { make in
-            make.top.equalTo(safeAreaLayoutGuide).offset(layoutMargins.top)
-            make.centerX.equalToSuperview()
-            make.size.equalTo(CGSize(width: 110.Hadapted, height: 52.Vadapted))
-        }
         
         stackView.axis = .vertical
         stackView.distribution = .fill

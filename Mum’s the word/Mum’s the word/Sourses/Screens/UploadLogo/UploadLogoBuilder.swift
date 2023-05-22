@@ -12,7 +12,7 @@ final class UploadLogoBuilder {
     public static func build(
         coordinator: UploadLogoRouter
     ) -> UploadLogoViewController {
-        let view = UploadLogoView()
+        let view = UploadLogoView(.dark)
         let vc = UploadLogoViewController(mainView: view)
         let presenter = UploadLogoPresenter(view: vc, router: coordinator)
         

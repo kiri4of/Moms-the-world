@@ -9,6 +9,7 @@ import UIKit
 import Hero
 
 class BaseViewController<View: UIView>: UIViewController {
+    private(set) var keyboardManager = KeyboardManager.shared
     let mainView: View!
     
     init(mainView: View) {

@@ -12,7 +12,7 @@ final class SignInBuilder {
     public static func build(
         coordinator: SignInRouter
     ) -> SignInViewController {
-        let view = SignInView()
+        let view = SignInView(.light)
         let vc = SignInViewController(mainView: view)
         let presenter = SignInPresenter(view: vc, router: coordinator)
         

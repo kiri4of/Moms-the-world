@@ -12,16 +12,9 @@ protocol BusinessHoursViewProtocol: AnyObject {
     func routeToLogo()
 }
 
-final class BusinessHoursView: UIView {
+final class BusinessHoursView: LoginView {
     
     private lazy var hoursView = HoursView()
-    
-    private var logoImage: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFill
-        imageView.image = AppImages.logoYellow
-        return imageView
-    }()
     
     private lazy var header = TwoLabelStackVIew(
         title: AppStrings.workHours,
@@ -32,29 +25,16 @@ final class BusinessHoursView: UIView {
     
     private lazy var purpleButton = PurpleButton(bg: AppColor.Gradient.yellow)
 
-    private var bgImage: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFill
-        imageView.image = AppImages.role
-        return imageView
-    }()
-    
     private lazy var stackView = UIStackView()
     
-    init() {
-        super.init(frame: .zero)
-        setupViews()
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    override init(_ type: LoginView.ViewType) {
+        super.init(type)
+        setupUI()
     }
 }
 
 extension BusinessHoursView {
-    private func setupViews() {
-        addSubview(bgImage)
-        addSubview(logoImage)
+    private func setupUI() {
         addSubview(stackView)
         addSubview(purpleButton)
         setupConstraints()
@@ -62,21 +42,12 @@ extension BusinessHoursView {
     }
     
     private func configureUI() {
+        purpleButton.hero.id = "purpleButton"
         purpleButton.setTitle(AppStrings.nextButton, for: .normal)
         purpleButton.addTarget(self, action: #selector(nextTap), for: .touchUpInside)
     }
     
     private func setupConstraints() {
-        bgImage.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
-        }
-                
-        logoImage.snp.makeConstraints { make in
-            make.top.equalTo(safeAreaLayoutGuide).offset(layoutMargins.top)
-            make.centerX.equalToSuperview()
-            make.size.equalTo(CGSize(width: 110.Hadapted, height: 52.Vadapted))
-        }
-        
         stackView.axis = .vertical
         stackView.distribution = .fill
         stackView.alignment = .leading

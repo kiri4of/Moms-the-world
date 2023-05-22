@@ -12,7 +12,7 @@ final class RoleBuilder {
     public static func build(
         coordinator: RoleRouter
     ) -> RoleViewController {
-        let view = RoleView()
+        let view = RoleView(.dark)
         let vc = RoleViewController(mainView: view)
         let presenter = RolePresenter(view: vc, router: coordinator)
         

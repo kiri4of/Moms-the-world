@@ -12,7 +12,7 @@ final class SignUpBuilder {
     public static func build(
         router: SignUpRouter, _ role: Roles
     ) -> SignUpViewController {
-        let view = SignUpView(type: role)
+        let view = SignUpView(role: role, .dark)
         let vc = SignUpViewController(mainView: view)
         let presenter = SignUpPresenter(view: vc, router: router)
         

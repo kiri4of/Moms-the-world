@@ -18,9 +18,8 @@ final class AppRouter {
 
 extension AppRouter {
     func showOnboarding() {
-        let router = BusinessHoursRouter(navigationRouter: navigationRouter)
+        let router = AddCompanyPhotosRouter(navigationRouter: navigationRouter)
         router.show()
-        //router.showOnboarding()
     }
     
     func showSplash(scene: UIWindowScene, completion: @escaping () -> ()) {

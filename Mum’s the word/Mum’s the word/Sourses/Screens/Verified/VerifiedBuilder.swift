@@ -12,7 +12,7 @@ final class VerifiedBuilder {
     public static func build(
         router: VerifiedRouter
     ) -> VerifiedViewController {
-        let view = VerifiedView()
+        let view = VerifiedView(.dark)
         let vc = VerifiedViewController(mainView: view)
         let presenter = VerifiedPresenter(view: vc, router: router)
         

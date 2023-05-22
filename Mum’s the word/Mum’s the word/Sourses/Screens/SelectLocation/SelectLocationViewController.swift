@@ -17,6 +17,19 @@ final class SelectLocationViewController: BaseViewController<SelectLocationView>
     
     override public func viewDidLoad() -> () {
         super.viewDidLoad()
+        configureUI()
+    }
+}
+
+extension SelectLocationViewController {
+    private func configureUI() {
+        mainView.delegate = self
+    }
+}
+
+extension SelectLocationViewController: SelectLocationViewProtocol {
+    func routeToNextScreen(role: Roles) {
+        presenter.routeToNextScreen(role: role)
     }
 }
 

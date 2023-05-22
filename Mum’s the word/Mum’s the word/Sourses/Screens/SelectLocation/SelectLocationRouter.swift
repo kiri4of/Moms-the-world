@@ -21,4 +21,14 @@ final class SelectLocationRouter {
         vc.presenter.setRole(role)
         navigationRouter.showScreen(vc)
     }
+    
+    func routeToEnterCompanyPhone() {
+        let router = CompanyPhoneRouter(navigationRouter: navigationRouter)
+        router.show()
+    }
+    
+    func routeToVerified() {
+        let router = VerifiedRouter(navigationRouter: navigationRouter)
+        router.show()
+    }
 }

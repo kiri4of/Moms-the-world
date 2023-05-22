@@ -12,14 +12,7 @@ protocol SignInViewProtocol: AnyObject {
     func nextTap()
 }
 
-final class SignInView: UIView {
-    
-    private var logoImage: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFill
-        imageView.image = AppImages.logoYellow
-        return imageView
-    }()
+final class SignInView: LoginView {
     
     private lazy var purpleButton = PurpleButton(bg: AppColor.purplePrimary)
     private lazy var privacyStackView = PrivacyStackView()
@@ -31,20 +24,13 @@ final class SignInView: UIView {
         desc: AppStrings.descSignIn
     )
     
-    private var bgImage: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFill
-        imageView.image = AppImages.lightBg
-        return imageView
-    }()
-    
     private lazy var stackView = UIStackView()
     
     weak var delegate: SignInViewProtocol?
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setupViews()
+    override init(_ type: LoginView.ViewType) {
+        super.init(type)
+        setupUI()
     }
     
     required init?(coder: NSCoder) {
@@ -57,9 +43,7 @@ final class SignInView: UIView {
 }
 
 extension SignInView {
-    private func setupViews() {
-        addSubview(bgImage)
-        addSubview(logoImage)
+    private func setupUI() {
         addSubview(stackView)
         addSubview(purpleButton)
         setupConstraints()
@@ -75,16 +59,6 @@ extension SignInView {
     }
     
     private func setupConstraints() {
-        bgImage.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
-        }
-                
-        logoImage.snp.makeConstraints { make in
-            make.top.equalTo(safeAreaLayoutGuide).offset(layoutMargins.top)
-            make.centerX.equalToSuperview()
-            make.size.equalTo(CGSize(width: 110.Hadapted, height: 52.Vadapted))
-        }
-        
         stackView.axis = .vertical
         stackView.distribution = .fill
         stackView.alignment = .leading

@@ -10,6 +10,7 @@ import Foundation
 protocol SelectLocationPresenterProtocol: AnyObject {
     func setSignUpModel(model: SignUpModel)
     func setRole(_ role: Roles)
+    func routeToNextScreen(role: Roles)
 }
 
 final class SelectLocationPresenter: SelectLocationPresenterProtocol {
@@ -30,5 +31,14 @@ final class SelectLocationPresenter: SelectLocationPresenterProtocol {
     
     func setRole(_ role: Roles) {
         self.role = role
+    }
+    
+    func routeToNextScreen(role: Roles) {
+        switch role {
+        case .parent:
+            router?.routeToVerified()
+        case .business:
+            router?.routeToEnterCompanyPhone()
+        }
     }
 }

@@ -11,15 +11,8 @@ import Hero
 protocol SignInCodeViewProtocol: AnyObject {
 }
 
-final class SignInCodeView: UIView {
-    
-    private var logoImage: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFill
-        imageView.image = AppImages.logoYellow
-        return imageView
-    }()
-    
+final class SignInCodeView: LoginView {
+
     private lazy var resendButton: BaseButton = {
         let button = BaseButton()
         button.setTitle(AppStrings.resend, for: .normal)
@@ -37,24 +30,13 @@ final class SignInCodeView: UIView {
         desc: AppStrings.chooseDesc
     )
     
-    private var bgImage: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFill
-        imageView.image = AppImages.lightBg
-        return imageView
-    }()
-    
     private lazy var stackView = UIStackView()
     
     weak var delegate: SelectLocationViewProtocol?
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setupViews()
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    override init(_ type: LoginView.ViewType) {
+        super.init(type)
+        setupUI()
     }
     
     func update(text: String) {
@@ -63,9 +45,7 @@ final class SignInCodeView: UIView {
 }
 
 extension SignInCodeView {
-    private func setupViews() {
-        addSubview(bgImage)
-        addSubview(logoImage)
+    private func setupUI() {
         addSubview(header)
         addSubview(otpTextField)
         addSubview(resendButton)
@@ -82,16 +62,6 @@ extension SignInCodeView {
     }
     
     private func setupConstraints() {
-        bgImage.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
-        }
-                
-        logoImage.snp.makeConstraints { make in
-            make.top.equalTo(safeAreaLayoutGuide).offset(layoutMargins.top)
-            make.centerX.equalToSuperview()
-            make.size.equalTo(CGSize(width: 110.Hadapted, height: 52.Vadapted))
-        }
-        
         header.snp.makeConstraints { make in
             make.top.equalTo(logoImage.snp.bottom).offset(36)
             make.leading.equalToSuperview().inset(16)

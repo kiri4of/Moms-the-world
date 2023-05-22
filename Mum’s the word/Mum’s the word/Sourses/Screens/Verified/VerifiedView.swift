@@ -11,14 +11,7 @@ import Hero
 protocol VerifiedViewProtocol: AnyObject {
 }
 
-final class VerifiedView: UIView {
-    
-    private var logoImage: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFill
-        imageView.image = AppImages.logoYellow
-        return imageView
-    }()
+final class VerifiedView: LoginView {
     
     private lazy var purpleButton = PurpleButton(bg: AppColor.Gradient.yellow)
 
@@ -26,13 +19,6 @@ final class VerifiedView: UIView {
         title: AppStrings.confirmationCode,
         desc: AppStrings.chooseDesc
     )
-    
-    private var bgImage: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFill
-        imageView.image = AppImages.role
-        return imageView
-    }()
     
     private var check: UIImageView = {
         let imageView = UIImageView()
@@ -43,20 +29,14 @@ final class VerifiedView: UIView {
         
     weak var delegate: VerifiedViewProtocol?
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setupViews()
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    override init(_ type: LoginView.ViewType) {
+        super.init(type)
+        setupUI()
     }
 }
 
 extension VerifiedView {
-    private func setupViews() {
-        addSubview(bgImage)
-        addSubview(logoImage)
+    private func setupUI() {
         addSubview(header)
         addSubview(check)
         addSubview(purpleButton)
@@ -72,16 +52,6 @@ extension VerifiedView {
     }
     
     private func setupConstraints() {
-        bgImage.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
-        }
-                
-        logoImage.snp.makeConstraints { make in
-            make.top.equalTo(safeAreaLayoutGuide).offset(layoutMargins.top)
-            make.centerX.equalToSuperview()
-            make.size.equalTo(CGSize(width: 110.Hadapted, height: 52.Vadapted))
-        }
-        
         header.snp.makeConstraints { make in
             make.top.equalTo(logoImage.snp.bottom).offset(36)
             make.leading.equalToSuperview().inset(16)

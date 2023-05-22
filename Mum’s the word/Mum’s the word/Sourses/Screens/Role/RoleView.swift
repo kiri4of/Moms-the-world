@@ -14,14 +14,7 @@ protocol RoleViewProtocol: AnyObject {
     func getRole(_ role: Roles)
 }
 
-final class RoleView: UIView {
-    
-    private var logoImage: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFill
-        imageView.image = AppImages.logoYellow
-        return imageView
-    }()
+final class RoleView: LoginView {
     
     private lazy var parentRoleButton =  RoleButton()
     private lazy var businessRoleButton = RoleButton()
@@ -44,43 +37,20 @@ final class RoleView: UIView {
         desc: AppStrings.chooseDesc
     )
     
-    private var bgImage: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFill
-        imageView.image = AppImages.role
-        return imageView
-    }()
-    
     private lazy var stackView = UIStackView()
     
     weak var delegate: RoleViewProtocol?
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    override init(_ type: LoginView.ViewType) {
+        super.init(type)
         setupUI()
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
 }
 
 extension RoleView {
     private func setupUI() {
-        addSubview(bgImage)
-        addSubview(logoImage)
         addSubview(stackView)
         addSubview(purpleButton)
-        
-        bgImage.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
-        }
-                
-        logoImage.snp.makeConstraints { make in
-            make.top.equalTo(safeAreaLayoutGuide).offset(layoutMargins.top)
-            make.centerX.equalToSuperview()
-            make.size.equalTo(CGSize(width: 110.Hadapted, height: 52.Vadapted))
-        }
         
         stackView.axis = .vertical
         stackView.distribution = .fill

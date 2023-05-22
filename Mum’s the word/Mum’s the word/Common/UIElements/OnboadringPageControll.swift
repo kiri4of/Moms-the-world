@@ -112,7 +112,7 @@ final class OnboardingPageControl: UIControl {
 
 extension OnboardingPageControl {
     func updateIndicators() {
-        let widthAnimationDuration = 0.2
+        let widthAnimationDuration = 0.25
         
         for (index,progressView) in progressViews.enumerated() where index < currentPage {
             UIView.animate(withDuration: widthAnimationDuration, delay: 0) {

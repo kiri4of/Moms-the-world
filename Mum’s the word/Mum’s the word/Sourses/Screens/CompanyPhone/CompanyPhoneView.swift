@@ -1,54 +1,48 @@
 // 
-//  SelectLocationView.swift
+//  CompanyPhoneView.swift
 //  Mum’s the word
 //
-//  Created by Александр Александрович on 05.05.2023.
+//  Created by Александр Александрович on 19.05.2023.
 //
 
 import UIKit
 import Hero
 
-protocol SelectLocationViewProtocol: AnyObject {
-    func routeToNextScreen(role: Roles)
+protocol CompanyPhoneViewProtocol: AnyObject {
+    func nextTap()
 }
 
-final class SelectLocationView: LoginView {
+final class CompanyPhoneView: LoginView {
     
-    private var role: Roles?
+    private lazy var purpleButton = PurpleButton(bg: AppColor.primaryOrange)
     
-    private lazy var purpleButton = PurpleButton(bg: AppColor.Gradient.yellow)
-    private lazy var locationPicker = DefaultTextField(
-        placeHolder: "Your Location", type: .picker)
-    
-    private lazy var stepper = Stepper()
-    
+    private(set) lazy var phoneTextField = DefaultTextField(
+        placeHolder: "Phone", type: .textField)
+        
     private lazy var header = TwoLabelStackVIew(
-        title: AppStrings.companyLocation,
-        desc: AppStrings.gradinetFirst
+        title: AppStrings.enterPhone,
+        desc: AppStrings.descSignIn
     )
     
     private lazy var stackView = UIStackView()
     
-    weak var delegate: SelectLocationViewProtocol?
+    weak var delegate: CompanyPhoneViewProtocol?
     
-    init(role: Roles, _ type: LoginView.ViewType) {
+    override init(_ type: LoginView.ViewType) {
         super.init(type)
-        self.role = role
         setupUI()
     }
     
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     func update(name: String) {
-        if role == .parent {
-            let string = AppStrings.addName(name)
-            header.titleLabel.attributedText = string
-        } else {
-            let company = AppStrings.companyLocation
-            header.titleLabel.text = company
-        }
+        header.titleLabel.attributedText = AppStrings.addName(name)
     }
 }
 
-extension SelectLocationView {
+extension CompanyPhoneView {
     private func setupUI() {
         addSubview(stackView)
         addSubview(purpleButton)
@@ -61,10 +55,7 @@ extension SelectLocationView {
         purpleButton.heroModifiers = [.translate(y: -100),.duration(0.5)]
         purpleButton.setTitle(AppStrings.nextButton, for: .normal)
         purpleButton.addTarget(self, action: #selector(nextTap), for: .touchUpInside)
-        stepper.updateUI(title: AppStrings.stepperTitle)
-        stepper.handler = { count in
-            print(count)
-        }
+        phoneTextField.keyboardType = .numberPad
     }
     
     private func setupConstraints() {
@@ -74,12 +65,8 @@ extension SelectLocationView {
         stackView.spacing = 16
                 
         stackView.addArrangedSubviews(
-            header,locationPicker
+            header,phoneTextField
         )
-        
-        if role == .parent {
-            stackView.addArrangedSubview(stepper)
-        }
         
         stackView.setCustomSpacing(30, after: header)
         
@@ -89,15 +76,9 @@ extension SelectLocationView {
             make.trailing.equalToSuperview().inset(16)
         }
         
-        locationPicker.snp.makeConstraints { make in
+        phoneTextField.snp.makeConstraints { make in
             make.width.equalTo(stackView)
             make.height.equalTo(Spacing.textFieldheight)
-        }
-        
-        if role == .parent {
-            stepper.snp.makeConstraints { make in
-                make.width.equalTo(stackView)
-            }
         }
         
         purpleButton.snp.makeConstraints { make in
@@ -106,14 +87,12 @@ extension SelectLocationView {
             make.width.greaterThanOrEqualTo(Spacing.buttonWidth)
             make.height.greaterThanOrEqualTo(Spacing.buttonHeight)
         }
-       
     }
     
     @objc
     private func nextTap() {
-        if let role {
-            delegate?.routeToNextScreen(role: role)
-        }
+        delegate?.nextTap()
     }
 }
+
 

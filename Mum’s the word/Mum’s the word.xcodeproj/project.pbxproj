@@ -85,6 +85,8 @@
 		CA550E0A29F985CD00780317 /* Int + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA550E0929F985CD00780317 /* Int + Extension.swift */; };
 		CA550E0C29F98A5500780317 /* OnboadringPageControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA550E0B29F98A5500780317 /* OnboadringPageControll.swift */; };
 		CA5E391E29F78E5A0014BD4D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA5E391D29F78E5A0014BD4D /* Launch Screen.storyboard */; };
+		CA5F304D2A1BE70E00232332 /* AddCompanyDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5F304C2A1BE70E00232332 /* AddCompanyDataSource.swift */; };
+		CA5F304F2A1BE72200232332 /* AddCompanyLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5F304E2A1BE72200232332 /* AddCompanyLayout.swift */; };
 		CA779F0B2A101F96001C4569 /* UploadLogoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA779F052A101F96001C4569 /* UploadLogoPresenter.swift */; };
 		CA779F0C2A101F96001C4569 /* UploadLogoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA779F062A101F96001C4569 /* UploadLogoRouter.swift */; };
 		CA779F0D2A101F96001C4569 /* UploadLogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA779F072A101F96001C4569 /* UploadLogoViewController.swift */; };
@@ -118,6 +120,27 @@
 		CAC4BF512A0556BA00331B80 /* SelectLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4BF4B2A0556BA00331B80 /* SelectLocationModel.swift */; };
 		CAC4BF532A0563F900331B80 /* UITextFiled + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4BF522A0563F900331B80 /* UITextFiled + Extension.swift */; };
 		CAC4BF552A0567E900331B80 /* Stepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4BF542A0567E900331B80 /* Stepper.swift */; };
+		CAE1EBDF2A17C95900859F61 /* AddCompanyPhotosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1EBD92A17C95900859F61 /* AddCompanyPhotosPresenter.swift */; };
+		CAE1EBE02A17C95900859F61 /* AddCompanyPhotosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1EBDA2A17C95900859F61 /* AddCompanyPhotosRouter.swift */; };
+		CAE1EBE12A17C95900859F61 /* AddCompanyPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1EBDB2A17C95900859F61 /* AddCompanyPhotosViewController.swift */; };
+		CAE1EBE22A17C95900859F61 /* AddCompanyPhotosBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1EBDC2A17C95900859F61 /* AddCompanyPhotosBuilder.swift */; };
+		CAE1EBE32A17C95900859F61 /* AddCompanyPhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1EBDD2A17C95900859F61 /* AddCompanyPhotosView.swift */; };
+		CAE1EBE42A17C95900859F61 /* AddCompanyPhotosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1EBDE2A17C95900859F61 /* AddCompanyPhotosModel.swift */; };
+		CAE1EBE72A17CEAB00859F61 /* DarkLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1EBE62A17CEAB00859F61 /* DarkLoginView.swift */; };
+		CAE1EBEF2A17DADB00859F61 /* CompanyPhonePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1EBE92A17DADB00859F61 /* CompanyPhonePresenter.swift */; };
+		CAE1EBF02A17DADB00859F61 /* CompanyPhoneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1EBEA2A17DADB00859F61 /* CompanyPhoneRouter.swift */; };
+		CAE1EBF12A17DADB00859F61 /* CompanyPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1EBEB2A17DADB00859F61 /* CompanyPhoneViewController.swift */; };
+		CAE1EBF22A17DADB00859F61 /* CompanyPhoneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1EBEC2A17DADB00859F61 /* CompanyPhoneBuilder.swift */; };
+		CAE1EBF32A17DADB00859F61 /* CompanyPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1EBED2A17DADB00859F61 /* CompanyPhoneView.swift */; };
+		CAE1EBF42A17DADB00859F61 /* CompanyPhoneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1EBEE2A17DADB00859F61 /* CompanyPhoneModel.swift */; };
+		CAE1EBFC2A17E0E300859F61 /* DescriptionCompanyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1EBF62A17E0E300859F61 /* DescriptionCompanyPresenter.swift */; };
+		CAE1EBFD2A17E0E300859F61 /* DescriptionCompanyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1EBF72A17E0E300859F61 /* DescriptionCompanyRouter.swift */; };
+		CAE1EBFE2A17E0E300859F61 /* DescriptionCompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1EBF82A17E0E300859F61 /* DescriptionCompanyViewController.swift */; };
+		CAE1EBFF2A17E0E300859F61 /* DescriptionCompanyBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1EBF92A17E0E300859F61 /* DescriptionCompanyBuilder.swift */; };
+		CAE1EC002A17E0E300859F61 /* DescriptionCompanyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1EBFA2A17E0E300859F61 /* DescriptionCompanyView.swift */; };
+		CAE1EC012A17E0E300859F61 /* DescriptionCompanyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1EBFB2A17E0E300859F61 /* DescriptionCompanyModel.swift */; };
+		CAE1EC032A17ED5100859F61 /* UITextView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1EC022A17ED5100859F61 /* UITextView + Extension.swift */; };
+		CAE1EC082A18AB9600859F61 /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1EC072A18AB9600859F61 /* KeyboardManager.swift */; };
 		CAE6055729F6C9B000FE65E6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CAE6055629F6C9B000FE65E6 /* SnapKit */; };
 		CAE6055D29F6CA4700FE65E6 /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE6055829F6CA4700FE65E6 /* OnboardingPresenter.swift */; };
 		CAE6055E29F6CA4700FE65E6 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE6055929F6CA4700FE65E6 /* OnboardingViewController.swift */; };
@@ -227,6 +250,8 @@
 		CA550E0929F985CD00780317 /* Int + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int + Extension.swift"; sourceTree = "<group>"; };
 		CA550E0B29F98A5500780317 /* OnboadringPageControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboadringPageControll.swift; sourceTree = "<group>"; };
 		CA5E391D29F78E5A0014BD4D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		CA5F304C2A1BE70E00232332 /* AddCompanyDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCompanyDataSource.swift; sourceTree = "<group>"; };
+		CA5F304E2A1BE72200232332 /* AddCompanyLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCompanyLayout.swift; sourceTree = "<group>"; };
 		CA779F052A101F96001C4569 /* UploadLogoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadLogoPresenter.swift; sourceTree = "<group>"; };
 		CA779F062A101F96001C4569 /* UploadLogoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadLogoRouter.swift; sourceTree = "<group>"; };
 		CA779F072A101F96001C4569 /* UploadLogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadLogoViewController.swift; sourceTree = "<group>"; };
@@ -260,6 +285,27 @@
 		CAC4BF4B2A0556BA00331B80 /* SelectLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLocationModel.swift; sourceTree = "<group>"; };
 		CAC4BF522A0563F900331B80 /* UITextFiled + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextFiled + Extension.swift"; sourceTree = "<group>"; };
 		CAC4BF542A0567E900331B80 /* Stepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stepper.swift; sourceTree = "<group>"; };
+		CAE1EBD92A17C95900859F61 /* AddCompanyPhotosPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCompanyPhotosPresenter.swift; sourceTree = "<group>"; };
+		CAE1EBDA2A17C95900859F61 /* AddCompanyPhotosRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCompanyPhotosRouter.swift; sourceTree = "<group>"; };
+		CAE1EBDB2A17C95900859F61 /* AddCompanyPhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCompanyPhotosViewController.swift; sourceTree = "<group>"; };
+		CAE1EBDC2A17C95900859F61 /* AddCompanyPhotosBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCompanyPhotosBuilder.swift; sourceTree = "<group>"; };
+		CAE1EBDD2A17C95900859F61 /* AddCompanyPhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCompanyPhotosView.swift; sourceTree = "<group>"; };
+		CAE1EBDE2A17C95900859F61 /* AddCompanyPhotosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCompanyPhotosModel.swift; sourceTree = "<group>"; };
+		CAE1EBE62A17CEAB00859F61 /* DarkLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkLoginView.swift; sourceTree = "<group>"; };
+		CAE1EBE92A17DADB00859F61 /* CompanyPhonePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyPhonePresenter.swift; sourceTree = "<group>"; };
+		CAE1EBEA2A17DADB00859F61 /* CompanyPhoneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyPhoneRouter.swift; sourceTree = "<group>"; };
+		CAE1EBEB2A17DADB00859F61 /* CompanyPhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyPhoneViewController.swift; sourceTree = "<group>"; };
+		CAE1EBEC2A17DADB00859F61 /* CompanyPhoneBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyPhoneBuilder.swift; sourceTree = "<group>"; };
+		CAE1EBED2A17DADB00859F61 /* CompanyPhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyPhoneView.swift; sourceTree = "<group>"; };
+		CAE1EBEE2A17DADB00859F61 /* CompanyPhoneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyPhoneModel.swift; sourceTree = "<group>"; };
+		CAE1EBF62A17E0E300859F61 /* DescriptionCompanyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionCompanyPresenter.swift; sourceTree = "<group>"; };
+		CAE1EBF72A17E0E300859F61 /* DescriptionCompanyRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionCompanyRouter.swift; sourceTree = "<group>"; };
+		CAE1EBF82A17E0E300859F61 /* DescriptionCompanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionCompanyViewController.swift; sourceTree = "<group>"; };
+		CAE1EBF92A17E0E300859F61 /* DescriptionCompanyBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionCompanyBuilder.swift; sourceTree = "<group>"; };
+		CAE1EBFA2A17E0E300859F61 /* DescriptionCompanyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionCompanyView.swift; sourceTree = "<group>"; };
+		CAE1EBFB2A17E0E300859F61 /* DescriptionCompanyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionCompanyModel.swift; sourceTree = "<group>"; };
+		CAE1EC022A17ED5100859F61 /* UITextView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView + Extension.swift"; sourceTree = "<group>"; };
+		CAE1EC072A18AB9600859F61 /* KeyboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
 		CAE6055829F6CA4700FE65E6 /* OnboardingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
 		CAE6055929F6CA4700FE65E6 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		CAE6055A29F6CA4700FE65E6 /* OnboardingBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingBuilder.swift; sourceTree = "<group>"; };
@@ -444,6 +490,7 @@
 		CA4DD9D329F66F2300E19431 /* Sourses */ = {
 			isa = PBXGroup;
 			children = (
+				CAE1EC062A18AB3700859F61 /* Managers */,
 				CA4DD9DD29F66FAA00E19431 /* Screens */,
 			);
 			path = Sourses;
@@ -482,6 +529,9 @@
 		CA4DD9DD29F66FAA00E19431 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				CAE1EBF52A17E0C700859F61 /* DescriptionCompany */,
+				CAE1EBE82A17D81800859F61 /* CompanyPhone */,
+				CAE1EBD82A17C93C00859F61 /* AddCompanyPhotos */,
 				CA0EFAFE2A159278003FF26A /* Verified */,
 				CA779F962A12D7B5001C4569 /* BusinessHours */,
 				CA779F042A101F79001C4569 /* UploadLogo */,
@@ -592,6 +642,7 @@
 				CA550DF729F980B200780317 /* UIView + Extension.swift */,
 				CAC4BF2B2A026F3D00331B80 /* UILabel + Extension.swift */,
 				CAC4BF522A0563F900331B80 /* UITextFiled + Extension.swift */,
+				CAE1EC022A17ED5100859F61 /* UITextView + Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -634,6 +685,7 @@
 		CA550DF129F9787500780317 /* UIElements */ = {
 			isa = PBXGroup;
 			children = (
+				CAE1EBE52A17CE9800859F61 /* DarkLoginView */,
 				CA0EFAFB2A157D28003FF26A /* WeekView */,
 				CA0EFAF82A157CDB003FF26A /* RoundedShadowedSegmentedControl */,
 				CA0EFAF52A157349003FF26A /* CustomTimePicker */,
@@ -659,6 +711,15 @@
 				CA550DF929F980D100780317 /* Helper.swift */,
 			);
 			path = Adaptive;
+			sourceTree = "<group>";
+		};
+		CA5F304B2A1BE6F800232332 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CA5F304C2A1BE70E00232332 /* AddCompanyDataSource.swift */,
+				CA5F304E2A1BE72200232332 /* AddCompanyLayout.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		CA779F042A101F79001C4569 /* UploadLogo */ = {
@@ -754,6 +815,62 @@
 				CAC4BF4B2A0556BA00331B80 /* SelectLocationModel.swift */,
 			);
 			path = SelectLocation;
+			sourceTree = "<group>";
+		};
+		CAE1EBD82A17C93C00859F61 /* AddCompanyPhotos */ = {
+			isa = PBXGroup;
+			children = (
+				CA5F304B2A1BE6F800232332 /* Helper */,
+				CAE1EBD92A17C95900859F61 /* AddCompanyPhotosPresenter.swift */,
+				CAE1EBDA2A17C95900859F61 /* AddCompanyPhotosRouter.swift */,
+				CAE1EBDB2A17C95900859F61 /* AddCompanyPhotosViewController.swift */,
+				CAE1EBDC2A17C95900859F61 /* AddCompanyPhotosBuilder.swift */,
+				CAE1EBDD2A17C95900859F61 /* AddCompanyPhotosView.swift */,
+				CAE1EBDE2A17C95900859F61 /* AddCompanyPhotosModel.swift */,
+			);
+			path = AddCompanyPhotos;
+			sourceTree = "<group>";
+		};
+		CAE1EBE52A17CE9800859F61 /* DarkLoginView */ = {
+			isa = PBXGroup;
+			children = (
+				CAE1EBE62A17CEAB00859F61 /* DarkLoginView.swift */,
+			);
+			path = DarkLoginView;
+			sourceTree = "<group>";
+		};
+		CAE1EBE82A17D81800859F61 /* CompanyPhone */ = {
+			isa = PBXGroup;
+			children = (
+				CAE1EBE92A17DADB00859F61 /* CompanyPhonePresenter.swift */,
+				CAE1EBEA2A17DADB00859F61 /* CompanyPhoneRouter.swift */,
+				CAE1EBEB2A17DADB00859F61 /* CompanyPhoneViewController.swift */,
+				CAE1EBEC2A17DADB00859F61 /* CompanyPhoneBuilder.swift */,
+				CAE1EBED2A17DADB00859F61 /* CompanyPhoneView.swift */,
+				CAE1EBEE2A17DADB00859F61 /* CompanyPhoneModel.swift */,
+			);
+			path = CompanyPhone;
+			sourceTree = "<group>";
+		};
+		CAE1EBF52A17E0C700859F61 /* DescriptionCompany */ = {
+			isa = PBXGroup;
+			children = (
+				CAE1EBF62A17E0E300859F61 /* DescriptionCompanyPresenter.swift */,
+				CAE1EBF72A17E0E300859F61 /* DescriptionCompanyRouter.swift */,
+				CAE1EBF82A17E0E300859F61 /* DescriptionCompanyViewController.swift */,
+				CAE1EBF92A17E0E300859F61 /* DescriptionCompanyBuilder.swift */,
+				CAE1EBFA2A17E0E300859F61 /* DescriptionCompanyView.swift */,
+				CAE1EBFB2A17E0E300859F61 /* DescriptionCompanyModel.swift */,
+			);
+			path = DescriptionCompany;
+			sourceTree = "<group>";
+		};
+		CAE1EC062A18AB3700859F61 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				CAE1EC072A18AB9600859F61 /* KeyboardManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -910,21 +1027,28 @@
 				CA13C33C29FC734D00EA85D8 /* RoleViewController.swift in Sources */,
 				CA50193A29F82FA2006039C4 /* AppFonts.swift in Sources */,
 				CA2C5DEB2A0BF64B0037D60E /* SignInViewController.swift in Sources */,
+				CAE1EBE12A17C95900859F61 /* AddCompanyPhotosViewController.swift in Sources */,
 				0C30816729F5C33400C73271 /* AppDelegate.swift in Sources */,
+				CAE1EBE32A17C95900859F61 /* AddCompanyPhotosView.swift in Sources */,
 				CA4DD9DA29F66F6200E19431 /* NavigationRouter.swift in Sources */,
 				CAE6055F29F6CA4700FE65E6 /* OnboardingBuilder.swift in Sources */,
 				CA2C5DF92A0D6EDB0037D60E /* SignInCodeModel.swift in Sources */,
 				CA0EFB072A15928E003FF26A /* VerifiedViewController.swift in Sources */,
+				CAE1EBFC2A17E0E300859F61 /* DescriptionCompanyPresenter.swift in Sources */,
 				CA2C5DF72A0D6EDB0037D60E /* SignInCodeBuilder.swift in Sources */,
 				CA779F0B2A101F96001C4569 /* UploadLogoPresenter.swift in Sources */,
+				CAE1EBF42A17DADB00859F61 /* CompanyPhoneModel.swift in Sources */,
 				CA779F0E2A101F96001C4569 /* UploadLogoBuilder.swift in Sources */,
 				CA779F152A102F00001C4569 /* ChooseLogoView.swift in Sources */,
 				CA50194729F83788006039C4 /* AppStrings.swift in Sources */,
 				CA779F9D2A12D802001C4569 /* BusinessHoursPresenter.swift in Sources */,
 				CA550DF829F980B200780317 /* UIView + Extension.swift in Sources */,
 				CA13C34429FE97E200EA85D8 /* RoleButtonModel.swift in Sources */,
+				CAE1EBE02A17C95900859F61 /* AddCompanyPhotosRouter.swift in Sources */,
 				CAC4BF532A0563F900331B80 /* UITextFiled + Extension.swift in Sources */,
 				CA50195F29F91C09006039C4 /* WelcomeRouter.swift in Sources */,
+				CAE1EC032A17ED5100859F61 /* UITextView + Extension.swift in Sources */,
+				CAE1EC082A18AB9600859F61 /* KeyboardManager.swift in Sources */,
 				CA0EFB052A15928E003FF26A /* VerifiedPresenter.swift in Sources */,
 				CA2C5DF52A0D6EDB0037D60E /* SignInCodeRouter.swift in Sources */,
 				CAC4BF4D2A0556BA00331B80 /* SelectLocationRouter.swift in Sources */,
@@ -935,7 +1059,9 @@
 				CA550DF329F9788200780317 /* PurpleButton.swift in Sources */,
 				CAC4BF3C2A02B22D00331B80 /* SignUpView.swift in Sources */,
 				CAC4BF3A2A02B22D00331B80 /* SignUpViewController.swift in Sources */,
+				CA5F304F2A1BE72200232332 /* AddCompanyLayout.swift in Sources */,
 				CA0EFAFA2A157CF8003FF26A /* RoundedShadowedSegmentedControl.swift in Sources */,
+				CAE1EBE42A17C95900859F61 /* AddCompanyPhotosModel.swift in Sources */,
 				CA2C5DFD2A0D78DD0037D60E /* OPTTexrStackView.swift in Sources */,
 				CAC4BF302A02712500331B80 /* TwoLabelStackVIew.swift in Sources */,
 				CA50194E29F85896006039C4 /* UICollectionVIew + Extension.swift in Sources */,
@@ -947,6 +1073,8 @@
 				CA50192429F79312006039C4 /* SplashBuilder.swift in Sources */,
 				CA4DD9E029F66FC000E19431 /* OnboardingRouter.swift in Sources */,
 				CAC4BF4F2A0556BA00331B80 /* SelectLocationBuilder.swift in Sources */,
+				CAE1EBF22A17DADB00859F61 /* CompanyPhoneBuilder.swift in Sources */,
+				CAE1EBE22A17C95900859F61 /* AddCompanyPhotosBuilder.swift in Sources */,
 				CAC4BF4E2A0556BA00331B80 /* SelectLocationViewController.swift in Sources */,
 				CA2C5DE92A0BF64B0037D60E /* SignInPresenter.swift in Sources */,
 				CAC4BF3B2A02B22D00331B80 /* SignUpBuilder.swift in Sources */,
@@ -955,11 +1083,14 @@
 				CA13C33F29FC734D00EA85D8 /* RoleModel.swift in Sources */,
 				CA2C5DE72A0BF64B0037D60E /* SignInRouter.swift in Sources */,
 				CA779FA22A12D802001C4569 /* BusinessHoursModel.swift in Sources */,
+				CAE1EBEF2A17DADB00859F61 /* CompanyPhonePresenter.swift in Sources */,
 				CA2C5DED2A0BF81E0037D60E /* Constants.swift in Sources */,
 				CA2C5DF42A0D6EDB0037D60E /* SignInCodePresenter.swift in Sources */,
 				CAE6055E29F6CA4700FE65E6 /* OnboardingViewController.swift in Sources */,
+				CAE1EC012A17E0E300859F61 /* DescriptionCompanyModel.swift in Sources */,
 				CA50196229F970C3006039C4 /* OnboardingCell.swift in Sources */,
 				CA50192229F79312006039C4 /* SplashRouter.swift in Sources */,
+				CAE1EBF02A17DADB00859F61 /* CompanyPhoneRouter.swift in Sources */,
 				CA779FA52A12D88E001C4569 /* HoursView.swift in Sources */,
 				CA50196529F970E2006039C4 /* OnboardingNavigationView.swift in Sources */,
 				CA13C33A29FC734D00EA85D8 /* RolePresenter.swift in Sources */,
@@ -970,6 +1101,8 @@
 				CA13C34629FE98C200EA85D8 /* TextField.swift in Sources */,
 				CA550DFA29F980D100780317 /* Helper.swift in Sources */,
 				CA550E0829F985AD00780317 /* Array + Extension.swift in Sources */,
+				CAE1EBFD2A17E0E300859F61 /* DescriptionCompanyRouter.swift in Sources */,
+				CAE1EBDF2A17C95900859F61 /* AddCompanyPhotosPresenter.swift in Sources */,
 				CA2C5DFF2A0D78E80037D60E /* OPTTextField.swift in Sources */,
 				CA13C32E29FAE8FD00EA85D8 /* StartScreenRouter.swift in Sources */,
 				CA13C33029FAE8FD00EA85D8 /* StartScreenBuilder.swift in Sources */,
@@ -977,8 +1110,10 @@
 				CA779F9F2A12D802001C4569 /* BusinessHoursViewController.swift in Sources */,
 				CA50193329F7A246006039C4 /* WelcomeViewController.swift in Sources */,
 				CA779F0D2A101F96001C4569 /* UploadLogoViewController.swift in Sources */,
+				CAE1EBE72A17CEAB00859F61 /* DarkLoginView.swift in Sources */,
 				CA50192E29F79E22006039C4 /* BubleLoader.swift in Sources */,
 				CA779F0F2A101F96001C4569 /* UploadLogoView.swift in Sources */,
+				CAE1EBF12A17DADB00859F61 /* CompanyPhoneViewController.swift in Sources */,
 				CA4DD9DC29F66F6200E19431 /* NavigationRouterProtocol.swift in Sources */,
 				CA779F9E2A12D802001C4569 /* BusinessHoursRouter.swift in Sources */,
 				CAE6056129F6CA4700FE65E6 /* OnboardingModel.swift in Sources */,
@@ -987,12 +1122,15 @@
 				CA2C5DE82A0BF64B0037D60E /* SignInView.swift in Sources */,
 				0C30816929F5C33400C73271 /* SceneDelegate.swift in Sources */,
 				CA779F0C2A101F96001C4569 /* UploadLogoRouter.swift in Sources */,
+				CAE1EBFF2A17E0E300859F61 /* DescriptionCompanyBuilder.swift in Sources */,
 				CAC4BF2C2A026F3D00331B80 /* UILabel + Extension.swift in Sources */,
 				CA779FA12A12D802001C4569 /* BusinessHoursView.swift in Sources */,
 				CA2C5DF82A0D6EDB0037D60E /* SignInCodeView.swift in Sources */,
 				CA0EFB092A15928E003FF26A /* VerifiedView.swift in Sources */,
 				CAC4BF2A2A005F5C00331B80 /* TapableLabel.swift in Sources */,
 				CA13C33E29FC734D00EA85D8 /* RoleView.swift in Sources */,
+				CAE1EC002A17E0E300859F61 /* DescriptionCompanyView.swift in Sources */,
+				CAE1EBFE2A17E0E300859F61 /* DescriptionCompanyViewController.swift in Sources */,
 				CA0EFAFD2A157D32003FF26A /* WeekView.swift in Sources */,
 				CAC4BF552A0567E900331B80 /* Stepper.swift in Sources */,
 				CAC4BF382A02B22D00331B80 /* SignUpPresenter.swift in Sources */,
@@ -1001,12 +1139,14 @@
 				CA550DF629F9809100780317 /* CGFloat.swift in Sources */,
 				CA50192B29F7935B006039C4 /* AppImages.swift in Sources */,
 				CA13C32F29FAE8FD00EA85D8 /* StartScreenViewController.swift in Sources */,
+				CAE1EBF32A17DADB00859F61 /* CompanyPhoneView.swift in Sources */,
 				CA50192329F79312006039C4 /* SplashViewController.swift in Sources */,
 				CAC4BF512A0556BA00331B80 /* SelectLocationModel.swift in Sources */,
 				CA550E0629F9856400780317 /* Dimension.swift in Sources */,
 				CAC4BF4C2A0556BA00331B80 /* SelectLocationPresenter.swift in Sources */,
 				CA13C33129FAE8FD00EA85D8 /* StartScreenView.swift in Sources */,
 				CA50192529F79312006039C4 /* SplashView.swift in Sources */,
+				CA5F304D2A1BE70E00232332 /* AddCompanyDataSource.swift in Sources */,
 				CA550E0229F984E200780317 /* Device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1166,6 +1306,7 @@
 				DEVELOPMENT_TEAM = 8ZH35KKWH9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Mum’s the word/Info.plist";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow to add images from library";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -1176,7 +1317,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "kkk.Mum-s-the-word";
+				PRODUCT_BUNDLE_IDENTIFIER = "kkk.Mum-s-the-word1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -1198,6 +1339,7 @@
 				DEVELOPMENT_TEAM = 8ZH35KKWH9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Mum’s the word/Info.plist";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow to add images from library";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -1208,7 +1350,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "kkk.Mum-s-the-word";
+				PRODUCT_BUNDLE_IDENTIFIER = "kkk.Mum-s-the-word1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

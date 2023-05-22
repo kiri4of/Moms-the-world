@@ -12,7 +12,7 @@ final class SelectLocationBuilder {
     public static func build(
         router: SelectLocationRouter, _ role: Roles
     ) -> SelectLocationViewController {
-        let view = SelectLocationView(type: role)
+        let view = SelectLocationView(role: role, .dark)
         let vc = SelectLocationViewController(mainView: view)
         let presenter = SelectLocationPresenter(view: vc, router: router)
         

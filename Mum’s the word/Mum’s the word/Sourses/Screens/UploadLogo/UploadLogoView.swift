@@ -12,15 +12,8 @@ protocol UploadLogoViewProtocol: AnyObject {
     func openChooseLoacation(_ model: SignUpModel)
 }
 
-final class UploadLogoView: UIView {
+final class UploadLogoView: LoginView {
             
-    private var logoImage: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFill
-        imageView.image = AppImages.logoYellow
-        return imageView
-    }()
-    
     private(set) lazy var purpleButton = PurpleButton(bg: AppColor.Gradient.yellow)
     private(set) lazy var chooseLogoView = ChooseLogoView(frame: .zero)
     
@@ -31,44 +24,21 @@ final class UploadLogoView: UIView {
         desc: AppStrings.descUploadLogo
     )
     
-    private var bgImage: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFill
-        imageView.image = AppImages.role
-        return imageView
-    }()
-    
     private lazy var stackView = UIStackView()
     
     weak var delegate: UploadLogoViewProtocol?
     
-    init() {
-        super.init(frame: .zero)
+    override init(_ type: LoginView.ViewType) {
+        super.init(type)
         setupUI()
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
 }
 
 extension UploadLogoView {
     private func setupUI() {
-        addSubview(bgImage)
-        addSubview(logoImage)
         addSubview(stackView)
         addSubview(purpleButton)
-        
-        bgImage.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
-        }
-                
-        logoImage.snp.makeConstraints { make in
-            make.top.equalTo(safeAreaLayoutGuide).offset(layoutMargins.top)
-            make.centerX.equalToSuperview()
-            make.size.equalTo(CGSize(width: 110.Hadapted, height: 52.Vadapted))
-        }
-        
+            
         stackView.axis = .vertical
         stackView.distribution = .fill
         stackView.alignment = .leading
@@ -110,6 +80,7 @@ extension UploadLogoView {
             make.width.greaterThanOrEqualTo(Spacing.buttonWidth)
             make.height.greaterThanOrEqualTo(Spacing.buttonHeight)
         }
+        purpleButton.hero.id = "purpleButton"
         purpleButton.setTitle(AppStrings.nextButton, for: .normal)
         purpleButton.addTarget(self, action: #selector(nextTap), for: .touchUpInside)
     }
