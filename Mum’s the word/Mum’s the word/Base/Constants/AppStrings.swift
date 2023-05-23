@@ -59,6 +59,7 @@ enum AppStrings {
     static let enterPhone = "Enter your phone number"
     static let companyDescription = "Complete the description of your company or service"
     static let textViewPlaceHolder = "Write a reply..."
+    static let changePhoto = "Change photo"
     
     static func addName(_ name: String) -> NSMutableAttributedString {
         let string = "Welcome, "

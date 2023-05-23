@@ -34,4 +34,9 @@ final class UploadLogoRouter: NSObject, UINavigationControllerDelegate {
     func dismisPiker() {
         navigationRouter.dismissModalScreen()
     }
+    
+    func routeToCompanyPhotos() {
+        let router = AddCompanyPhotosRouter(navigationRouter: navigationRouter)
+        router.show()
+    }
 }

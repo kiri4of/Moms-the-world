@@ -31,4 +31,7 @@ enum AppImages {
     static let companyCardLogo = UIImage(named: "company_card_logo")
     static let logoPlaceholder = UIImage(named: "logo_placeholder")
     static let verified = UIImage(named: "verified")
+    static let addPhoto = UIImage(named: "addPhoto")
+    static let camera = UIImage(named: "camera")
+    static let cross = UIImage(named: "cross")?.withRenderingMode(.alwaysOriginal)
 }

@@ -15,6 +15,10 @@ extension UICollectionViewCell {
     class func dequeue(_ collectionView: UICollectionView, for indexPath: IndexPath) -> Self {
         return unsafeDowncast(collectionView.dequeueReusableCell(withReuseIdentifier: self.reuseID, for: indexPath), to: self)
     }
+    
+    var indexPath: IndexPath? {
+        return next(of: UICollectionView.self)?.indexPath(for: self)
+    }
 }
 
 extension UICollectionReusableView {

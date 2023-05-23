@@ -9,7 +9,7 @@ import UIKit
 import Hero
 
 protocol UploadLogoViewProtocol: AnyObject {
-    func openChooseLoacation(_ model: SignUpModel)
+    func openCompanyPhotos()
 }
 
 final class UploadLogoView: LoginView {
@@ -87,7 +87,7 @@ extension UploadLogoView {
     
     @objc
     private func nextTap() {
-       print("Sasha")
+        delegate?.openCompanyPhotos()
     }
 }
 

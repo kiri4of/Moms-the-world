@@ -7,24 +7,41 @@
 
 import UIKit
 
-enum CompanyPhotos {
+enum CompanyPhotos: Hashable {
     case photos
 }
 
-struct CompanyPhotosModel {
-    let photos: [Photo]
+struct CompanyPhotosModel: Hashable {
+        
+    var photos: [Photo]
     
-    var isTwoPhotoAdded: Bool {
-        return photos.count == 2
+    var isTwoPhotoAdd: Bool {
+        return photos.count >= 2 && photos.allSatisfy({$0.currentType == .fill })
     }
     
-    var isThreeOrMorePhotosAdded: Bool {
-        return photos.count >= 3
+    var isFilledTwoPhotos: Bool {
+        return photos.count > 2 
+    }
+    
+    var isFilledOnlyTwoPhotos: Bool {
+        return photos.count == 3
     }
 }
 
-struct Photo {
-    let image: UIImage
+struct Photo: Hashable {
+    
+    enum Filled {
+        case fill
+        case empty
+        case add
+    }
+    
+    let id = UUID().uuidString
+    var image: UIImage?
+    
+    var currentType: Filled {
+        return image == nil ? .empty : .fill
+    }
 }
 
 

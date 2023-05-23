@@ -22,6 +22,7 @@ final class UploadLogoViewController: BaseViewController<UploadLogoView> {
     }
     
     private func addTarget() {
+        mainView.delegate = self
         mainView.chooseLogoView.handler = { [weak self] in
             self?.presenter.openPicker()
         }
@@ -32,6 +33,12 @@ extension UploadLogoViewController: UploadLogoViewControllerProtocol {
     func updateLogoImage(image: UIImage) {
         mainView.chooseLogoView.updateView(uiimage: image)
         mainView.card.update(image: image)
+    }
+}
+
+extension UploadLogoViewController: UploadLogoViewProtocol {
+    func openCompanyPhotos() {
+        presenter.routeToCompanyPhotos()
     }
 }
 

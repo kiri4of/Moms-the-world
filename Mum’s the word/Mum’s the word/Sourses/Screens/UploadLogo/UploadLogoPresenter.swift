@@ -10,6 +10,7 @@ import UIKit
 protocol UploadLogoPresenterProtocol: AnyObject {
     func catchImage(image: UIImage)
     func openPicker()
+    func routeToCompanyPhotos()
 }
 
 final class UploadLogoPresenter: NSObject,UploadLogoPresenterProtocol {
@@ -41,6 +42,10 @@ final class UploadLogoPresenter: NSObject,UploadLogoPresenterProtocol {
     
     func dismisPiker() {
         router?.dismisPiker()
+    }
+    
+    func routeToCompanyPhotos() {
+        router?.routeToCompanyPhotos()
     }
         
     private
