@@ -23,12 +23,20 @@ final class SelectLocationRouter {
     }
     
     func routeToEnterCompanyPhone() {
+        navigationRouter.chooseAnimationTransition(type: .fade)
         let router = CompanyPhoneRouter(navigationRouter: navigationRouter)
         router.show()
     }
     
     func routeToVerified() {
+        navigationRouter.chooseAnimationTransition(type: .fade)
         let router = VerifiedRouter(navigationRouter: navigationRouter)
+        router.show()
+    }
+    
+    func routeToLocation() {
+        navigationRouter.chooseAnimationTransition(type: .slide(direction: .left))
+        let router = LocationMapRouter(navigationRouter: navigationRouter)
         router.show()
     }
 }

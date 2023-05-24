@@ -9,6 +9,8 @@ import UIKit
 
 final class DefaultTextField: UITextField {
     
+    var locationHandler: (() -> ())?
+    
     enum ElementType {
         case picker
         case textField
@@ -81,6 +83,6 @@ extension DefaultTextField {
     
     @objc
     private func pickerTapped() {
-        print("Text field tapped")
+        locationHandler?()
     }
 }

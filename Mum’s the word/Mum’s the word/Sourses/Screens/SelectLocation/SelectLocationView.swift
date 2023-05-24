@@ -10,6 +10,7 @@ import Hero
 
 protocol SelectLocationViewProtocol: AnyObject {
     func routeToNextScreen(role: Roles)
+    func routeToLacationScreen()
 }
 
 final class SelectLocationView: LoginView {
@@ -64,6 +65,10 @@ extension SelectLocationView {
         stepper.updateUI(title: AppStrings.stepperTitle)
         stepper.handler = { count in
             print(count)
+        }
+        
+        locationPicker.locationHandler = { [weak self] in
+            self?.delegate?.routeToLacationScreen()
         }
     }
     

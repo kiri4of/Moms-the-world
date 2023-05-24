@@ -10,6 +10,15 @@
 		0C30816729F5C33400C73271 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C30816629F5C33400C73271 /* AppDelegate.swift */; };
 		0C30816929F5C33400C73271 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C30816829F5C33400C73271 /* SceneDelegate.swift */; };
 		0C30817029F5C33700C73271 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C30816F29F5C33700C73271 /* Assets.xcassets */; };
+		CA069A502A1D3B07005E9581 /* LocationMapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA069A4A2A1D3B07005E9581 /* LocationMapPresenter.swift */; };
+		CA069A512A1D3B07005E9581 /* LocationMapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA069A4B2A1D3B07005E9581 /* LocationMapRouter.swift */; };
+		CA069A522A1D3B07005E9581 /* LocationMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA069A4C2A1D3B07005E9581 /* LocationMapViewController.swift */; };
+		CA069A532A1D3B07005E9581 /* LocationMapBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA069A4D2A1D3B07005E9581 /* LocationMapBuilder.swift */; };
+		CA069A542A1D3B07005E9581 /* LocationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA069A4E2A1D3B07005E9581 /* LocationMapView.swift */; };
+		CA069A552A1D3B07005E9581 /* LocationMapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA069A4F2A1D3B07005E9581 /* LocationMapModel.swift */; };
+		CA069A5A2A1D4D29005E9581 /* NavigationLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA069A592A1D4D29005E9581 /* NavigationLocationView.swift */; };
+		CA069A5C2A1D4D2C005E9581 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA069A5B2A1D4D2C005E9581 /* SearchView.swift */; };
+		CA069A5E2A1D4EB2005E9581 /* SearchNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA069A5D2A1D4EB2005E9581 /* SearchNavigationView.swift */; };
 		CA0EFAF42A15730F003FF26A /* TimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EFAF32A15730F003FF26A /* TimePicker.swift */; };
 		CA0EFAF72A157350003FF26A /* CustomTimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EFAF62A157350003FF26A /* CustomTimePicker.swift */; };
 		CA0EFAFA2A157CF8003FF26A /* RoundedShadowedSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EFAF92A157CF8003FF26A /* RoundedShadowedSegmentedControl.swift */; };
@@ -178,6 +187,15 @@
 		0C30817429F5C33700C73271 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C30817929F5C33700C73271 /* Mum’s the wordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mum’s the wordTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C30818329F5C33700C73271 /* Mum’s the wordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mum’s the wordUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA069A4A2A1D3B07005E9581 /* LocationMapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapPresenter.swift; sourceTree = "<group>"; };
+		CA069A4B2A1D3B07005E9581 /* LocationMapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapRouter.swift; sourceTree = "<group>"; };
+		CA069A4C2A1D3B07005E9581 /* LocationMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapViewController.swift; sourceTree = "<group>"; };
+		CA069A4D2A1D3B07005E9581 /* LocationMapBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapBuilder.swift; sourceTree = "<group>"; };
+		CA069A4E2A1D3B07005E9581 /* LocationMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapView.swift; sourceTree = "<group>"; };
+		CA069A4F2A1D3B07005E9581 /* LocationMapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapModel.swift; sourceTree = "<group>"; };
+		CA069A592A1D4D29005E9581 /* NavigationLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLocationView.swift; sourceTree = "<group>"; };
+		CA069A5B2A1D4D2C005E9581 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		CA069A5D2A1D4EB2005E9581 /* SearchNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNavigationView.swift; sourceTree = "<group>"; };
 		CA0EFAF32A15730F003FF26A /* TimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePicker.swift; sourceTree = "<group>"; };
 		CA0EFAF62A157350003FF26A /* CustomTimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTimePicker.swift; sourceTree = "<group>"; };
 		CA0EFAF92A157CF8003FF26A /* RoundedShadowedSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowedSegmentedControl.swift; sourceTree = "<group>"; };
@@ -379,6 +397,45 @@
 			path = "Mum’s the word";
 			sourceTree = "<group>";
 		};
+		CA069A492A1D3AC1005E9581 /* LocationMap */ = {
+			isa = PBXGroup;
+			children = (
+				CA069A4A2A1D3B07005E9581 /* LocationMapPresenter.swift */,
+				CA069A4B2A1D3B07005E9581 /* LocationMapRouter.swift */,
+				CA069A4C2A1D3B07005E9581 /* LocationMapViewController.swift */,
+				CA069A4D2A1D3B07005E9581 /* LocationMapBuilder.swift */,
+				CA069A4E2A1D3B07005E9581 /* LocationMapView.swift */,
+				CA069A4F2A1D3B07005E9581 /* LocationMapModel.swift */,
+			);
+			path = LocationMap;
+			sourceTree = "<group>";
+		};
+		CA069A562A1D4C25005E9581 /* SearchNavigationView */ = {
+			isa = PBXGroup;
+			children = (
+				CA069A582A1D4D0A005E9581 /* Search */,
+				CA069A572A1D4D00005E9581 /* Navigation */,
+				CA069A5D2A1D4EB2005E9581 /* SearchNavigationView.swift */,
+			);
+			path = SearchNavigationView;
+			sourceTree = "<group>";
+		};
+		CA069A572A1D4D00005E9581 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				CA069A592A1D4D29005E9581 /* NavigationLocationView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		CA069A582A1D4D0A005E9581 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				CA069A5B2A1D4D2C005E9581 /* SearchView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		CA0EFAF22A157309003FF26A /* TimePicker */ = {
 			isa = PBXGroup;
 			children = (
@@ -535,6 +592,7 @@
 		CA4DD9DD29F66FAA00E19431 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				CA069A492A1D3AC1005E9581 /* LocationMap */,
 				CAE1EBF52A17E0C700859F61 /* DescriptionCompany */,
 				CAE1EBE82A17D81800859F61 /* CompanyPhone */,
 				CAE1EBD82A17C93C00859F61 /* AddCompanyPhotos */,
@@ -692,6 +750,7 @@
 		CA550DF129F9787500780317 /* UIElements */ = {
 			isa = PBXGroup;
 			children = (
+				CA069A562A1D4C25005E9581 /* SearchNavigationView */,
 				CA5F30532A1C05A600232332 /* ChangePhotoView */,
 				CAE1EBE52A17CE9800859F61 /* DarkLoginView */,
 				CA0EFAFB2A157D28003FF26A /* WeekView */,
@@ -1047,6 +1106,7 @@
 				CA13C34129FC74B000EA85D8 /* RoleButton.swift in Sources */,
 				CA0EFB0A2A15928E003FF26A /* VerifiedModel.swift in Sources */,
 				CA0EFAF42A15730F003FF26A /* TimePicker.swift in Sources */,
+				CA069A5E2A1D4EB2005E9581 /* SearchNavigationView.swift in Sources */,
 				CA50192129F79312006039C4 /* SplashPresenter.swift in Sources */,
 				CAC4BF3D2A02B22D00331B80 /* SignUpModel.swift in Sources */,
 				CA13C33C29FC734D00EA85D8 /* RoleViewController.swift in Sources */,
@@ -1108,14 +1168,18 @@
 				CA4DD9DB29F66F6200E19431 /* AppRouter.swift in Sources */,
 				CA4DD9E329F6728200E19431 /* BaseViewController.swift in Sources */,
 				CA13C33F29FC734D00EA85D8 /* RoleModel.swift in Sources */,
+				CA069A552A1D3B07005E9581 /* LocationMapModel.swift in Sources */,
 				CA2C5DE72A0BF64B0037D60E /* SignInRouter.swift in Sources */,
 				CA779FA22A12D802001C4569 /* BusinessHoursModel.swift in Sources */,
+				CA069A532A1D3B07005E9581 /* LocationMapBuilder.swift in Sources */,
 				CAE1EBEF2A17DADB00859F61 /* CompanyPhonePresenter.swift in Sources */,
 				CA2C5DED2A0BF81E0037D60E /* Constants.swift in Sources */,
 				CA2C5DF42A0D6EDB0037D60E /* SignInCodePresenter.swift in Sources */,
 				CAE6055E29F6CA4700FE65E6 /* OnboardingViewController.swift in Sources */,
+				CA069A5C2A1D4D2C005E9581 /* SearchView.swift in Sources */,
 				CAE1EC012A17E0E300859F61 /* DescriptionCompanyModel.swift in Sources */,
 				CA50196229F970C3006039C4 /* OnboardingCell.swift in Sources */,
+				CA069A522A1D3B07005E9581 /* LocationMapViewController.swift in Sources */,
 				CA50192229F79312006039C4 /* SplashRouter.swift in Sources */,
 				CA5F30552A1C061100232332 /* ChangePhotoView.swift in Sources */,
 				CAE1EBF02A17DADB00859F61 /* CompanyPhoneRouter.swift in Sources */,
@@ -1162,20 +1226,24 @@
 				CA0EFAFD2A157D32003FF26A /* WeekView.swift in Sources */,
 				CAC4BF552A0567E900331B80 /* Stepper.swift in Sources */,
 				CAC4BF382A02B22D00331B80 /* SignUpPresenter.swift in Sources */,
+				CA069A5A2A1D4D29005E9581 /* NavigationLocationView.swift in Sources */,
 				CA50193029F7A128006039C4 /* AppColor.swift in Sources */,
 				CA779F102A101F96001C4569 /* UploadLogoModel.swift in Sources */,
 				CA550DF629F9809100780317 /* CGFloat.swift in Sources */,
 				CA50192B29F7935B006039C4 /* AppImages.swift in Sources */,
 				CA13C32F29FAE8FD00EA85D8 /* StartScreenViewController.swift in Sources */,
 				CAE1EBF32A17DADB00859F61 /* CompanyPhoneView.swift in Sources */,
+				CA069A542A1D3B07005E9581 /* LocationMapView.swift in Sources */,
 				CA50192329F79312006039C4 /* SplashViewController.swift in Sources */,
 				CAC4BF512A0556BA00331B80 /* SelectLocationModel.swift in Sources */,
 				CA550E0629F9856400780317 /* Dimension.swift in Sources */,
 				CAC4BF4C2A0556BA00331B80 /* SelectLocationPresenter.swift in Sources */,
+				CA069A512A1D3B07005E9581 /* LocationMapRouter.swift in Sources */,
 				CA13C33129FAE8FD00EA85D8 /* StartScreenView.swift in Sources */,
 				CA50192529F79312006039C4 /* SplashView.swift in Sources */,
 				CA5F304D2A1BE70E00232332 /* AddCompanyDataSource.swift in Sources */,
 				CA550E0229F984E200780317 /* Device.swift in Sources */,
+				CA069A502A1D3B07005E9581 /* LocationMapPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

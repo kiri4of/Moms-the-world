@@ -34,4 +34,6 @@ enum AppImages {
     static let addPhoto = UIImage(named: "addPhoto")
     static let camera = UIImage(named: "camera")
     static let cross = UIImage(named: "cross")?.withRenderingMode(.alwaysOriginal)
+    static let backArrow = UIImage(named: "back_arrow")?.withRenderingMode(.alwaysOriginal)
+    static let magnifyingglass = UIImage(named: "magnifyingglass")
 }

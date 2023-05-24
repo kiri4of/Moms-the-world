@@ -82,7 +82,7 @@ final class AddCompanyPhotosPresenter: AddCompanyPhotosPresenterProtocol {
         } else {
             model.photos[indexPath.row].image = nil
         }
-        
+        view?.changeUIAfterTwoPhoto(willChange: model.isTwoPhotoAdd)
         view?.updatePhotos(model: model.photos)
     }
         

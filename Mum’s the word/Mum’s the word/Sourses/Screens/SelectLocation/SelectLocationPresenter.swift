@@ -11,6 +11,7 @@ protocol SelectLocationPresenterProtocol: AnyObject {
     func setSignUpModel(model: SignUpModel)
     func setRole(_ role: Roles)
     func routeToNextScreen(role: Roles)
+    func routeToLocationScreen()
 }
 
 final class SelectLocationPresenter: SelectLocationPresenterProtocol {
@@ -40,5 +41,9 @@ final class SelectLocationPresenter: SelectLocationPresenterProtocol {
         case .business:
             router?.routeToEnterCompanyPhone()
         }
+    }
+    
+    func routeToLocationScreen() {
+        router?.routeToLocation()
     }
 }

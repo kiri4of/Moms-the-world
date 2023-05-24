@@ -9,8 +9,13 @@ import UIKit
 import Hero
 
 class NavigationRouter: NavigationRouterProtocol {
+    
+    enum Route {
+        case push
+        case pop(vc: UIViewController)
+    }
    
-    private weak var navigationController: UINavigationController?
+    private(set) weak var navigationController: UINavigationController?
     
     init(navigationController: UINavigationController?) {
         self.navigationController = navigationController
@@ -48,5 +53,4 @@ class NavigationRouter: NavigationRouterProtocol {
     func present(_ viewController: UIViewController) {
         navigationController?.present(viewController, animated: true)
     }
-    
 }

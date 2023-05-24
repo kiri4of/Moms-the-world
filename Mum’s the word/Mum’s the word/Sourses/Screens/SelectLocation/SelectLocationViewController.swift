@@ -28,6 +28,10 @@ extension SelectLocationViewController {
 }
 
 extension SelectLocationViewController: SelectLocationViewProtocol {
+    func routeToLacationScreen() {
+        presenter.routeToLocationScreen()
+    }
+    
     func routeToNextScreen(role: Roles) {
         presenter.routeToNextScreen(role: role)
     }
