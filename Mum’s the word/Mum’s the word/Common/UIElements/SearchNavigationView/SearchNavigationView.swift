@@ -2,7 +2,7 @@
 //  SearchNavigationView.swift
 //  Mum’s the word
 //
-//  Created by Александр Александрович on 23.05.2023.
+//  Created by Kiri4of on 23.05.2023.
 //
 
 import UIKit
@@ -10,9 +10,15 @@ import UIKit
 final class SearchNavigationView: UIView {
     
     var backDidTap: (() -> ())?
+    var searchDidTap: (() -> ())?
+    
+    enum TypeOfSearchView {
+        case dark
+        case light
+    }
     
     private(set) lazy var backNavigationView = BackNavigationView()
-    private(set) lazy var searchView = SearchView()
+    private(set) lazy var searchView = SearchFrView()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -22,6 +28,20 @@ final class SearchNavigationView: UIView {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func updateUI(type: TypeOfSearchView) {
+        switch type {
+        case .dark:
+            self.backgroundColor = .clear
+            searchView.backgroundColor = .white
+            searchView.layer.borderWidth = 0
+            backNavigationView.title.textColor = .white
+        case .light:
+            self.backgroundColor = .white
+            searchView.layer.borderWidth = 2
+            backNavigationView.title.textColor = .black
+        }
     }
 }
 
@@ -49,6 +69,10 @@ extension SearchNavigationView {
     private func configureUI() {
         backNavigationView.backTap = { [weak self] in
             self?.backDidTap?()
+        }
+        
+        searchView.searchTap = { [weak self] in
+            self?.searchDidTap?()
         }
     }
 }

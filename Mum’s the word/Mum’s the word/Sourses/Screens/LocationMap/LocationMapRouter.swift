@@ -2,7 +2,7 @@
 //  LocationMapRouter.swift
 //  Mum’s the word
 //
-//  Created by Александр Александрович on 23.05.2023.
+//  Created by Kiri4of on 23.05.2023.
 //
 
 import UIKit
@@ -23,5 +23,11 @@ final class LocationMapRouter {
     func pop() {
         navigationRouter.chooseAnimationTransition(type: .slide(direction: .right))
         navigationRouter.pop()
+    }
+    
+    func openSearch() {
+        navigationRouter.chooseAnimationTransition(type: .fade)
+        let router = SearchRouter(navigationRouter: navigationRouter)
+        router.show()
     }
 }

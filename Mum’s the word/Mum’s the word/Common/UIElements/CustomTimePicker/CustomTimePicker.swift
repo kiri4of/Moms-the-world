@@ -2,7 +2,7 @@
 //  CustomTimePicker.swift
 //  Mum’s the word
 //
-//  Created by Александр Александрович on 17.05.2023.
+//  Created by Kiri4of on 17.05.2023.
 //
 
 import UIKit

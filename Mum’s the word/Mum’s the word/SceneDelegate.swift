@@ -27,7 +27,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         appRouter = createRouter()
         appRouter?.showSplash(scene: (scene as? UIWindowScene)!) { [weak self] in
             guard let self else { return }
-            self.appRouter?.showOnboarding()
+            if isFirstLaunch() {
+                self.appRouter?.showOnboarding()
+                UserDefaults.standard.set(true, forKey: "hasBeenLaunchedBefore")
+            } else {
+                self.appRouter?.showStart()
+            }
             self.window?.overrideUserInterfaceStyle = .light
             self.window?.makeKeyAndVisible()
         }
@@ -39,5 +44,11 @@ private extension SceneDelegate {
         let navigationRouter = NavigationRouter(navigationController: rootController)
         let appRouter = AppRouter(navigationRouter: navigationRouter)
         return appRouter
+    }
+    
+    func isFirstLaunch() -> Bool{
+        let key = "hasBeenLaunchedBefore"
+        let hasBeenLaunchedBefore = UserDefaults.standard.bool(forKey: key)
+        return !hasBeenLaunchedBefore
     }
 }

@@ -2,7 +2,7 @@
 //  SearchNavigationVIew.swift
 //  Mum’s the word
 //
-//  Created by Александр Александрович on 23.05.2023.
+//  Created by Kiri4of on 23.05.2023.
 //
 
 import UIKit
@@ -28,7 +28,7 @@ final class BackNavigationView: UIView {
         return button
     }()
     
-    private lazy var title: UILabel = {
+    private(set) lazy var title: UILabel = {
         let label = UILabel()
         label.textColor = .black
         label.font = AppFonts.inter14Bold

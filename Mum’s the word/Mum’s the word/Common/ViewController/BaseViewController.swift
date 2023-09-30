@@ -2,7 +2,7 @@
 //  BaseViewController.swift
 //  Mum’s the word
 //
-//  Created by Александр Александрович on 24.04.2023.
+//  Created by Kiri4of on 24.04.2023.
 //
 
 import UIKit
@@ -20,6 +20,7 @@ class BaseViewController<View: UIView>: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hero.isEnabled = true
+        keyboardManager.startObservingTapOutsideKeyboard()
     }
     
     required init?(coder: NSCoder) {
@@ -29,5 +30,9 @@ class BaseViewController<View: UIView>: UIViewController {
     override func loadView() {
         super.loadView()
         self.view = mainView
+    }
+    
+    deinit {
+        keyboardManager.stopObservingTapOutsideKeyboard()
     }
 }

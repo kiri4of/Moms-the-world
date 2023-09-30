@@ -2,7 +2,7 @@
 //  LocationMapViewController.swift
 //  Mum’s the word
 //
-//  Created by Александр Александрович on 23.05.2023.
+//  Created by Kiri4of on 23.05.2023.
 //
 
 import UIKit
@@ -35,6 +35,13 @@ extension LocationMapViewController {
         
         navView.backDidTap = { [weak self] in
             self?.presenter.pop()
+        }
+        
+        navView.searchDidTap = { [weak self] in
+            UIView.animate(withDuration: 0.2) {
+                self?.navView.backgroundColor = .clear
+            }
+            self?.presenter.openSearch()
         }
         
         hero.isEnabled = false

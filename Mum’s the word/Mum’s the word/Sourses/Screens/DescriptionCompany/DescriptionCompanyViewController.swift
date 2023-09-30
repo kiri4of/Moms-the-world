@@ -2,7 +2,7 @@
 //  DescriptionCompanyViewController.swift
 //  Mum’s the word
 //
-//  Created by Александр Александрович on 19.05.2023.
+//  Created by Kiri4of on 19.05.2023.
 //
 
 import UIKit
@@ -19,10 +19,6 @@ final class DescriptionCompanyViewController: BaseViewController<DescriptionComp
         super.viewDidLoad()
         configureUI()
     }
-    
-    deinit {
-        keyboardManager.stopObservingTapOutsideKeyboard()
-    }
 }
 
 extension DescriptionCompanyViewController {
@@ -30,7 +26,6 @@ extension DescriptionCompanyViewController {
         hideNavigationContoroller()
         mainView.textView.delegate = self
         mainView.delegate = self
-        keyboardManager.startObservingTapOutsideKeyboard()
     }
     
     private func updateTextViewHeight(textView: UITextView) {

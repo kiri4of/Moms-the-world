@@ -2,13 +2,14 @@
 //  LocationMapPresenter.swift
 //  Mum’s the word
 //
-//  Created by Александр Александрович on 23.05.2023.
+//  Created by Kiri4of on 23.05.2023.
 //
 
 import Foundation
 
 protocol LocationMapPresenterProtocol: AnyObject {
     func pop()
+    func openSearch()
 }
 
 final class LocationMapPresenter: LocationMapPresenterProtocol {
@@ -23,5 +24,9 @@ final class LocationMapPresenter: LocationMapPresenterProtocol {
     
     func pop() {
         router?.pop()
+    }
+    
+    func openSearch() {
+        router?.openSearch()
     }
 }

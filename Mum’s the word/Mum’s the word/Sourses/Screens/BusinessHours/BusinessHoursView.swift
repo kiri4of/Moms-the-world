@@ -2,7 +2,7 @@
 //  BusinessHoursView.swift
 //  Mum’s the word
 //
-//  Created by Александр Александрович on 16.05.2023.
+//  Created by Kiri4of on 16.05.2023.
 //
 
 import UIKit
@@ -63,6 +63,10 @@ extension BusinessHoursView {
             make.top.equalTo(logoImage.snp.bottom).offset(36)
             make.leading.equalToSuperview().inset(16)
             make.trailing.equalToSuperview().inset(16)
+        }
+        
+        hoursView.snp.makeConstraints { make in
+            make.width.equalToSuperview()
         }
         
         purpleButton.snp.makeConstraints { make in

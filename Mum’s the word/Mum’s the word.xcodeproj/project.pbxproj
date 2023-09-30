@@ -17,8 +17,17 @@
 		CA069A542A1D3B07005E9581 /* LocationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA069A4E2A1D3B07005E9581 /* LocationMapView.swift */; };
 		CA069A552A1D3B07005E9581 /* LocationMapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA069A4F2A1D3B07005E9581 /* LocationMapModel.swift */; };
 		CA069A5A2A1D4D29005E9581 /* NavigationLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA069A592A1D4D29005E9581 /* NavigationLocationView.swift */; };
-		CA069A5C2A1D4D2C005E9581 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA069A5B2A1D4D2C005E9581 /* SearchView.swift */; };
+		CA069A5C2A1D4D2C005E9581 /* SearchFrView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA069A5B2A1D4D2C005E9581 /* SearchFrView.swift */; };
 		CA069A5E2A1D4EB2005E9581 /* SearchNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA069A5D2A1D4EB2005E9581 /* SearchNavigationView.swift */; };
+		CA069A942A1E7DDB005E9581 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA069A8E2A1E7DDB005E9581 /* SearchPresenter.swift */; };
+		CA069A952A1E7DDB005E9581 /* SearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA069A8F2A1E7DDB005E9581 /* SearchRouter.swift */; };
+		CA069A962A1E7DDB005E9581 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA069A902A1E7DDB005E9581 /* SearchViewController.swift */; };
+		CA069A972A1E7DDB005E9581 /* SearchBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA069A912A1E7DDB005E9581 /* SearchBuilder.swift */; };
+		CA069A982A1E7DDB005E9581 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA069A922A1E7DDB005E9581 /* SearchView.swift */; };
+		CA069A992A1E7DDB005E9581 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA069A932A1E7DDB005E9581 /* SearchModel.swift */; };
+		CA069A9C2A1E98A3005E9581 /* SearchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA069A9B2A1E98A3005E9581 /* SearchDataSource.swift */; };
+		CA069A9E2A1E98C0005E9581 /* SearchLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA069A9D2A1E98C0005E9581 /* SearchLayout.swift */; };
+		CA069AA02A1E9C8F005E9581 /* ResizeCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA069A9F2A1E9C8F005E9581 /* ResizeCollectionView.swift */; };
 		CA0EFAF42A15730F003FF26A /* TimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EFAF32A15730F003FF26A /* TimePicker.swift */; };
 		CA0EFAF72A157350003FF26A /* CustomTimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EFAF62A157350003FF26A /* CustomTimePicker.swift */; };
 		CA0EFAFA2A157CF8003FF26A /* RoundedShadowedSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EFAF92A157CF8003FF26A /* RoundedShadowedSegmentedControl.swift */; };
@@ -44,6 +53,13 @@
 		CA13C34129FC74B000EA85D8 /* RoleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA13C34029FC74B000EA85D8 /* RoleButton.swift */; };
 		CA13C34429FE97E200EA85D8 /* RoleButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA13C34329FE97E200EA85D8 /* RoleButtonModel.swift */; };
 		CA13C34629FE98C200EA85D8 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA13C34529FE98C200EA85D8 /* TextField.swift */; };
+		CA237AE02A1F8E990026941F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CA237ADF2A1F8E990026941F /* Alamofire */; };
+		CA237AE62A1F8EE30026941F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA237AE52A1F8EE30026941F /* NetworkManager.swift */; };
+		CA237AEB2A1F8F2E0026941F /* MultipartBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA237AEA2A1F8F2E0026941F /* MultipartBuilder.swift */; };
+		CA237AED2A1F9CA50026941F /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA237AEC2A1F9CA50026941F /* ApiManager.swift */; };
+		CA237AEF2A1F9CDB0026941F /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA237AEE2A1F9CDB0026941F /* Endpoint.swift */; };
+		CA237AF42A1FAF540026941F /* SearchEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA237AF32A1FAF540026941F /* SearchEndpoint.swift */; };
+		CA237AF62A1FBB720026941F /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA237AF52A1FBB720026941F /* SearchCell.swift */; };
 		CA2C5DE72A0BF64B0037D60E /* SignInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2C5DE22A0BF64A0037D60E /* SignInRouter.swift */; };
 		CA2C5DE82A0BF64B0037D60E /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2C5DE32A0BF64A0037D60E /* SignInView.swift */; };
 		CA2C5DE92A0BF64B0037D60E /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2C5DE42A0BF64B0037D60E /* SignInPresenter.swift */; };
@@ -194,8 +210,17 @@
 		CA069A4E2A1D3B07005E9581 /* LocationMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapView.swift; sourceTree = "<group>"; };
 		CA069A4F2A1D3B07005E9581 /* LocationMapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapModel.swift; sourceTree = "<group>"; };
 		CA069A592A1D4D29005E9581 /* NavigationLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLocationView.swift; sourceTree = "<group>"; };
-		CA069A5B2A1D4D2C005E9581 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		CA069A5B2A1D4D2C005E9581 /* SearchFrView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFrView.swift; sourceTree = "<group>"; };
 		CA069A5D2A1D4EB2005E9581 /* SearchNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNavigationView.swift; sourceTree = "<group>"; };
+		CA069A8E2A1E7DDB005E9581 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		CA069A8F2A1E7DDB005E9581 /* SearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRouter.swift; sourceTree = "<group>"; };
+		CA069A902A1E7DDB005E9581 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		CA069A912A1E7DDB005E9581 /* SearchBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBuilder.swift; sourceTree = "<group>"; };
+		CA069A922A1E7DDB005E9581 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		CA069A932A1E7DDB005E9581 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		CA069A9B2A1E98A3005E9581 /* SearchDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDataSource.swift; sourceTree = "<group>"; };
+		CA069A9D2A1E98C0005E9581 /* SearchLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLayout.swift; sourceTree = "<group>"; };
+		CA069A9F2A1E9C8F005E9581 /* ResizeCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizeCollectionView.swift; sourceTree = "<group>"; };
 		CA0EFAF32A15730F003FF26A /* TimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePicker.swift; sourceTree = "<group>"; };
 		CA0EFAF62A157350003FF26A /* CustomTimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTimePicker.swift; sourceTree = "<group>"; };
 		CA0EFAF92A157CF8003FF26A /* RoundedShadowedSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowedSegmentedControl.swift; sourceTree = "<group>"; };
@@ -221,6 +246,12 @@
 		CA13C34029FC74B000EA85D8 /* RoleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleButton.swift; sourceTree = "<group>"; };
 		CA13C34329FE97E200EA85D8 /* RoleButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleButtonModel.swift; sourceTree = "<group>"; };
 		CA13C34529FE98C200EA85D8 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		CA237AE52A1F8EE30026941F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CA237AEA2A1F8F2E0026941F /* MultipartBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartBuilder.swift; sourceTree = "<group>"; };
+		CA237AEC2A1F9CA50026941F /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		CA237AEE2A1F9CDB0026941F /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		CA237AF32A1FAF540026941F /* SearchEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEndpoint.swift; sourceTree = "<group>"; };
+		CA237AF52A1FBB720026941F /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		CA2C5DE22A0BF64A0037D60E /* SignInRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInRouter.swift; sourceTree = "<group>"; };
 		CA2C5DE32A0BF64A0037D60E /* SignInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		CA2C5DE42A0BF64B0037D60E /* SignInPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
@@ -342,6 +373,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA237AE02A1F8E990026941F /* Alamofire in Frameworks */,
 				CAE6056429F6F42E00FE65E6 /* Hero in Frameworks */,
 				CAE6055729F6C9B000FE65E6 /* SnapKit in Frameworks */,
 			);
@@ -431,9 +463,35 @@
 		CA069A582A1D4D0A005E9581 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				CA069A5B2A1D4D2C005E9581 /* SearchView.swift */,
+				CA069A5B2A1D4D2C005E9581 /* SearchFrView.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		CA069A8D2A1E7D9C005E9581 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				CA069A9A2A1E9894005E9581 /* Helper */,
+				CA069A8E2A1E7DDB005E9581 /* SearchPresenter.swift */,
+				CA069A8F2A1E7DDB005E9581 /* SearchRouter.swift */,
+				CA069A902A1E7DDB005E9581 /* SearchViewController.swift */,
+				CA069A912A1E7DDB005E9581 /* SearchBuilder.swift */,
+				CA069A922A1E7DDB005E9581 /* SearchView.swift */,
+				CA069A932A1E7DDB005E9581 /* SearchModel.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		CA069A9A2A1E9894005E9581 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CA069A9B2A1E98A3005E9581 /* SearchDataSource.swift */,
+				CA069A9D2A1E98C0005E9581 /* SearchLayout.swift */,
+				CA069A9F2A1E9C8F005E9581 /* ResizeCollectionView.swift */,
+				CA237AF32A1FAF540026941F /* SearchEndpoint.swift */,
+				CA237AF52A1FBB720026941F /* SearchCell.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		CA0EFAF22A157309003FF26A /* TimePicker */ = {
@@ -516,6 +574,57 @@
 			path = RoleButton;
 			sourceTree = "<group>";
 		};
+		CA237AE12A1F8EAE0026941F /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				CA237AE82A1F8EFD0026941F /* MultipartBuilder */,
+				CA237AE72A1F8EE50026941F /* NetworkManager */,
+				CA237AE42A1F8EC70026941F /* ApiManager */,
+				CA237AE32A1F8EBF0026941F /* Request */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		CA237AE22A1F8EB50026941F /* KeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				CAE1EC072A18AB9600859F61 /* KeyboardManager.swift */,
+			);
+			path = KeyBoard;
+			sourceTree = "<group>";
+		};
+		CA237AE32A1F8EBF0026941F /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				CA237AEE2A1F9CDB0026941F /* Endpoint.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		CA237AE42A1F8EC70026941F /* ApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				CA237AEC2A1F9CA50026941F /* ApiManager.swift */,
+			);
+			path = ApiManager;
+			sourceTree = "<group>";
+		};
+		CA237AE72A1F8EE50026941F /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				CA237AE52A1F8EE30026941F /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		CA237AE82A1F8EFD0026941F /* MultipartBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				CA237AEA2A1F8F2E0026941F /* MultipartBuilder.swift */,
+			);
+			path = MultipartBuilder;
+			sourceTree = "<group>";
+		};
 		CA2C5DE12A0BF6360037D60E /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
@@ -592,6 +701,7 @@
 		CA4DD9DD29F66FAA00E19431 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				CA069A8D2A1E7D9C005E9581 /* Search */,
 				CA069A492A1D3AC1005E9581 /* LocationMap */,
 				CAE1EBF52A17E0C700859F61 /* DescriptionCompany */,
 				CAE1EBE82A17D81800859F61 /* CompanyPhone */,
@@ -952,7 +1062,8 @@
 		CAE1EC062A18AB3700859F61 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				CAE1EC072A18AB9600859F61 /* KeyboardManager.swift */,
+				CA237AE22A1F8EB50026941F /* KeyBoard */,
+				CA237AE12A1F8EAE0026941F /* HTTP */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -976,6 +1087,7 @@
 			packageProductDependencies = (
 				CAE6055629F6C9B000FE65E6 /* SnapKit */,
 				CAE6056329F6F42E00FE65E6 /* Hero */,
+				CA237ADF2A1F8E990026941F /* Alamofire */,
 			);
 			productName = "Mum’s the word";
 			productReference = 0C30816329F5C33400C73271 /* Mum’s the word.app */;
@@ -1052,6 +1164,7 @@
 			packageReferences = (
 				CAE6055529F6C9B000FE65E6 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				CAE6056229F6F42E00FE65E6 /* XCRemoteSwiftPackageReference "Hero" */,
+				CA237ADE2A1F8E990026941F /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 0C30816429F5C33400C73271 /* Products */;
 			projectDirPath = "";
@@ -1103,7 +1216,9 @@
 				CA13C33229FAE8FD00EA85D8 /* StartScreenModel.swift in Sources */,
 				CA13C32D29FAE8FD00EA85D8 /* StartScreenPresenter.swift in Sources */,
 				CA50194C29F84499006039C4 /* UILabel + Extensions.swift in Sources */,
+				CA069A992A1E7DDB005E9581 /* SearchModel.swift in Sources */,
 				CA13C34129FC74B000EA85D8 /* RoleButton.swift in Sources */,
+				CA069A952A1E7DDB005E9581 /* SearchRouter.swift in Sources */,
 				CA0EFB0A2A15928E003FF26A /* VerifiedModel.swift in Sources */,
 				CA0EFAF42A15730F003FF26A /* TimePicker.swift in Sources */,
 				CA069A5E2A1D4EB2005E9581 /* SearchNavigationView.swift in Sources */,
@@ -1126,6 +1241,7 @@
 				CA779F0E2A101F96001C4569 /* UploadLogoBuilder.swift in Sources */,
 				CA779F152A102F00001C4569 /* ChooseLogoView.swift in Sources */,
 				CA50194729F83788006039C4 /* AppStrings.swift in Sources */,
+				CA237AF62A1FBB720026941F /* SearchCell.swift in Sources */,
 				CA779F9D2A12D802001C4569 /* BusinessHoursPresenter.swift in Sources */,
 				CA550DF829F980B200780317 /* UIView + Extension.swift in Sources */,
 				CA13C34429FE97E200EA85D8 /* RoleButtonModel.swift in Sources */,
@@ -1160,9 +1276,12 @@
 				CA4DD9E029F66FC000E19431 /* OnboardingRouter.swift in Sources */,
 				CAC4BF4F2A0556BA00331B80 /* SelectLocationBuilder.swift in Sources */,
 				CAE1EBF22A17DADB00859F61 /* CompanyPhoneBuilder.swift in Sources */,
+				CA069AA02A1E9C8F005E9581 /* ResizeCollectionView.swift in Sources */,
 				CAE1EBE22A17C95900859F61 /* AddCompanyPhotosBuilder.swift in Sources */,
+				CA237AF42A1FAF540026941F /* SearchEndpoint.swift in Sources */,
 				CAC4BF4E2A0556BA00331B80 /* SelectLocationViewController.swift in Sources */,
 				CA2C5DE92A0BF64B0037D60E /* SignInPresenter.swift in Sources */,
+				CA069A9E2A1E98C0005E9581 /* SearchLayout.swift in Sources */,
 				CA5F30572A1C0FE100232332 /* UIResponder + Extension.swift in Sources */,
 				CAC4BF3B2A02B22D00331B80 /* SignUpBuilder.swift in Sources */,
 				CA4DD9DB29F66F6200E19431 /* AppRouter.swift in Sources */,
@@ -1176,23 +1295,27 @@
 				CA2C5DED2A0BF81E0037D60E /* Constants.swift in Sources */,
 				CA2C5DF42A0D6EDB0037D60E /* SignInCodePresenter.swift in Sources */,
 				CAE6055E29F6CA4700FE65E6 /* OnboardingViewController.swift in Sources */,
-				CA069A5C2A1D4D2C005E9581 /* SearchView.swift in Sources */,
+				CA069A5C2A1D4D2C005E9581 /* SearchFrView.swift in Sources */,
 				CAE1EC012A17E0E300859F61 /* DescriptionCompanyModel.swift in Sources */,
 				CA50196229F970C3006039C4 /* OnboardingCell.swift in Sources */,
 				CA069A522A1D3B07005E9581 /* LocationMapViewController.swift in Sources */,
 				CA50192229F79312006039C4 /* SplashRouter.swift in Sources */,
 				CA5F30552A1C061100232332 /* ChangePhotoView.swift in Sources */,
+				CA237AEB2A1F8F2E0026941F /* MultipartBuilder.swift in Sources */,
 				CAE1EBF02A17DADB00859F61 /* CompanyPhoneRouter.swift in Sources */,
 				CA779FA52A12D88E001C4569 /* HoursView.swift in Sources */,
 				CA50196529F970E2006039C4 /* OnboardingNavigationView.swift in Sources */,
 				CA13C33A29FC734D00EA85D8 /* RolePresenter.swift in Sources */,
 				CAC4BF402A02C10600331B80 /* PrivacyStackView.swift in Sources */,
+				CA069A942A1E7DDB005E9581 /* SearchPresenter.swift in Sources */,
 				CA779FA02A12D802001C4569 /* BusinessHoursBuilder.swift in Sources */,
+				CA237AEF2A1F9CDB0026941F /* Endpoint.swift in Sources */,
 				CAE6056029F6CA4700FE65E6 /* OnboardingView.swift in Sources */,
 				CA2C5DEA2A0BF64B0037D60E /* SignInBuilder.swift in Sources */,
 				CA13C34629FE98C200EA85D8 /* TextField.swift in Sources */,
 				CA550DFA29F980D100780317 /* Helper.swift in Sources */,
 				CA550E0829F985AD00780317 /* Array + Extension.swift in Sources */,
+				CA069A972A1E7DDB005E9581 /* SearchBuilder.swift in Sources */,
 				CAE1EBFD2A17E0E300859F61 /* DescriptionCompanyRouter.swift in Sources */,
 				CAE1EBDF2A17C95900859F61 /* AddCompanyPhotosPresenter.swift in Sources */,
 				CA2C5DFF2A0D78E80037D60E /* OPTTextField.swift in Sources */,
@@ -1205,6 +1328,7 @@
 				CAE1EBE72A17CEAB00859F61 /* DarkLoginView.swift in Sources */,
 				CA50192E29F79E22006039C4 /* BubleLoader.swift in Sources */,
 				CA779F0F2A101F96001C4569 /* UploadLogoView.swift in Sources */,
+				CA237AED2A1F9CA50026941F /* ApiManager.swift in Sources */,
 				CAE1EBF12A17DADB00859F61 /* CompanyPhoneViewController.swift in Sources */,
 				CA4DD9DC29F66F6200E19431 /* NavigationRouterProtocol.swift in Sources */,
 				CA779F9E2A12D802001C4569 /* BusinessHoursRouter.swift in Sources */,
@@ -1222,6 +1346,7 @@
 				CAC4BF2A2A005F5C00331B80 /* TapableLabel.swift in Sources */,
 				CA13C33E29FC734D00EA85D8 /* RoleView.swift in Sources */,
 				CAE1EC002A17E0E300859F61 /* DescriptionCompanyView.swift in Sources */,
+				CA069A982A1E7DDB005E9581 /* SearchView.swift in Sources */,
 				CAE1EBFE2A17E0E300859F61 /* DescriptionCompanyViewController.swift in Sources */,
 				CA0EFAFD2A157D32003FF26A /* WeekView.swift in Sources */,
 				CAC4BF552A0567E900331B80 /* Stepper.swift in Sources */,
@@ -1229,8 +1354,10 @@
 				CA069A5A2A1D4D29005E9581 /* NavigationLocationView.swift in Sources */,
 				CA50193029F7A128006039C4 /* AppColor.swift in Sources */,
 				CA779F102A101F96001C4569 /* UploadLogoModel.swift in Sources */,
+				CA237AE62A1F8EE30026941F /* NetworkManager.swift in Sources */,
 				CA550DF629F9809100780317 /* CGFloat.swift in Sources */,
 				CA50192B29F7935B006039C4 /* AppImages.swift in Sources */,
+				CA069A9C2A1E98A3005E9581 /* SearchDataSource.swift in Sources */,
 				CA13C32F29FAE8FD00EA85D8 /* StartScreenViewController.swift in Sources */,
 				CAE1EBF32A17DADB00859F61 /* CompanyPhoneView.swift in Sources */,
 				CA069A542A1D3B07005E9581 /* LocationMapView.swift in Sources */,
@@ -1239,6 +1366,7 @@
 				CA550E0629F9856400780317 /* Dimension.swift in Sources */,
 				CAC4BF4C2A0556BA00331B80 /* SelectLocationPresenter.swift in Sources */,
 				CA069A512A1D3B07005E9581 /* LocationMapRouter.swift in Sources */,
+				CA069A962A1E7DDB005E9581 /* SearchViewController.swift in Sources */,
 				CA13C33129FAE8FD00EA85D8 /* StartScreenView.swift in Sources */,
 				CA50192529F79312006039C4 /* SplashView.swift in Sources */,
 				CA5F304D2A1BE70E00232332 /* AddCompanyDataSource.swift in Sources */,
@@ -1571,6 +1699,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		CA237ADE2A1F8E990026941F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		CAE6055529F6C9B000FE65E6 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -1590,6 +1726,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CA237ADF2A1F8E990026941F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA237ADE2A1F8E990026941F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		CAE6055629F6C9B000FE65E6 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CAE6055529F6C9B000FE65E6 /* XCRemoteSwiftPackageReference "SnapKit" */;

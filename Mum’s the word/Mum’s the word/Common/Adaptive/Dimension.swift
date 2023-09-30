@@ -2,7 +2,7 @@
 //  Dimension.swift
 //  gor_ios
 //
-//  Created by Александр Александрович on 08.09.2022.
+//  Created by Kiri4of on 08.09.2022.
 //
 
 enum Dimension {

@@ -2,7 +2,7 @@
 //  AppRouter.swift
 //  Mum’s the word
 //
-//  Created by Александр Александрович on 24.04.2023.
+//  Created by Kiri4of on 24.04.2023.
 //
 
 import UIKit
@@ -18,8 +18,15 @@ final class AppRouter {
 
 extension AppRouter {
     func showOnboarding() {
-        let router = WelcomeRouter(navigationRouter: navigationRouter)
+//        let router = LocationMapRouter(navigationRouter: navigationRouter)
+//        router.show()
+        let router = OnboardingRouter(navigationRouter: navigationRouter)
         router.showOnboarding()
+    }
+    
+    func showStart() {
+        let router = StartScreenRouter(navigationRouter: navigationRouter)
+        router.show()
     }
     
     func showSplash(scene: UIWindowScene, completion: @escaping () -> ()) {
